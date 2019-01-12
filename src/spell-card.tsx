@@ -1,45 +1,7 @@
 import * as React from "react";
-import { Spell, SpellComponent, SourceBook } from "./spells";
+import { Spell } from "./spells";
 import { colours, shadows } from "./styles";
-
-/**
- * Render out component initials to actual words
- */
-const spellComponentText = (component: SpellComponent): string => {
-  switch (component) {
-    case "V":
-      return "Verbal";
-    case "S":
-      return "Somatic";
-    case "M":
-      return "Material";
-    default:
-      return "";
-  }
-};
-
-/**
- * Human-readable source books
- */
-const sourceBookText = (sourceBook: SourceBook): string => {
-  switch (sourceBook) {
-    // Freely avaliable content
-    case "phb":
-      return "Player's Handbook";
-    case "srd":
-      return "System Reference Document";
-    // Not bundled in the code, as these are proprietary, but render properly
-    case "scag":
-      return "Sword Coast Adventurer's Guide";
-    case "xgte":
-      return "Xanathar's Guide to Everything";
-    case "ee":
-      return "Elemental Evil";
-    // Fallback
-    default:
-      return "Unknown";
-  }
-};
+import { sourceBookText, spellComponentText } from "./spell-utils";
 
 /*
  *
@@ -66,7 +28,7 @@ const TextBlock = ({ title, lines }: TextBlockProps) => {
 
   return (
     <div>
-      <h2>{title}</h2>
+      <h3>{title}</h3>
       {description}
     </div>
   );
@@ -172,13 +134,13 @@ export const SpellCard = ({ spell }: SpellCardProps) => {
 
   return (
     <div style={cardStyles}>
-      <h1
+      <h2
         style={{
           marginTop: 0
         }}
       >
         {spell.name}
-      </h1>
+      </h2>
       {components}
       {description}
     </div>

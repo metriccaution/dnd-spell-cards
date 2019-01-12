@@ -3,6 +3,8 @@ import { Spell } from "./spells";
 import { produce } from "immer";
 import { SpellCard } from "./spell-card";
 import { colours, shadows } from "./styles";
+import { groupBy } from "lodash";
+import { spellLevelText } from "./spell-utils";
 
 interface SpellListProps {
   spellList: Spell[];
@@ -54,11 +56,49 @@ export default class SpellList extends React.Component<
     return a.level - b.level || a.name.localeCompare(b.name);
   }
 
-  public render() {
-    const spellCards = this.props.spellList
-      .filter(this.spellMatchesText.bind(this, this.state.searchText))
+  private renderSpellLevel(level: string, spells: Spell[]) {
+    const spellCards = spells
       .sort(this.compareSpells)
       .map(spell => <SpellCard key={spell.name} spell={spell} />);
+
+    const levelNumber = parseInt(level, 10);
+    const levelName = isNaN(levelNumber)
+      ? "Unknown Level"
+      : spellLevelText(levelNumber);
+
+    return (
+      <div key={level}>
+        <h1
+          style={{
+            backgroundColor: colours.spellDividerBackground,
+            boxShadow: shadows.standard,
+            padding: "0.5em",
+            margin: "0em 1em"
+          }}
+        >
+          {levelName}
+        </h1>
+        <div
+          style={{
+            margin: "0.25em"
+          }}
+        >
+          {spellCards}
+        </div>
+      </div>
+    );
+  }
+
+  public render() {
+    const matchingSpells = this.props.spellList.filter(
+      this.spellMatchesText.bind(this, this.state.searchText)
+    );
+
+    const spellGroups = groupBy(matchingSpells, "level");
+
+    const groupedCards = Object.keys(spellGroups).map(groupName =>
+      this.renderSpellLevel(groupName, spellGroups[groupName])
+    );
 
     return (
       <div
@@ -94,13 +134,7 @@ export default class SpellList extends React.Component<
             margin: "1em"
           }}
         >
-          <div
-            style={{
-              margin: "0.25em"
-            }}
-          >
-            {spellCards}
-          </div>
+          {groupedCards}
         </div>
       </div>
     );
