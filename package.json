@@ -1,8 +1,6 @@
 {
   "name": "dnd-spell-cards",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "precompile": "rm -rf dist/",
     "format": "prettier --write 'src/**/*'",
@@ -11,9 +9,7 @@
     "test": "npm run format && npm run lint && npm run compile",
     "start": "webpack-dev-server"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@types/react": "^16.4.18",
     "@types/react-dom": "^16.0.9",
