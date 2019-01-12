@@ -4,7 +4,7 @@
   "scripts": {
     "precompile": "rm -rf dist/",
     "format": "prettier --write 'src/**/*'",
-    "compile": "webpack",
+    "build": "webpack",
     "lint": "tslint -p . --fix",
     "test": "npm run format && npm run lint && npm run compile",
     "start": "webpack-dev-server"
