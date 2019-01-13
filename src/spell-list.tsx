@@ -120,10 +120,13 @@ export default class SpellList extends React.Component<
         >
           <input
             style={{
+              height: "2.5em",
               width: "96%",
               border: "none",
-              margin: "0% 2%"
+              margin: "0% 2%",
+              paddingLeft: "1em"
             }}
+            placeholder={"Search"}
             value={this.state.searchText}
             onChange={e => this.setSearchText(e.target.value)}
           />
