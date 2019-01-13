@@ -54,7 +54,7 @@ const PropertiesList = ({ properties }: PropertiesListProps) => {
             style={{
               borderBottom: `1px solid ${colours.cardBorder}`,
               paddingRight: "1em",
-              textAlign: "left",
+              textAlign: "left"
             }}
           >
             {name}
@@ -62,7 +62,7 @@ const PropertiesList = ({ properties }: PropertiesListProps) => {
           <td
             style={{
               borderBottom: `1px solid ${colours.cardBorder}`,
-              textAlign: "left",
+              textAlign: "left"
             }}
           >
             {value}
@@ -122,11 +122,11 @@ export const SpellCard = ({ spell }: SpellCardProps) => {
   const description = [
     {
       lines: spell.description,
-      title: "Description",
+      title: "Description"
     },
     {
       lines: spell.higherLevel,
-      title: "At a higher level",
+      title: "At a higher level"
     }
   ]
     .filter(({ lines }) => lines.length > 0)
