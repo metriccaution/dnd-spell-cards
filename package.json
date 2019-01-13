@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "precompile": "rm -rf dist/",
-    "format": "prettier --write 'src/**/*' '*.{yml,md,js,json}'",
+    "format": "prettier --write 'src/**/*' '*.{yml,md,js,json}' 'data/**/*.{json,md,js}'",
     "build": "webpack",
     "lint": "tslint -p . --fix",
     "test": "npm run format && npm run lint && npm run compile",

@@ -7,3 +7,8 @@ A quick-reference set of D&D spell cards - Designed to be used during play to pu
 ## How to use
 
 [Go here](https://metriccaution.github.io/dnd-spell-cards/)
+
+## Licensing
+
+- Code is licensed under the MIT license.
+- Spell data is licensed under the OGL.

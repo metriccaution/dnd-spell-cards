@@ -1,2 +1,7 @@
 node_modules
 dist
+
+# Don't include non-free data in the public version
+data/*/*
+!data/srd/README.md
+!data/srd/**/*
