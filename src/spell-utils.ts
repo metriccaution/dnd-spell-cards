@@ -1,4 +1,4 @@
-import { SpellComponent, SourceBook } from "./spells";
+import { SourceBook, SpellComponent } from "./spells";
 
 /**
  * Render out component initials to actual words

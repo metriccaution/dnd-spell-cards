@@ -1,7 +1,7 @@
 import * as React from "react";
+import { sourceBookText, spellComponentText } from "./spell-utils";
 import { Spell } from "./spells";
 import { colours, shadows } from "./styles";
-import { sourceBookText, spellComponentText } from "./spell-utils";
 
 /*
  *
@@ -39,7 +39,7 @@ const TextBlock = ({ title, lines }: TextBlockProps) => {
  */
 
 interface PropertiesListProps {
-  properties: [string, string][];
+  properties: Array<[string, string]>;
 }
 const PropertiesList = ({ properties }: PropertiesListProps) => {
   return (
@@ -52,17 +52,17 @@ const PropertiesList = ({ properties }: PropertiesListProps) => {
         >
           <th
             style={{
-              textAlign: "left",
+              borderBottom: `1px solid ${colours.cardBorder}`,
               paddingRight: "1em",
-              borderBottom: `1px solid ${colours.cardBorder}`
+              textAlign: "left",
             }}
           >
             {name}
           </th>
           <td
             style={{
+              borderBottom: `1px solid ${colours.cardBorder}`,
               textAlign: "left",
-              borderBottom: `1px solid ${colours.cardBorder}`
             }}
           >
             {value}
@@ -121,12 +121,12 @@ export const SpellCard = ({ spell }: SpellCardProps) => {
 
   const description = [
     {
+      lines: spell.description,
       title: "Description",
-      lines: spell.description
     },
     {
+      lines: spell.higherLevel,
       title: "At a higher level",
-      lines: spell.higherLevel
     }
   ]
     .filter(({ lines }) => lines.length > 0)

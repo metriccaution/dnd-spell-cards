@@ -1,10 +1,10 @@
-import * as React from "react";
-import { Spell } from "./spells";
 import { produce } from "immer";
-import { SpellCard } from "./spell-card";
-import { colours, shadows } from "./styles";
 import { groupBy } from "lodash";
+import * as React from "react";
+import { SpellCard } from "./spell-card";
 import { spellLevelText } from "./spell-utils";
+import { Spell } from "./spells";
+import { colours, shadows } from "./styles";
 
 interface SpellListProps {
   spellList: Spell[];
@@ -25,6 +25,60 @@ export default class SpellList extends React.Component<
     this.state = {
       searchText: ""
     };
+  }
+
+  public render() {
+    const matchingSpells = this.props.spellList.filter(
+      this.spellMatchesText.bind(this, this.state.searchText)
+    );
+
+    const spellGroups = groupBy(matchingSpells, "level");
+
+    const groupedCards = Object.keys(spellGroups).map(groupName =>
+      this.renderSpellLevel(groupName, spellGroups[groupName])
+    );
+
+    return (
+      <div
+        style={{
+          height: "100%",
+          overflowY: "auto",
+          color: colours.text,
+          backgroundColor: colours.pageBackground
+        }}
+      >
+        <div
+          style={{
+            position: "sticky",
+            top: 0,
+            backgroundColor: colours.topNavBackground,
+            padding: "0.5em 0em",
+            boxShadow: shadows.standard
+          }}
+        >
+          <input
+            style={{
+              height: "2.5em",
+              width: "96%",
+              border: "none",
+              margin: "0% 2%",
+              paddingLeft: "1em"
+            }}
+            placeholder={"Search"}
+            value={this.state.searchText}
+            onChange={e => this.setSearchText(e.target.value)}
+          />
+        </div>
+
+        <div
+          style={{
+            margin: "1em"
+          }}
+        >
+          {groupedCards}
+        </div>
+      </div>
+    );
   }
 
   /**
@@ -84,60 +138,6 @@ export default class SpellList extends React.Component<
           }}
         >
           {spellCards}
-        </div>
-      </div>
-    );
-  }
-
-  public render() {
-    const matchingSpells = this.props.spellList.filter(
-      this.spellMatchesText.bind(this, this.state.searchText)
-    );
-
-    const spellGroups = groupBy(matchingSpells, "level");
-
-    const groupedCards = Object.keys(spellGroups).map(groupName =>
-      this.renderSpellLevel(groupName, spellGroups[groupName])
-    );
-
-    return (
-      <div
-        style={{
-          height: "100%",
-          overflowY: "auto",
-          color: colours.text,
-          backgroundColor: colours.pageBackground
-        }}
-      >
-        <div
-          style={{
-            position: "sticky",
-            top: 0,
-            backgroundColor: colours.topNavBackground,
-            padding: "0.5em 0em",
-            boxShadow: shadows.standard
-          }}
-        >
-          <input
-            style={{
-              height: "2.5em",
-              width: "96%",
-              border: "none",
-              margin: "0% 2%",
-              paddingLeft: "1em"
-            }}
-            placeholder={"Search"}
-            value={this.state.searchText}
-            onChange={e => this.setSearchText(e.target.value)}
-          />
-        </div>
-
-        <div
-          style={{
-            margin: "1em"
-          }}
-        >
-          {groupedCards}
         </div>
       </div>
     );

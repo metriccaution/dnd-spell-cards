@@ -1,10 +1,10 @@
 export type SpellComponent = "S" | "V" | "M";
 export type SourceBook = "phb" | "srd" | "scag" | "xgte" | "ee";
 
-export type SourcePage = {
+export interface SourcePage {
   pageNumber: number;
   book: SourceBook;
-};
+}
 
 /**
  * All of the details stored about a spell.
