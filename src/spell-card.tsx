@@ -1,7 +1,7 @@
 import * as React from "react";
 import { sourceBookText, spellComponentText } from "./spell-utils";
-import { Spell } from "./spells";
 import { colours, shadows } from "./styles";
+import { Spell } from "./types";
 
 /*
  *
@@ -78,9 +78,16 @@ const PropertiesList = ({ properties }: PropertiesListProps) => {
  */
 
 export interface SpellCardProps {
+  /**
+   * Actual spell details
+   */
   spell: Spell;
+  /**
+   * What gives someone this spell
+   */
+  knownBy: string[];
 }
-export const SpellCard = ({ spell }: SpellCardProps) => {
+export const SpellCard = ({ spell, knownBy }: SpellCardProps) => {
   const cardStyles = {
     margin: "1em",
     width: "35em",
@@ -114,7 +121,8 @@ export const SpellCard = ({ spell }: SpellCardProps) => {
         [
           "Source",
           `${sourceBookText(spell.page.book)} page ${spell.page.pageNumber}`
-        ]
+        ],
+        ["Known by", knownBy.join(", ")]
       ]}
     />
   );

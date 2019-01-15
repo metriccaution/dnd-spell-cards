@@ -3,5 +3,6 @@ dist
 
 # Don't include non-free data in the public version
 data/*/*
+!data/README.md
 !data/srd/README.md
 !data/srd/**/*

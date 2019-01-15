@@ -3,11 +3,12 @@ import { groupBy } from "lodash";
 import * as React from "react";
 import { SpellCard } from "./spell-card";
 import { spellLevelText } from "./spell-utils";
-import { Spell } from "./spells";
 import { colours, shadows } from "./styles";
+import { Spell, SpellsKnown } from "./types";
 
 interface SpellListProps {
   spellList: Spell[];
+  spellsKnown: SpellsKnown[];
 }
 interface SpellListState {
   searchText: string;
@@ -110,10 +111,35 @@ export default class SpellList extends React.Component<
     return a.level - b.level || a.name.localeCompare(b.name);
   }
 
+  /**
+   * Flip the spells known listing from a list of groupings, to a
+   * spell-to-grouping-name mapping - Allowing for a quick lookup
+   */
+  private groupSpellsKnownBySpell(): Record<string, string[]> {
+    return this.props.spellsKnown.reduce(
+      (bySpell: Record<string, string[]>, grouping) => {
+        grouping.spells.forEach(spell => {
+          bySpell[spell] = (bySpell[spell] || []).concat(grouping.knownBy);
+        });
+
+        return bySpell;
+      },
+      {}
+    );
+  }
+
   private renderSpellLevel(level: string, spells: Spell[]) {
+    const groupedBySpell = this.groupSpellsKnownBySpell();
+
     const spellCards = spells
       .sort(this.compareSpells)
-      .map(spell => <SpellCard key={spell.name} spell={spell} />);
+      .map(spell => (
+        <SpellCard
+          key={spell.name}
+          knownBy={groupedBySpell[spell.name].sort() || []}
+          spell={spell}
+        />
+      ));
 
     const levelNumber = parseInt(level, 10);
     const levelName = isNaN(levelNumber)

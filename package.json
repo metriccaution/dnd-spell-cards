@@ -6,7 +6,7 @@
     "format": "prettier --write 'src/**/*' '*.{yml,md,js,json}' 'data/**/*.{json,md,js}'",
     "build": "webpack",
     "lint": "tslint -p . --fix",
-    "test": "npm run format && npm run lint && npm run compile",
+    "test": "npm run format && npm run lint && npm run build",
     "start": "webpack-dev-server"
   },
   "license": "MIT",
@@ -33,7 +33,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint && npm run format"
+      "pre-commit": "npm test"
     }
   }
 }

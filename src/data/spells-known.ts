@@ -1,7 +1,9 @@
-[
+import { SpellsKnown } from "../types";
+
+export const spellsKnown: SpellsKnown[] = [
   {
-    "class": "Bard",
-    "spells": [
+    knownBy: "Bard",
+    spells: [
       "Dancing Lights",
       "Light",
       "Mage Hand",
@@ -117,8 +119,8 @@
     ]
   },
   {
-    "class": "Cleric",
-    "spells": [
+    knownBy: "Cleric",
+    spells: [
       "Guidance",
       "Light",
       "Mending",
@@ -227,8 +229,8 @@
     ]
   },
   {
-    "class": "Druid",
-    "spells": [
+    knownBy: "Druid",
+    spells: [
       "Druidcraft",
       "Guidance",
       "Mending",
@@ -337,8 +339,8 @@
     ]
   },
   {
-    "class": "Paladin",
-    "spells": [
+    knownBy: "Paladin",
+    spells: [
       "Bless",
       "Command",
       "Cure Wounds",
@@ -373,8 +375,8 @@
     ]
   },
   {
-    "class": "Ranger",
-    "spells": [
+    knownBy: "Ranger",
+    spells: [
       "Alarm",
       "Animal Friendship",
       "Cure Wounds",
@@ -415,8 +417,8 @@
     ]
   },
   {
-    "class": "Sorcerer",
-    "spells": [
+    knownBy: "Sorcerer",
+    spells: [
       "Acid Splash",
       "Chill Touch",
       "Dancing Lights",
@@ -540,8 +542,8 @@
     ]
   },
   {
-    "class": "Warlock",
-    "spells": [
+    knownBy: "Warlock",
+    spells: [
       "Chill Touch",
       "Eldritch Blast",
       "Mage Hand",
@@ -609,8 +611,8 @@
     ]
   },
   {
-    "class": "Wizard",
-    "spells": [
+    knownBy: "Wizard",
+    spells: [
       "Acid Splash",
       "Chill Touch",
       "Dancing Lights",
@@ -817,4 +819,4 @@
       "Wish"
     ]
   }
-]
+];
