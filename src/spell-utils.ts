@@ -1,4 +1,4 @@
-import { SourceBook, SpellComponent } from "./types";
+import { SourceBook, SpellComponent, SpellsKnown } from "./types";
 
 /**
  * Render out component initials to actual words
@@ -44,3 +44,19 @@ export const sourceBookText = (sourceBook: SourceBook): string => {
  */
 export const spellLevelText = (level: number): string =>
   level === 0 ? "Cantrip" : `Level ${level}`;
+
+/**
+ * Flip the spells known listing from a list of groupings, to a
+ * spell-to-grouping-name mapping - Allowing for a quick lookup
+ */
+export const groupSpellsKnownBySpell = (
+  spellsKnown: SpellsKnown[]
+): Record<string, string[]> => {
+  return spellsKnown.reduce((bySpell: Record<string, string[]>, grouping) => {
+    grouping.spells.forEach(spell => {
+      bySpell[spell] = (bySpell[spell] || []).concat(grouping.knownBy);
+    });
+
+    return bySpell;
+  }, {});
+};
