@@ -20,8 +20,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 259
+        book: "srd",
+        pageNumber: 114
       }
     ]
   },
@@ -43,8 +43,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 211
+        book: "srd",
+        pageNumber: 114
       }
     ]
   },
@@ -67,8 +67,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 211
+        book: "srd",
+        pageNumber: 114
       }
     ]
   },
@@ -91,8 +91,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 211
+        book: "srd",
+        pageNumber: 114
       }
     ]
   },
@@ -119,8 +119,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 211
+        book: "srd",
+        pageNumber: 114
       }
     ]
   },
@@ -141,8 +141,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 212
+        book: "srd",
+        pageNumber: 115
       }
     ]
   },
@@ -166,8 +166,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 212
+        book: "srd",
+        pageNumber: 115
       }
     ]
   },
@@ -190,8 +190,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 212
+        book: "srd",
+        pageNumber: 115
       }
     ]
   },
@@ -216,8 +216,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 212
+        book: "srd",
+        pageNumber: 115
       }
     ]
   },
@@ -243,8 +243,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 213
+        book: "srd",
+        pageNumber: 116
       }
     ]
   },
@@ -267,8 +267,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 213
+        book: "srd",
+        pageNumber: 116
       }
     ]
   },
@@ -298,8 +298,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 213
+        book: "srd",
+        pageNumber: 117
       }
     ]
   },
@@ -328,8 +328,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 214
+        book: "srd",
+        pageNumber: 117
       }
     ]
   },
@@ -352,8 +352,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 214
+        book: "srd",
+        pageNumber: 118
       }
     ]
   },
@@ -386,8 +386,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 218
+        book: "srd",
+        pageNumber: 118
       }
     ]
   },
@@ -409,8 +409,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 215
+        book: "srd",
+        pageNumber: 118
       }
     ]
   },
@@ -433,8 +433,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 262
+        book: "srd",
+        pageNumber: 119
       }
     ]
   },
@@ -460,8 +460,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 263
+        book: "srd",
+        pageNumber: 119
       }
     ]
   },
@@ -488,8 +488,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 215
+        book: "srd",
+        pageNumber: 119
       }
     ]
   },
@@ -517,8 +517,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 215
+        book: "srd",
+        pageNumber: 120
       }
     ]
   },
@@ -540,8 +540,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 216
+        book: "srd",
+        pageNumber: 120
       }
     ]
   },
@@ -564,8 +564,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 216
+        book: "srd",
+        pageNumber: 120
       }
     ]
   },
@@ -590,8 +590,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 217
+        book: "srd",
+        pageNumber: 120
       }
     ]
   },
@@ -612,8 +612,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 217
+        book: "srd",
+        pageNumber: 121
       }
     ]
   },
@@ -634,8 +634,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 217
+        book: "srd",
+        pageNumber: 121
       }
     ]
   },
@@ -663,8 +663,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 218
+        book: "srd",
+        pageNumber: 121
       }
     ]
   },
@@ -687,8 +687,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 238
+        book: "srd",
+        pageNumber: 121
       }
     ]
   },
@@ -710,8 +710,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 218
+        book: "srd",
+        pageNumber: 122
       }
     ]
   },
@@ -734,8 +734,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 219
+        book: "srd",
+        pageNumber: 122
       }
     ]
   },
@@ -760,8 +760,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 219
+        book: "srd",
+        pageNumber: 122
       }
     ]
   },
@@ -784,8 +784,8 @@ export const spells: Spell[] = [
     components: ["V"],
     page: [
       {
-        book: "phb",
-        pageNumber: 219
+        book: "srd",
+        pageNumber: 122
       }
     ]
   },
@@ -807,8 +807,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 219
+        book: "srd",
+        pageNumber: 122
       }
     ]
   },
@@ -829,8 +829,8 @@ export const spells: Spell[] = [
     components: ["V"],
     page: [
       {
-        book: "phb",
-        pageNumber: 219
+        book: "srd",
+        pageNumber: 123
       }
     ]
   },
@@ -851,8 +851,8 @@ export const spells: Spell[] = [
     components: ["V"],
     page: [
       {
-        book: "phb",
-        pageNumber: 219
+        book: "srd",
+        pageNumber: 123
       }
     ]
   },
@@ -876,8 +876,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 220
+        book: "srd",
+        pageNumber: 123
       }
     ]
   },
@@ -902,8 +902,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 220
+        book: "srd",
+        pageNumber: 123
       }
     ]
   },
@@ -925,8 +925,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 221
+        book: "srd",
+        pageNumber: 123
       }
     ]
   },
@@ -951,8 +951,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 221
+        book: "srd",
+        pageNumber: 124
       }
     ]
   },
@@ -975,8 +975,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 221
+        book: "srd",
+        pageNumber: 124
       }
     ]
   },
@@ -999,8 +999,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 221
+        book: "srd",
+        pageNumber: 124
       }
     ]
   },
@@ -1023,8 +1023,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 221
+        book: "srd",
+        pageNumber: 124
       }
     ]
   },
@@ -1048,8 +1048,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 222
+        book: "srd",
+        pageNumber: 124
       }
     ]
   },
@@ -1072,8 +1072,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 222
+        book: "srd",
+        pageNumber: 125
       }
     ]
   },
@@ -1098,8 +1098,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 222
+        book: "srd",
+        pageNumber: 125
       }
     ]
   },
@@ -1124,8 +1124,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 222
+        book: "srd",
+        pageNumber: 125
       }
     ]
   },
@@ -1159,8 +1159,8 @@ export const spells: Spell[] = [
     components: ["V"],
     page: [
       {
-        book: "phb",
-        pageNumber: 223
+        book: "srd",
+        pageNumber: 125
       }
     ]
   },
@@ -1183,8 +1183,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 223
+        book: "srd",
+        pageNumber: 126
       }
     ]
   },
@@ -1212,8 +1212,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 224
+        book: "srd",
+        pageNumber: 126
       }
     ]
   },
@@ -1235,8 +1235,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 224
+        book: "srd",
+        pageNumber: 126
       }
     ]
   },
@@ -1258,8 +1258,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 224
+        book: "srd",
+        pageNumber: 126
       }
     ]
   },
@@ -1283,8 +1283,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 224
+        book: "srd",
+        pageNumber: 127
       }
     ]
   },
@@ -1309,8 +1309,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 224
+        book: "srd",
+        pageNumber: 127
       }
     ]
   },
@@ -1340,8 +1340,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 225
+        book: "srd",
+        pageNumber: 127
       }
     ]
   },
@@ -1366,8 +1366,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 225
+        book: "srd",
+        pageNumber: 127
       }
     ]
   },
@@ -1394,8 +1394,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 225
+        book: "srd",
+        pageNumber: 128
       }
     ]
   },
@@ -1421,8 +1421,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 226
+        book: "srd",
+        pageNumber: 128
       }
     ]
   },
@@ -1452,8 +1452,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 226
+        book: "srd",
+        pageNumber: 128
       }
     ]
   },
@@ -1483,8 +1483,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 226
+        book: "srd",
+        pageNumber: 129
       }
     ]
   },
@@ -1506,8 +1506,8 @@ export const spells: Spell[] = [
     components: ["V"],
     page: [
       {
-        book: "phb",
-        pageNumber: 226
+        book: "srd",
+        pageNumber: 129
       }
     ]
   },
@@ -1542,8 +1542,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 227
+        book: "srd",
+        pageNumber: 129
       }
     ]
   },
@@ -1567,8 +1567,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 227
+        book: "srd",
+        pageNumber: 130
       }
     ]
   },
@@ -1589,8 +1589,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 227
+        book: "srd",
+        pageNumber: 130
       }
     ]
   },
@@ -1623,8 +1623,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 227
+        book: "srd",
+        pageNumber: 130
       }
     ]
   },
@@ -1647,8 +1647,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 228
+        book: "srd",
+        pageNumber: 131
       }
     ]
   },
@@ -1669,8 +1669,8 @@ export const spells: Spell[] = [
     components: ["S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 228
+        book: "srd",
+        pageNumber: 131
       }
     ]
   },
@@ -1691,35 +1691,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 229
-      }
-    ]
-  },
-  {
-    name: "Create Undead",
-    description: [
-      "You can cast this spell only at night. Choose up to three corpses of Medium or Small humanoids within range. Each corpse becomes a ghoul under your control. (The DM has game statistics for these creatures.)",
-      "As a bonus action on each of your turns, you can mentally command any creature you animated with this spell if the creature is within 120 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.",
-      "The creature is under your control for 24 hours, after which it stops obeying any command you have given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature before the current 24-hour period ends. This use of the spell reasserts your control over up to three creatures you have animated with this spell, rather than animating new ones."
-    ],
-    higherLevel: [
-      "When you cast this spell using a 7th-level spell slot, you can animate or reassert control over four ghouls. When you cast this spell using an 8th-level spell slot, you can animate or reassert control over five ghouls or two ghasts or wights. When you cast this spell using a 9th-level spell slot, you can animate or reassert control over six ghouls, three ghasts or wights, or two mummies."
-    ],
-    range: "10 feet",
-    material:
-      "One clay pot filled with grave dirt, one clay pot filled with brackish water, and one 150 gp black onyx stone for each corpse.",
-    ritual: false,
-    concentration: false,
-    duration: "Instantaneous",
-    castingTime: "1 minute",
-    school: "Necromancy",
-    level: 6,
-    components: ["V", "S", "M"],
-    page: [
-      {
-        book: "phb",
-        pageNumber: 229
+        book: "srd",
+        pageNumber: 131
       }
     ]
   },
@@ -1747,8 +1720,35 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 229
+        book: "srd",
+        pageNumber: 132
+      }
+    ]
+  },
+  {
+    name: "Create Undead",
+    description: [
+      "You can cast this spell only at night. Choose up to three corpses of Medium or Small humanoids within range. Each corpse becomes a ghoul under your control. (The DM has game statistics for these creatures.)",
+      "As a bonus action on each of your turns, you can mentally command any creature you animated with this spell if the creature is within 120 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.",
+      "The creature is under your control for 24 hours, after which it stops obeying any command you have given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature before the current 24-hour period ends. This use of the spell reasserts your control over up to three creatures you have animated with this spell, rather than animating new ones."
+    ],
+    higherLevel: [
+      "When you cast this spell using a 7th-level spell slot, you can animate or reassert control over four ghouls. When you cast this spell using an 8th-level spell slot, you can animate or reassert control over five ghouls or two ghasts or wights. When you cast this spell using a 9th-level spell slot, you can animate or reassert control over six ghouls, three ghasts or wights, or two mummies."
+    ],
+    range: "10 feet",
+    material:
+      "One clay pot filled with grave dirt, one clay pot filled with brackish water, and one 150 gp black onyx stone for each corpse.",
+    ritual: false,
+    concentration: false,
+    duration: "Instantaneous",
+    castingTime: "1 minute",
+    school: "Necromancy",
+    level: 6,
+    components: ["V", "S", "M"],
+    page: [
+      {
+        book: "srd",
+        pageNumber: 132
       }
     ]
   },
@@ -1784,8 +1784,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 229
+        book: "srd",
+        pageNumber: 132
       }
     ]
   },
@@ -1808,8 +1808,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 230
+        book: "srd",
+        pageNumber: 132
       }
     ]
   },
@@ -1831,8 +1831,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 230
+        book: "srd",
+        pageNumber: 133
       }
     ]
   },
@@ -1855,8 +1855,8 @@ export const spells: Spell[] = [
     components: ["V", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 230
+        book: "srd",
+        pageNumber: 133
       }
     ]
   },
@@ -1877,8 +1877,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 230
+        book: "srd",
+        pageNumber: 133
       }
     ]
   },
@@ -1901,8 +1901,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 230
+        book: "srd",
+        pageNumber: 133
       }
     ]
   },
@@ -1925,8 +1925,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 230
+        book: "srd",
+        pageNumber: 133
       }
     ]
   },
@@ -1952,8 +1952,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 230
+        book: "srd",
+        pageNumber: 133
       }
     ]
   },
@@ -1975,8 +1975,8 @@ export const spells: Spell[] = [
     components: ["S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 231
+        book: "srd",
+        pageNumber: 134
       }
     ]
   },
@@ -1998,8 +1998,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 231
+        book: "srd",
+        pageNumber: 134
       }
     ]
   },
@@ -2021,8 +2021,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 231
+        book: "srd",
+        pageNumber: 134
       }
     ]
   },
@@ -2044,8 +2044,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 231
+        book: "srd",
+        pageNumber: 134
       }
     ]
   },
@@ -2070,8 +2070,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 231
+        book: "srd",
+        pageNumber: 135
       }
     ]
   },
@@ -2094,8 +2094,8 @@ export const spells: Spell[] = [
     components: ["V"],
     page: [
       {
-        book: "phb",
-        pageNumber: 233
+        book: "srd",
+        pageNumber: 135
       }
     ]
   },
@@ -2118,8 +2118,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 233
+        book: "srd",
+        pageNumber: 135
       }
     ]
   },
@@ -2145,8 +2145,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 233
+        book: "srd",
+        pageNumber: 135
       }
     ]
   },
@@ -2172,8 +2172,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 233
+        book: "srd",
+        pageNumber: 136
       }
     ]
   },
@@ -2196,8 +2196,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 234
+        book: "srd",
+        pageNumber: 136
       }
     ]
   },
@@ -2221,8 +2221,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 234
+        book: "srd",
+        pageNumber: 136
       }
     ]
   },
@@ -2243,8 +2243,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 234
+        book: "srd",
+        pageNumber: 136
       }
     ]
   },
@@ -2270,8 +2270,8 @@ export const spells: Spell[] = [
     components: ["V"],
     page: [
       {
-        book: "phb",
-        pageNumber: 234
+        book: "srd",
+        pageNumber: 137
       }
     ]
   },
@@ -2296,8 +2296,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 234
+        book: "srd",
+        pageNumber: 137
       }
     ]
   },
@@ -2323,8 +2323,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 235
+        book: "srd",
+        pageNumber: 137
       }
     ]
   },
@@ -2350,8 +2350,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 235
+        book: "srd",
+        pageNumber: 138
       }
     ]
   },
@@ -2377,8 +2377,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 236
+        book: "srd",
+        pageNumber: 138
       }
     ]
   },
@@ -2403,8 +2403,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 236
+        book: "srd",
+        pageNumber: 138
       }
     ]
   },
@@ -2431,8 +2431,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 236
+        book: "srd",
+        pageNumber: 139
       }
     ]
   },
@@ -2455,8 +2455,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 236
+        book: "srd",
+        pageNumber: 139
       }
     ]
   },
@@ -2491,8 +2491,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 237
+        book: "srd",
+        pageNumber: 139
       }
     ]
   },
@@ -2518,8 +2518,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 237
+        book: "srd",
+        pageNumber: 140
       }
     ]
   },
@@ -2542,8 +2542,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 238
+        book: "srd",
+        pageNumber: 140
       }
     ]
   },
@@ -2564,8 +2564,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 238
+        book: "srd",
+        pageNumber: 140
       }
     ]
   },
@@ -2592,8 +2592,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 238
+        book: "srd",
+        pageNumber: 140
       }
     ]
   },
@@ -2614,8 +2614,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 238
+        book: "srd",
+        pageNumber: 141
       }
     ]
   },
@@ -2642,8 +2642,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 238
+        book: "srd",
+        pageNumber: 141
       }
     ]
   },
@@ -2666,8 +2666,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 239
+        book: "srd",
+        pageNumber: 141
       }
     ]
   },
@@ -2689,8 +2689,8 @@ export const spells: Spell[] = [
     components: ["V"],
     page: [
       {
-        book: "phb",
-        pageNumber: 239
+        book: "srd",
+        pageNumber: 141
       }
     ]
   },
@@ -2713,8 +2713,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 261
+        book: "srd",
+        pageNumber: 142
       }
     ]
   },
@@ -2737,8 +2737,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 239
+        book: "srd",
+        pageNumber: 142
       }
     ]
   },
@@ -2760,8 +2760,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 239
+        book: "srd",
+        pageNumber: 142
       }
     ]
   },
@@ -2782,8 +2782,8 @@ export const spells: Spell[] = [
     components: ["V", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 239
+        book: "srd",
+        pageNumber: 142
       }
     ]
   },
@@ -2807,8 +2807,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 239
+        book: "srd",
+        pageNumber: 142
       }
     ]
   },
@@ -2836,8 +2836,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 240
+        book: "srd",
+        pageNumber: 143
       }
     ]
   },
@@ -2862,31 +2862,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 240
-      }
-    ]
-  },
-  {
-    name: "Find Traps",
-    description: [
-      "You sense the presence of any trap within range that is within line of sight. A trap, for the purpose of this spell, includes anything that would inflict a sudden or unexpected effect you consider harmful or undesirable, which was specifically intended as such by its creator. Thus, the spell would sense an area affected by the alarm spell, a glyph of warding, or a mechanical pit trap, but it would not reveal a natural weakness in the floor, an unstable ceiling, or a hidden sinkhole.",
-      "This spell merely reveals that a trap is present. You don't learn the location of each trap, but you do learn the general nature of the danger posed by a trap you sense."
-    ],
-    higherLevel: [],
-    range: "120 feet",
-    material: null,
-    ritual: false,
-    concentration: false,
-    duration: "Instantaneous",
-    castingTime: "1 action",
-    school: "Divination",
-    level: 2,
-    components: ["V", "S"],
-    page: [
-      {
-        book: "phb",
-        pageNumber: 241
+        book: "srd",
+        pageNumber: 143
       }
     ]
   },
@@ -2909,8 +2886,31 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 240
+        book: "srd",
+        pageNumber: 143
+      }
+    ]
+  },
+  {
+    name: "Find Traps",
+    description: [
+      "You sense the presence of any trap within range that is within line of sight. A trap, for the purpose of this spell, includes anything that would inflict a sudden or unexpected effect you consider harmful or undesirable, which was specifically intended as such by its creator. Thus, the spell would sense an area affected by the alarm spell, a glyph of warding, or a mechanical pit trap, but it would not reveal a natural weakness in the floor, an unstable ceiling, or a hidden sinkhole.",
+      "This spell merely reveals that a trap is present. You don't learn the location of each trap, but you do learn the general nature of the danger posed by a trap you sense."
+    ],
+    higherLevel: [],
+    range: "120 feet",
+    material: null,
+    ritual: false,
+    concentration: false,
+    duration: "Instantaneous",
+    castingTime: "1 action",
+    school: "Divination",
+    level: 2,
+    components: ["V", "S"],
+    page: [
+      {
+        book: "srd",
+        pageNumber: 144
       }
     ]
   },
@@ -2932,78 +2932,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 241
-      }
-    ]
-  },
-  {
-    name: "Fire Bolt",
-    description: [
-      "You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn’t being worn or carried.",
-      "This spell’s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."
-    ],
-    higherLevel: [],
-    range: "120 feet",
-    material: null,
-    ritual: false,
-    concentration: false,
-    duration: "Instantaneous",
-    castingTime: "1 action",
-    school: "Evocation",
-    level: 0,
-    components: ["V", "S"],
-    page: [
-      {
-        book: "phb",
-        pageNumber: 242
-      }
-    ]
-  },
-  {
-    name: "Fire Shield",
-    description: [
-      "Thin and vaporous flame surround your body for the duration of the spell, radiating a bright light bright light in a 10-foot radius and dim light for an additional 10 feet. You can end the spell using an action to make it disappear.",
-      "The flames are around you a heat shield or cold, your choice. The heat shield gives you cold damage resistance and the cold resistance to fire damage.",
-      "In addition, whenever a creature within 5 feet of you hits you with a melee attack, flames spring from the shield. The attacker then suffers 2d8 points of fire damage or cold, depending on the model."
-    ],
-    higherLevel: [],
-    range: "Self",
-    material: "A little phosphorus or a firefly.",
-    ritual: false,
-    concentration: false,
-    duration: "10 minutes",
-    castingTime: "1 action",
-    school: "Evocation",
-    level: 4,
-    components: ["V", "S", "M"],
-    page: [
-      {
-        book: "phb",
-        pageNumber: 242
-      }
-    ]
-  },
-  {
-    name: "Fire Storm",
-    description: [
-      "A storm made up of sheets of roaring flame appears in a location you choose within range. The area of the storm consists of up to ten 10-foot cubes, which you can arrange as you wish. Each cube must have at least one face adjacent to the face of another cube. Each creature in the area must make a dexterity saving throw. It takes 7d10 fire damage on a failed save, or half as much damage on a successful one.",
-      "The fire damages objects in the area and ignites flammable objects that aren't being worn or carried. If you choose, plant life in the area is unaffected by this spell."
-    ],
-    higherLevel: [],
-    range: "150 feet",
-    material: null,
-    ritual: false,
-    concentration: false,
-    duration: "Instantaneous",
-    castingTime: "1 action",
-    school: "Evocation",
-    level: 7,
-    components: ["V", "S"],
-    page: [
-      {
-        book: "phb",
-        pageNumber: 242
+        book: "srd",
+        pageNumber: 144
       }
     ]
   },
@@ -3027,8 +2957,78 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 241
+        book: "srd",
+        pageNumber: 144
+      }
+    ]
+  },
+  {
+    name: "Fire Bolt",
+    description: [
+      "You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn’t being worn or carried.",
+      "This spell’s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."
+    ],
+    higherLevel: [],
+    range: "120 feet",
+    material: null,
+    ritual: false,
+    concentration: false,
+    duration: "Instantaneous",
+    castingTime: "1 action",
+    school: "Evocation",
+    level: 0,
+    components: ["V", "S"],
+    page: [
+      {
+        book: "srd",
+        pageNumber: 144
+      }
+    ]
+  },
+  {
+    name: "Fire Shield",
+    description: [
+      "Thin and vaporous flame surround your body for the duration of the spell, radiating a bright light bright light in a 10-foot radius and dim light for an additional 10 feet. You can end the spell using an action to make it disappear.",
+      "The flames are around you a heat shield or cold, your choice. The heat shield gives you cold damage resistance and the cold resistance to fire damage.",
+      "In addition, whenever a creature within 5 feet of you hits you with a melee attack, flames spring from the shield. The attacker then suffers 2d8 points of fire damage or cold, depending on the model."
+    ],
+    higherLevel: [],
+    range: "Self",
+    material: "A little phosphorus or a firefly.",
+    ritual: false,
+    concentration: false,
+    duration: "10 minutes",
+    castingTime: "1 action",
+    school: "Evocation",
+    level: 4,
+    components: ["V", "S", "M"],
+    page: [
+      {
+        book: "srd",
+        pageNumber: 144
+      }
+    ]
+  },
+  {
+    name: "Fire Storm",
+    description: [
+      "A storm made up of sheets of roaring flame appears in a location you choose within range. The area of the storm consists of up to ten 10-foot cubes, which you can arrange as you wish. Each cube must have at least one face adjacent to the face of another cube. Each creature in the area must make a dexterity saving throw. It takes 7d10 fire damage on a failed save, or half as much damage on a successful one.",
+      "The fire damages objects in the area and ignites flammable objects that aren't being worn or carried. If you choose, plant life in the area is unaffected by this spell."
+    ],
+    higherLevel: [],
+    range: "150 feet",
+    material: null,
+    ritual: false,
+    concentration: false,
+    duration: "Instantaneous",
+    castingTime: "1 action",
+    school: "Evocation",
+    level: 7,
+    components: ["V", "S"],
+    page: [
+      {
+        book: "srd",
+        pageNumber: 145
       }
     ]
   },
@@ -3053,8 +3053,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 242
+        book: "srd",
+        pageNumber: 145
       }
     ]
   },
@@ -3077,8 +3077,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 242
+        book: "srd",
+        pageNumber: 145
       }
     ]
   },
@@ -3104,8 +3104,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 242
+        book: "srd",
+        pageNumber: 145
       }
     ]
   },
@@ -3129,8 +3129,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 243
+        book: "srd",
+        pageNumber: 145
       }
     ]
   },
@@ -3153,8 +3153,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 282
+        book: "srd",
+        pageNumber: 146
       }
     ]
   },
@@ -3177,8 +3177,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 243
+        book: "srd",
+        pageNumber: 146
       }
     ]
   },
@@ -3201,8 +3201,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 243
+        book: "srd",
+        pageNumber: 146
       }
     ]
   },
@@ -3227,8 +3227,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 243
+        book: "srd",
+        pageNumber: 146
       }
     ]
   },
@@ -3254,8 +3254,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 243
+        book: "srd",
+        pageNumber: 147
       }
     ]
   },
@@ -3277,8 +3277,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 244
+        book: "srd",
+        pageNumber: 147
       }
     ]
   },
@@ -3300,8 +3300,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 244
+        book: "srd",
+        pageNumber: 147
       }
     ]
   },
@@ -3326,8 +3326,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 263
+        book: "srd",
+        pageNumber: 147
       }
     ]
   },
@@ -3350,8 +3350,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 244
+        book: "srd",
+        pageNumber: 148
       }
     ]
   },
@@ -3375,8 +3375,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 244
+        book: "srd",
+        pageNumber: 148
       }
     ]
   },
@@ -3401,8 +3401,8 @@ export const spells: Spell[] = [
     components: ["V"],
     page: [
       {
-        book: "phb",
-        pageNumber: 244
+        book: "srd",
+        pageNumber: 148
       }
     ]
   },
@@ -3425,8 +3425,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 245
+        book: "srd",
+        pageNumber: 148
       }
     ]
   },
@@ -3450,8 +3450,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 245
+        book: "srd",
+        pageNumber: 149
       }
     ]
   },
@@ -3472,8 +3472,8 @@ export const spells: Spell[] = [
     components: ["V"],
     page: [
       {
-        book: "phb",
-        pageNumber: 245
+        book: "srd",
+        pageNumber: 149
       }
     ]
   },
@@ -3497,8 +3497,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 245
+        book: "srd",
+        pageNumber: 149
       }
     ]
   },
@@ -3530,8 +3530,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 245
+        book: "srd",
+        pageNumber: 149
       }
     ]
   },
@@ -3553,8 +3553,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 246
+        book: "srd",
+        pageNumber: 150
       }
     ]
   },
@@ -3576,8 +3576,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 246
+        book: "srd",
+        pageNumber: 150
       }
     ]
   },
@@ -3598,8 +3598,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 246
+        book: "srd",
+        pageNumber: 150
       }
     ]
   },
@@ -3624,8 +3624,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 246
+        book: "srd",
+        pageNumber: 150
       }
     ]
   },
@@ -3647,8 +3647,8 @@ export const spells: Spell[] = [
     components: ["V"],
     page: [
       {
-        book: "phb",
-        pageNumber: 246
+        book: "srd",
+        pageNumber: 150
       }
     ]
   },
@@ -3687,8 +3687,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 248
+        book: "srd",
+        pageNumber: 151
       }
     ]
   },
@@ -3709,8 +3709,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 248
+        book: "srd",
+        pageNumber: 151
       }
     ]
   },
@@ -3733,8 +3733,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 248
+        book: "srd",
+        pageNumber: 151
       }
     ]
   },
@@ -3758,8 +3758,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 248
+        book: "srd",
+        pageNumber: 152
       }
     ]
   },
@@ -3803,8 +3803,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 249
+        book: "srd",
+        pageNumber: 152
       }
     ]
   },
@@ -3826,8 +3826,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 249
+        book: "srd",
+        pageNumber: 152
       }
     ]
   },
@@ -3848,8 +3848,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 249
+        book: "srd",
+        pageNumber: 153
       }
     ]
   },
@@ -3871,8 +3871,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 250
+        book: "srd",
+        pageNumber: 153
       }
     ]
   },
@@ -3895,8 +3895,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 250
+        book: "srd",
+        pageNumber: 153
       }
     ]
   },
@@ -3919,8 +3919,8 @@ export const spells: Spell[] = [
     components: ["V"],
     page: [
       {
-        book: "phb",
-        pageNumber: 250
+        book: "srd",
+        pageNumber: 153
       }
     ]
   },
@@ -3944,8 +3944,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 250
+        book: "srd",
+        pageNumber: 153
       }
     ]
   },
@@ -3966,8 +3966,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 250
+        book: "srd",
+        pageNumber: 154
       }
     ]
   },
@@ -3990,8 +3990,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 250
+        book: "srd",
+        pageNumber: 154
       }
     ]
   },
@@ -4012,8 +4012,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 250
+        book: "srd",
+        pageNumber: 154
       }
     ]
   },
@@ -4035,8 +4035,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 280
+        book: "srd",
+        pageNumber: 154
       }
     ]
   },
@@ -4059,8 +4059,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 251
+        book: "srd",
+        pageNumber: 154
       }
     ]
   },
@@ -4083,8 +4083,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 251
+        book: "srd",
+        pageNumber: 154
       }
     ]
   },
@@ -4106,8 +4106,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 251
+        book: "srd",
+        pageNumber: 155
       }
     ]
   },
@@ -4128,8 +4128,8 @@ export const spells: Spell[] = [
     components: ["V"],
     page: [
       {
-        book: "phb",
-        pageNumber: 251
+        book: "srd",
+        pageNumber: 155
       }
     ]
   },
@@ -4152,8 +4152,8 @@ export const spells: Spell[] = [
     components: ["S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 252
+        book: "srd",
+        pageNumber: 155
       }
     ]
   },
@@ -4177,8 +4177,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 252
+        book: "srd",
+        pageNumber: 155
       }
     ]
   },
@@ -4200,8 +4200,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 252
+        book: "srd",
+        pageNumber: 155
       }
     ]
   },
@@ -4226,8 +4226,8 @@ export const spells: Spell[] = [
     components: ["S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 252
+        book: "srd",
+        pageNumber: 156
       }
     ]
   },
@@ -4263,8 +4263,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 252
+        book: "srd",
+        pageNumber: 156
       }
     ]
   },
@@ -4287,8 +4287,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 253
+        book: "srd",
+        pageNumber: 157
       }
     ]
   },
@@ -4311,8 +4311,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 253
+        book: "srd",
+        pageNumber: 157
       }
     ]
   },
@@ -4337,8 +4337,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 254
+        book: "srd",
+        pageNumber: 157
       }
     ]
   },
@@ -4362,8 +4362,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 235
+        book: "srd",
+        pageNumber: 157
       }
     ]
   },
@@ -4386,8 +4386,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 254
+        book: "srd",
+        pageNumber: 157
       }
     ]
   },
@@ -4409,8 +4409,8 @@ export const spells: Spell[] = [
     components: ["V"],
     page: [
       {
-        book: "phb",
-        pageNumber: 264
+        book: "srd",
+        pageNumber: 158
       }
     ]
   },
@@ -4431,8 +4431,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 254
+        book: "srd",
+        pageNumber: 158
       }
     ]
   },
@@ -4456,8 +4456,8 @@ export const spells: Spell[] = [
     components: ["V"],
     page: [
       {
-        book: "phb",
-        pageNumber: 254
+        book: "srd",
+        pageNumber: 158
       }
     ]
   },
@@ -4480,8 +4480,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 254
+        book: "srd",
+        pageNumber: 158
       }
     ]
   },
@@ -4502,8 +4502,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 255
+        book: "srd",
+        pageNumber: 158
       }
     ]
   },
@@ -4527,8 +4527,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 255
+        book: "srd",
+        pageNumber: 158
       }
     ]
   },
@@ -4550,8 +4550,8 @@ export const spells: Spell[] = [
     components: ["V", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 255
+        book: "srd",
+        pageNumber: 159
       }
     ]
   },
@@ -4575,8 +4575,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 255
+        book: "srd",
+        pageNumber: 159
       }
     ]
   },
@@ -4597,8 +4597,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 256
+        book: "srd",
+        pageNumber: 159
       }
     ]
   },
@@ -4621,8 +4621,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 256
+        book: "srd",
+        pageNumber: 159
       }
     ]
   },
@@ -4645,8 +4645,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 256
+        book: "srd",
+        pageNumber: 159
       }
     ]
   },
@@ -4669,8 +4669,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 256
+        book: "srd",
+        pageNumber: 160
       }
     ]
   },
@@ -4691,8 +4691,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 256
+        book: "srd",
+        pageNumber: 160
       }
     ]
   },
@@ -4715,8 +4715,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 256
+        book: "srd",
+        pageNumber: 160
       }
     ]
   },
@@ -4744,8 +4744,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 256
+        book: "srd",
+        pageNumber: 160
       }
     ]
   },
@@ -4773,8 +4773,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 257
+        book: "srd",
+        pageNumber: 160
       }
     ]
   },
@@ -4797,8 +4797,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 257
+        book: "srd",
+        pageNumber: 161
       }
     ]
   },
@@ -4823,8 +4823,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 257
+        book: "srd",
+        pageNumber: 161
       }
     ]
   },
@@ -4847,8 +4847,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 257
+        book: "srd",
+        pageNumber: 161
       }
     ]
   },
@@ -4872,8 +4872,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 261
+        book: "srd",
+        pageNumber: 162
       }
     ]
   },
@@ -4898,8 +4898,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 258
+        book: "srd",
+        pageNumber: 162
       }
     ]
   },
@@ -4922,8 +4922,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 258
+        book: "srd",
+        pageNumber: 162
       }
     ]
   },
@@ -4944,8 +4944,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 258
+        book: "srd",
+        pageNumber: 163
       }
     ]
   },
@@ -4968,8 +4968,8 @@ export const spells: Spell[] = [
     components: ["V"],
     page: [
       {
-        book: "phb",
-        pageNumber: 258
+        book: "srd",
+        pageNumber: 163
       }
     ]
   },
@@ -4996,8 +4996,8 @@ export const spells: Spell[] = [
     components: ["V", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 258
+        book: "srd",
+        pageNumber: 163
       }
     ]
   },
@@ -5020,8 +5020,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 258
+        book: "srd",
+        pageNumber: 163
       }
     ]
   },
@@ -5044,8 +5044,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 259
+        book: "srd",
+        pageNumber: 163
       }
     ]
   },
@@ -5067,8 +5067,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 259
+        book: "srd",
+        pageNumber: 164
       }
     ]
   },
@@ -5090,8 +5090,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 259
+        book: "srd",
+        pageNumber: 164
       }
     ]
   },
@@ -5113,8 +5113,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 259
+        book: "srd",
+        pageNumber: 164
       }
     ]
   },
@@ -5135,8 +5135,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 259
+        book: "srd",
+        pageNumber: 164
       }
     ]
   },
@@ -5160,8 +5160,8 @@ export const spells: Spell[] = [
     components: ["S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 260
+        book: "srd",
+        pageNumber: 164
       }
     ]
   },
@@ -5185,8 +5185,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 260
+        book: "srd",
+        pageNumber: 165
       }
     ]
   },
@@ -5211,8 +5211,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 260
+        book: "srd",
+        pageNumber: 165
       }
     ]
   },
@@ -5235,8 +5235,8 @@ export const spells: Spell[] = [
     components: ["S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 260
+        book: "srd",
+        pageNumber: 165
       }
     ]
   },
@@ -5257,8 +5257,8 @@ export const spells: Spell[] = [
     components: ["V"],
     page: [
       {
-        book: "phb",
-        pageNumber: 260
+        book: "srd",
+        pageNumber: 165
       }
     ]
   },
@@ -5285,8 +5285,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 261
+        book: "srd",
+        pageNumber: 166
       }
     ]
   },
@@ -5313,8 +5313,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 261
+        book: "srd",
+        pageNumber: 166
       }
     ]
   },
@@ -5340,8 +5340,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 263
+        book: "srd",
+        pageNumber: 166
       }
     ]
   },
@@ -5363,8 +5363,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 263
+        book: "srd",
+        pageNumber: 167
       }
     ]
   },
@@ -5385,8 +5385,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 264
+        book: "srd",
+        pageNumber: 167
       }
     ]
   },
@@ -5408,8 +5408,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 264
+        book: "srd",
+        pageNumber: 167
       }
     ]
   },
@@ -5432,8 +5432,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 265
+        book: "srd",
+        pageNumber: 167
       }
     ]
   },
@@ -5455,8 +5455,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 265
+        book: "srd",
+        pageNumber: 167
       }
     ]
   },
@@ -5482,8 +5482,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 265
+        book: "srd",
+        pageNumber: 168
       }
     ]
   },
@@ -5507,8 +5507,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 265
+        book: "srd",
+        pageNumber: 168
       }
     ]
   },
@@ -5532,8 +5532,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 266
+        book: "srd",
+        pageNumber: 168
       }
     ]
   },
@@ -5557,8 +5557,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 266
+        book: "srd",
+        pageNumber: 169
       }
     ]
   },
@@ -5580,8 +5580,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 266
+        book: "srd",
+        pageNumber: 169
       }
     ]
   },
@@ -5606,8 +5606,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 266
+        book: "srd",
+        pageNumber: 169
       }
     ]
   },
@@ -5628,8 +5628,8 @@ export const spells: Spell[] = [
     components: ["V"],
     page: [
       {
-        book: "phb",
-        pageNumber: 266
+        book: "srd",
+        pageNumber: 170
       }
     ]
   },
@@ -5651,8 +5651,8 @@ export const spells: Spell[] = [
     components: ["V"],
     page: [
       {
-        book: "phb",
-        pageNumber: 267
+        book: "srd",
+        pageNumber: 170
       }
     ]
   },
@@ -5675,8 +5675,8 @@ export const spells: Spell[] = [
     components: ["V"],
     page: [
       {
-        book: "phb",
-        pageNumber: 267
+        book: "srd",
+        pageNumber: 170
       }
     ]
   },
@@ -5704,8 +5704,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 267
+        book: "srd",
+        pageNumber: 170
       }
     ]
   },
@@ -5742,8 +5742,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 267
+        book: "srd",
+        pageNumber: 170
       }
     ]
   },
@@ -5782,8 +5782,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 267
+        book: "srd",
+        pageNumber: 171
       }
     ]
   },
@@ -5815,8 +5815,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 262
+        book: "srd",
+        pageNumber: 171
       }
     ]
   },
@@ -5839,8 +5839,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 269
+        book: "srd",
+        pageNumber: 172
       }
     ]
   },
@@ -5864,8 +5864,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 269
+        book: "srd",
+        pageNumber: 172
       }
     ]
   },
@@ -5889,8 +5889,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 270
+        book: "srd",
+        pageNumber: 172
       }
     ]
   },
@@ -5911,8 +5911,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 270
+        book: "srd",
+        pageNumber: 173
       }
     ]
   },
@@ -5935,8 +5935,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 270
+        book: "srd",
+        pageNumber: 173
       }
     ]
   },
@@ -5958,8 +5958,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 270
+        book: "srd",
+        pageNumber: 173
       }
     ]
   },
@@ -5980,8 +5980,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 270
+        book: "srd",
+        pageNumber: 173
       }
     ]
   },
@@ -6005,8 +6005,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 270
+        book: "srd",
+        pageNumber: 173
       }
     ]
   },
@@ -6028,8 +6028,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 271
+        book: "srd",
+        pageNumber: 174
       }
     ]
   },
@@ -6051,8 +6051,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 271
+        book: "srd",
+        pageNumber: 174
       }
     ]
   },
@@ -6074,8 +6074,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 271
+        book: "srd",
+        pageNumber: 174
       }
     ]
   },
@@ -6127,8 +6127,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 271
+        book: "srd",
+        pageNumber: 174
       }
     ]
   },
@@ -6149,8 +6149,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 271
+        book: "srd",
+        pageNumber: 174
       }
     ]
   },
@@ -6175,8 +6175,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 264
+        book: "srd",
+        pageNumber: 175
       }
     ]
   },
@@ -6197,8 +6197,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 272
+        book: "srd",
+        pageNumber: 175
       }
     ]
   },
@@ -6223,8 +6223,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 272
+        book: "srd",
+        pageNumber: 175
       }
     ]
   },
@@ -6247,8 +6247,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 272
+        book: "srd",
+        pageNumber: 175
       }
     ]
   },
@@ -6269,8 +6269,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 272
+        book: "srd",
+        pageNumber: 175
       }
     ]
   },
@@ -6294,8 +6294,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 272
+        book: "srd",
+        pageNumber: 176
       }
     ]
   },
@@ -6317,8 +6317,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 272
+        book: "srd",
+        pageNumber: 176
       }
     ]
   },
@@ -6340,8 +6340,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 272
+        book: "srd",
+        pageNumber: 176
       }
     ]
   },
@@ -6365,8 +6365,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 273
+        book: "srd",
+        pageNumber: 176
       }
     ]
   },
@@ -6401,8 +6401,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 273
+        book: "srd",
+        pageNumber: 176
       }
     ]
   },
@@ -6426,8 +6426,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 254
+        book: "srd",
+        pageNumber: 177
       }
     ]
   },
@@ -6448,8 +6448,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 274
+        book: "srd",
+        pageNumber: 177
       }
     ]
   },
@@ -6473,8 +6473,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 274
+        book: "srd",
+        pageNumber: 177
       }
     ]
   },
@@ -6496,8 +6496,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 274
+        book: "srd",
+        pageNumber: 177
       }
     ]
   },
@@ -6521,8 +6521,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 274
+        book: "srd",
+        pageNumber: 178
       }
     ]
   },
@@ -6549,8 +6549,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 274
+        book: "srd",
+        pageNumber: 178
       }
     ]
   },
@@ -6574,8 +6574,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 275
+        book: "srd",
+        pageNumber: 178
       }
     ]
   },
@@ -6596,8 +6596,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 275
+        book: "srd",
+        pageNumber: 179
       }
     ]
   },
@@ -6618,8 +6618,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 275
+        book: "srd",
+        pageNumber: 179
       }
     ]
   },
@@ -6640,8 +6640,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 275
+        book: "srd",
+        pageNumber: 179
       }
     ]
   },
@@ -6663,8 +6663,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 275
+        book: "srd",
+        pageNumber: 179
       }
     ]
   },
@@ -6686,8 +6686,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 275
+        book: "srd",
+        pageNumber: 179
       }
     ]
   },
@@ -6710,8 +6710,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 276
+        book: "srd",
+        pageNumber: 179
       }
     ]
   },
@@ -6736,8 +6736,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 276
+        book: "srd",
+        pageNumber: 180
       }
     ]
   },
@@ -6762,8 +6762,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 276
+        book: "srd",
+        pageNumber: 180
       }
     ]
   },
@@ -6786,8 +6786,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 276
+        book: "srd",
+        pageNumber: 180
       }
     ]
   },
@@ -6811,8 +6811,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 277
+        book: "srd",
+        pageNumber: 180
       }
     ]
   },
@@ -6833,8 +6833,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 277
+        book: "srd",
+        pageNumber: 181
       }
     ]
   },
@@ -6855,8 +6855,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 277
+        book: "srd",
+        pageNumber: 181
       }
     ]
   },
@@ -6878,8 +6878,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 277
+        book: "srd",
+        pageNumber: 181
       }
     ]
   },
@@ -6904,8 +6904,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 277
+        book: "srd",
+        pageNumber: 181
       }
     ]
   },
@@ -6926,8 +6926,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 277
+        book: "srd",
+        pageNumber: 182
       }
     ]
   },
@@ -6949,8 +6949,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 277
+        book: "srd",
+        pageNumber: 182
       }
     ]
   },
@@ -6974,8 +6974,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 278
+        book: "srd",
+        pageNumber: 182
       }
     ]
   },
@@ -7000,8 +7000,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 278
+        book: "srd",
+        pageNumber: 182
       }
     ]
   },
@@ -7024,8 +7024,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 278
+        book: "srd",
+        pageNumber: 182
       }
     ]
   },
@@ -7047,8 +7047,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 278
+        book: "srd",
+        pageNumber: 183
       }
     ]
   },
@@ -7069,8 +7069,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 278
+        book: "srd",
+        pageNumber: 183
       }
     ]
   },
@@ -7100,8 +7100,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 279
+        book: "srd",
+        pageNumber: 183
       }
     ]
   },
@@ -7126,8 +7126,8 @@ export const spells: Spell[] = [
     components: ["V", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 279
+        book: "srd",
+        pageNumber: 183
       }
     ]
   },
@@ -7150,8 +7150,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 279
+        book: "srd",
+        pageNumber: 184
       }
     ]
   },
@@ -7174,8 +7174,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 279
+        book: "srd",
+        pageNumber: 184
       }
     ]
   },
@@ -7217,8 +7217,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 280
+        book: "srd",
+        pageNumber: 184
       }
     ]
   },
@@ -7246,8 +7246,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 280
+        book: "srd",
+        pageNumber: 185
       }
     ]
   },
@@ -7270,7 +7270,7 @@ export const spells: Spell[] = [
     page: [
       {
         book: "srd",
-        pageNumber: 183
+        pageNumber: 185
       }
     ]
   },
@@ -7292,8 +7292,8 @@ export const spells: Spell[] = [
     components: ["V"],
     page: [
       {
-        book: "phb",
-        pageNumber: 281
+        book: "srd",
+        pageNumber: 185
       }
     ]
   },
@@ -7317,8 +7317,8 @@ export const spells: Spell[] = [
     components: ["V", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 282
+        book: "srd",
+        pageNumber: 186
       }
     ]
   },
@@ -7346,8 +7346,8 @@ export const spells: Spell[] = [
     components: ["V"],
     page: [
       {
-        book: "phb",
-        pageNumber: 282
+        book: "srd",
+        pageNumber: 187
       }
     ]
   },
@@ -7371,8 +7371,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 282
+        book: "srd",
+        pageNumber: 187
       }
     ]
   },
@@ -7394,8 +7394,8 @@ export const spells: Spell[] = [
     components: ["V"],
     page: [
       {
-        book: "phb",
-        pageNumber: 283
+        book: "srd",
+        pageNumber: 187
       }
     ]
   },
@@ -7418,8 +7418,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 255
+        book: "srd",
+        pageNumber: 187
       }
     ]
   },
@@ -7440,8 +7440,8 @@ export const spells: Spell[] = [
     components: ["V", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 283
+        book: "srd",
+        pageNumber: 187
       }
     ]
   },
@@ -7462,8 +7462,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 283
+        book: "srd",
+        pageNumber: 188
       }
     ]
   },
@@ -7485,8 +7485,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 283
+        book: "srd",
+        pageNumber: 188
       }
     ]
   },
@@ -7518,8 +7518,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 283
+        book: "srd",
+        pageNumber: 188
       }
     ]
   },
@@ -7543,8 +7543,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 284
+        book: "srd",
+        pageNumber: 189
       }
     ]
   },
@@ -7566,8 +7566,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 284
+        book: "srd",
+        pageNumber: 189
       }
     ]
   },
@@ -7588,8 +7588,8 @@ export const spells: Spell[] = [
     components: ["S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 284
+        book: "srd",
+        pageNumber: 189
       }
     ]
   },
@@ -7612,8 +7612,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 284
+        book: "srd",
+        pageNumber: 189
       }
     ]
   },
@@ -7636,8 +7636,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 285
+        book: "srd",
+        pageNumber: 189
       }
     ]
   },
@@ -7659,8 +7659,8 @@ export const spells: Spell[] = [
     components: ["V"],
     page: [
       {
-        book: "phb",
-        pageNumber: 285
+        book: "srd",
+        pageNumber: 189
       }
     ]
   },
@@ -7686,8 +7686,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 285
+        book: "srd",
+        pageNumber: 190
       }
     ]
   },
@@ -7709,8 +7709,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 285
+        book: "srd",
+        pageNumber: 190
       }
     ]
   },
@@ -7735,8 +7735,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 285
+        book: "srd",
+        pageNumber: 190
       }
     ]
   },
@@ -7762,8 +7762,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 287
+        book: "srd",
+        pageNumber: 190
       }
     ]
   },
@@ -7788,8 +7788,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 287
+        book: "srd",
+        pageNumber: 191
       }
     ]
   },
@@ -7813,8 +7813,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 287
+        book: "srd",
+        pageNumber: 191
       }
     ]
   },
@@ -7835,8 +7835,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 287
+        book: "srd",
+        pageNumber: 191
       }
     ]
   },
@@ -7858,8 +7858,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 287
+        book: "srd",
+        pageNumber: 191
       }
     ]
   },
@@ -7884,8 +7884,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 287
+        book: "srd",
+        pageNumber: 192
       }
     ]
   },
@@ -7906,8 +7906,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 288
+        book: "srd",
+        pageNumber: 192
       }
     ]
   },
@@ -7929,8 +7929,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 288
+        book: "srd",
+        pageNumber: 192
       }
     ]
   },
@@ -7953,8 +7953,8 @@ export const spells: Spell[] = [
     components: ["V", "S", "M"],
     page: [
       {
-        book: "phb",
-        pageNumber: 288
+        book: "srd",
+        pageNumber: 192
       }
     ]
   },
@@ -7984,8 +7984,8 @@ export const spells: Spell[] = [
     components: ["V"],
     page: [
       {
-        book: "phb",
-        pageNumber: 288
+        book: "srd",
+        pageNumber: 193
       }
     ]
   },
@@ -8007,8 +8007,8 @@ export const spells: Spell[] = [
     components: ["V"],
     page: [
       {
-        book: "phb",
-        pageNumber: 289
+        book: "srd",
+        pageNumber: 193
       }
     ]
   },
@@ -8030,8 +8030,8 @@ export const spells: Spell[] = [
     components: ["V", "S"],
     page: [
       {
-        book: "phb",
-        pageNumber: 289
+        book: "srd",
+        pageNumber: 193
       }
     ]
   }
