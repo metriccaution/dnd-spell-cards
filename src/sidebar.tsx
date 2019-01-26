@@ -51,6 +51,22 @@ export const SideBar = ({
           </div>
         );
       })}
+
+      <h1
+        style={{
+          backgroundColor: colours.spellDividerBackground,
+          boxShadow: shadows.standard,
+          margin: "0em 1em 0em 0.2em",
+          padding: "0.2em"
+        }}
+      >
+        <a
+          href="https://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf"
+          target="_blank"
+        >
+          SRD Link
+        </a>
+      </h1>
     </div>
   );
 };
