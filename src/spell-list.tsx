@@ -1,57 +1,35 @@
-import { produce } from "immer";
 import { groupBy } from "lodash";
 import * as React from "react";
 import { SideBar } from "./sidebar";
 import { SpellCard } from "./spell-card";
-import { groupSpellsKnownBySpell, spellLevelText } from "./spell-utils";
+import { spellLevelText } from "./spell-utils";
+import { groupSpellsKnownBySpell } from "./spell-utils";
 import { colours, shadows } from "./styles";
-import { Spell, SpellsKnown } from "./types";
+import { Spell, SpellGrouping, SpellsKnown } from "./types";
 
 interface SpellListProps {
   spellList: Spell[];
   spellsKnown: SpellsKnown[];
-}
-interface SpellListState {
+  // Showing the sidebar or not
   showSidebar: boolean;
+  toggleSidebar: () => void;
+  // Search filtering
   searchText: string;
+  setSearchText: (text: string) => void;
+  // Spell grouping data - Which classes/subclasses know a spell
   groupFilter: string[];
+  toggleGroupFilter: (groupName: string) => void;
 }
-
-/**
- * Alias for a spell name to class mapping
- */
-type SpellGrouping = Record<string, string[]>;
 
 /**
  * A (filtered) listing of all spells in the spell book
  */
-export default class SpellList extends React.Component<
-  SpellListProps,
-  SpellListState
-> {
-  constructor(props: SpellListProps) {
-    super(props);
-    this.state = {
-      searchText: "",
-      groupFilter: [],
-      showSidebar: false
-    };
-  }
-
+export default class SpellList extends React.Component<SpellListProps, {}> {
   public render() {
-    const groupedBySpell = groupSpellsKnownBySpell(this.props.spellsKnown);
+    const { spellList, spellsKnown } = this.props;
 
-    const matchingSpells = this.props.spellList
-      .filter(this.spellMatchesText.bind(this, this.state.searchText))
-      .filter(
-        this.spellMatchesGroupFilter.bind(
-          this,
-          this.state.groupFilter,
-          groupedBySpell
-        )
-      );
-
-    const spellGroups = groupBy(matchingSpells, "level");
+    const groupedBySpell = groupSpellsKnownBySpell(spellsKnown);
+    const spellGroups = groupBy(spellList, "level");
 
     const groupedCards = Object.keys(spellGroups).map(groupName =>
       this.renderSpellLevel(groupName, groupedBySpell, spellGroups[groupName])
@@ -77,63 +55,6 @@ export default class SpellList extends React.Component<
           {groupedCards}
         </div>
       </div>
-    );
-  }
-
-  private toggleGroupFilter(groupName: string) {
-    this.setState(
-      produce(this.state, draft => {
-        draft.groupFilter =
-          draft.groupFilter.indexOf(groupName) > -1
-            ? draft.groupFilter.filter(group => group !== groupName)
-            : draft.groupFilter.concat(groupName);
-      })
-    );
-  }
-
-  private toggleSidebar() {
-    this.setState(
-      produce(this.state, draft => {
-        draft.showSidebar = !draft.showSidebar;
-      })
-    );
-  }
-
-  /**
-   * Does a spell match a text value.
-   */
-  private spellMatchesText(text: string, spell: Spell): boolean {
-    const searchTerm = text.toLowerCase();
-    const matchesString = (toMatch: string) =>
-      toMatch.toLowerCase().indexOf(searchTerm) > -1;
-
-    return matchesString(spell.name) || spell.description.some(matchesString);
-  }
-
-  /**
-   * Does a spell match the selected groups
-   */
-  private spellMatchesGroupFilter(
-    selectedGroups: string[],
-    groupedBySpell: SpellGrouping,
-    spell: Spell
-  ): boolean {
-    if (selectedGroups.length === 0) {
-      return true;
-    }
-
-    const spellKnownBy = groupedBySpell[spell.name];
-    return spellKnownBy.some(knownBy => selectedGroups.indexOf(knownBy) > -1);
-  }
-
-  /**
-   * Update the current search value
-   */
-  private setSearchText(searchText: string) {
-    this.setState(
-      produce(this.state, draft => {
-        draft.searchText = searchText;
-      })
     );
   }
 
@@ -189,7 +110,7 @@ export default class SpellList extends React.Component<
 
   private renderSidebar() {
     // TODO - Animate this
-    if (!this.state.showSidebar) {
+    if (!this.props.showSidebar) {
       return null;
     }
 
@@ -209,9 +130,9 @@ export default class SpellList extends React.Component<
           }}
         >
           <SideBar
-            selectedGroups={this.state.groupFilter}
+            selectedGroups={this.props.groupFilter}
             groupNames={this.props.spellsKnown.map(o => o.knownBy)}
-            toggleGroup={this.toggleGroupFilter.bind(this)}
+            toggleGroup={this.props.toggleGroupFilter}
           />
         </div>
       </div>
@@ -230,7 +151,7 @@ export default class SpellList extends React.Component<
         }}
       >
         <button
-          onClick={this.toggleSidebar.bind(this)}
+          onClick={this.props.toggleSidebar.bind(this)}
           style={{
             width: "5em",
             margin: "0.5em 1em",
@@ -249,8 +170,8 @@ export default class SpellList extends React.Component<
             paddingLeft: "0.2em"
           }}
           placeholder={"Search"}
-          value={this.state.searchText}
-          onChange={e => this.setSearchText(e.target.value)}
+          value={this.props.searchText}
+          onChange={e => this.props.setSearchText(e.target.value)}
         />
       </div>
     );

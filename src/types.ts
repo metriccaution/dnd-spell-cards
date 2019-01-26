@@ -1,6 +1,21 @@
+/**
+ * The different components of a spell
+ */
 export type SpellComponent = "S" | "V" | "M";
+
+/**
+ * Known source books
+ */
 export type SourceBook = "phb" | "srd" | "scag" | "xgte" | "ee";
 
+/**
+ * Alias for a spell name to class mapping
+ */
+export type SpellGrouping = Record<string, string[]>;
+
+/**
+ * A location in a book where a spell is from
+ */
 export interface SourcePage {
   pageNumber: number;
   book: SourceBook;
