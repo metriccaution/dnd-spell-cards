@@ -57,6 +57,7 @@ export default class MainPage extends React.Component<{}, SpellListState> {
         setSearchText={this.setSearchText.bind(this)}
         spellSourceFilter={this.state.spellSourceFilter}
         toggleSpellSourceFilter={this.toggleSpellSourceFilter.bind(this)}
+        loadExtraData={this.loadData.bind(this)}
       />
     );
   }

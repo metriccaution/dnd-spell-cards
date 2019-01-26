@@ -19,6 +19,8 @@ interface SpellListProps {
   // Spell source data - Which classes/subclasses know a spell
   spellSourceFilter: string[];
   toggleSpellSourceFilter: (sourceName: string) => void;
+  // Loading extra data
+  loadExtraData: (spellsToAdd: Spell[], sourcesToAdd: SpellSources[]) => void;
 }
 
 /**
@@ -135,6 +137,7 @@ export default class SpellList extends React.Component<SpellListProps, {}> {
             selectedSources={this.props.spellSourceFilter}
             sourceNames={this.props.spellsKnown.map(o => o.knownBy)}
             toggleSpellSource={this.props.toggleSpellSourceFilter}
+            loadExtraData={this.props.loadExtraData}
           />
         </div>
       </div>
