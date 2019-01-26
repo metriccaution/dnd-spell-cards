@@ -2,17 +2,22 @@ import * as React from "react";
 import { colours, shadows } from "./styles";
 
 export interface SideBarProps {
-  toggleGroup: (groupName: string) => void;
-  selectedGroups: string[];
-  groupNames: string[];
+  toggleSpellSource: (sourceName: string) => void;
+  selectedSources: string[];
+  sourceNames: string[];
 }
 export const SideBar = ({
-  groupNames,
-  toggleGroup,
-  selectedGroups
+  sourceNames,
+  toggleSpellSource,
+  selectedSources
 }: SideBarProps) => {
   return (
-    <div>
+    <div
+      style={{
+        overflowY: "auto",
+        height: "100%"
+      }}
+    >
       <h1
         style={{
           backgroundColor: colours.spellDividerBackground,
@@ -23,7 +28,7 @@ export const SideBar = ({
       >
         Class / Subclass
       </h1>
-      {groupNames.sort().map((g, i) => {
+      {sourceNames.sort().map(g => {
         const id = `choose-filter-${g}`;
 
         return (
@@ -40,8 +45,8 @@ export const SideBar = ({
             <input
               id={id}
               type="checkbox"
-              onChange={() => toggleGroup(g)}
-              checked={selectedGroups.indexOf(g) > -1}
+              onChange={() => toggleSpellSource(g)}
+              checked={selectedSources.indexOf(g) > -1}
               style={{
                 margin: "0.8em",
                 transform: "scale(1.5)"

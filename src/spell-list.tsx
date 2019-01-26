@@ -5,20 +5,20 @@ import { SpellCard } from "./spell-card";
 import { spellLevelText } from "./spell-utils";
 import { groupSpellsKnownBySpell } from "./spell-utils";
 import { colours, shadows } from "./styles";
-import { Spell, SpellGrouping, SpellsKnown } from "./types";
+import { SourcesBySpell, Spell, SpellSources } from "./types";
 
 interface SpellListProps {
   spellList: Spell[];
-  spellsKnown: SpellsKnown[];
+  spellsKnown: SpellSources[];
   // Showing the sidebar or not
   showSidebar: boolean;
   toggleSidebar: () => void;
   // Search filtering
   searchText: string;
   setSearchText: (text: string) => void;
-  // Spell grouping data - Which classes/subclasses know a spell
-  groupFilter: string[];
-  toggleGroupFilter: (groupName: string) => void;
+  // Spell source data - Which classes/subclasses know a spell
+  spellSourceFilter: string[];
+  toggleSpellSourceFilter: (sourceName: string) => void;
 }
 
 /**
@@ -29,10 +29,10 @@ export default class SpellList extends React.Component<SpellListProps, {}> {
     const { spellList, spellsKnown } = this.props;
 
     const groupedBySpell = groupSpellsKnownBySpell(spellsKnown);
-    const spellGroups = groupBy(spellList, "level");
+    const spellsByLevel = groupBy(spellList, "level");
 
-    const groupedCards = Object.keys(spellGroups).map(groupName =>
-      this.renderSpellLevel(groupName, groupedBySpell, spellGroups[groupName])
+    const cardsByLevel = Object.keys(spellsByLevel).map(levelName =>
+      this.renderSpellLevel(levelName, groupedBySpell, spellsByLevel[levelName])
     );
 
     return (
@@ -52,7 +52,7 @@ export default class SpellList extends React.Component<SpellListProps, {}> {
             margin: "1em"
           }}
         >
-          {groupedCards}
+          {cardsByLevel}
         </div>
       </div>
     );
@@ -67,7 +67,7 @@ export default class SpellList extends React.Component<SpellListProps, {}> {
 
   private renderSpellLevel(
     level: string,
-    groupedBySpell: SpellGrouping,
+    groupedBySpell: SourcesBySpell,
     spells: Spell[]
   ) {
     const spellCards = spells
@@ -130,9 +130,9 @@ export default class SpellList extends React.Component<SpellListProps, {}> {
           }}
         >
           <SideBar
-            selectedGroups={this.props.groupFilter}
-            groupNames={this.props.spellsKnown.map(o => o.knownBy)}
-            toggleGroup={this.props.toggleGroupFilter}
+            selectedSources={this.props.spellSourceFilter}
+            sourceNames={this.props.spellsKnown.map(o => o.knownBy)}
+            toggleSpellSource={this.props.toggleSpellSourceFilter}
           />
         </div>
       </div>

@@ -1,6 +1,6 @@
-import { SpellsKnown } from "../types";
+import { SpellSources } from "../types";
 
-export const spellsKnown: SpellsKnown[] = [
+export const spellSources: SpellSources[] = [
   {
     knownBy: "Bard",
     spells: [

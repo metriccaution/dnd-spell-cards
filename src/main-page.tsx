@@ -1,18 +1,17 @@
 import { produce } from "immer";
 import * as React from "react";
-// Raw data imports
+import { spellSources } from "./data/spell-sources";
 import { spells } from "./data/spells";
-import { spellsKnown } from "./data/spells-known";
 import SpellList from "./spell-list";
 import { groupSpellsKnownBySpell } from "./spell-utils";
-import { Spell, SpellGrouping, SpellsKnown } from "./types";
+import { SourcesBySpell, Spell, SpellSources } from "./types";
 
 interface SpellListState {
   spells: Spell[];
-  spellsKnown: SpellsKnown[];
+  spellSources: SpellSources[];
   showSidebar: boolean;
   searchText: string;
-  groupFilter: string[];
+  spellSourceFilter: string[];
 }
 
 /**
@@ -23,22 +22,22 @@ export default class MainPage extends React.Component<{}, SpellListState> {
     super(props);
     this.state = {
       spells,
-      spellsKnown,
+      spellSources,
       searchText: "",
-      groupFilter: [],
+      spellSourceFilter: [],
       showSidebar: false
     };
   }
 
   public render() {
-    const groupedBySpell = groupSpellsKnownBySpell(this.state.spellsKnown);
+    const groupedBySpell = groupSpellsKnownBySpell(this.state.spellSources);
 
     const matchingSpells = this.state.spells
       .filter(this.spellMatchesText.bind(this, this.state.searchText))
       .filter(
-        this.spellMatchesGroupFilter.bind(
+        this.spellMatchesSourceFilter.bind(
           this,
-          this.state.groupFilter,
+          this.state.spellSourceFilter,
           groupedBySpell
         )
       );
@@ -46,28 +45,34 @@ export default class MainPage extends React.Component<{}, SpellListState> {
     return (
       <SpellList
         spellList={matchingSpells}
-        spellsKnown={this.state.spellsKnown}
+        spellsKnown={this.state.spellSources}
         toggleSidebar={this.toggleSidebar.bind(this)}
         showSidebar={this.state.showSidebar}
         searchText={this.state.searchText}
         setSearchText={this.setSearchText.bind(this)}
-        groupFilter={this.state.groupFilter}
-        toggleGroupFilter={this.toggleGroupFilter.bind(this)}
+        spellSourceFilter={this.state.spellSourceFilter}
+        toggleSpellSourceFilter={this.toggleSpellSourceFilter.bind(this)}
       />
     );
   }
 
-  private toggleGroupFilter(groupName: string) {
+  /**
+   * Toggle filtering by a particular spell source
+   */
+  private toggleSpellSourceFilter(groupName: string) {
     this.setState(
       produce(this.state, draft => {
-        draft.groupFilter =
-          draft.groupFilter.indexOf(groupName) > -1
-            ? draft.groupFilter.filter(group => group !== groupName)
-            : draft.groupFilter.concat(groupName);
+        draft.spellSourceFilter =
+          draft.spellSourceFilter.indexOf(groupName) > -1
+            ? draft.spellSourceFilter.filter(group => group !== groupName)
+            : draft.spellSourceFilter.concat(groupName);
       })
     );
   }
 
+  /**
+   * Open/close the sidebar
+   */
   private toggleSidebar() {
     this.setState(
       produce(this.state, draft => {
@@ -90,9 +95,9 @@ export default class MainPage extends React.Component<{}, SpellListState> {
   /**
    * Does a spell match the selected groups
    */
-  private spellMatchesGroupFilter(
+  private spellMatchesSourceFilter(
     selectedGroups: string[],
-    groupedBySpell: SpellGrouping,
+    groupedBySpell: SourcesBySpell,
     spell: Spell
   ): boolean {
     if (selectedGroups.length === 0) {

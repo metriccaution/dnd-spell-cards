@@ -9,9 +9,9 @@ export type SpellComponent = "S" | "V" | "M";
 export type SourceBook = "phb" | "srd" | "scag" | "xgte" | "ee";
 
 /**
- * Alias for a spell name to class mapping
+ * Alias for a spell name to spell source mapping
  */
-export type SpellGrouping = Record<string, string[]>;
+export type SourcesBySpell = Record<string, string[]>;
 
 /**
  * A location in a book where a spell is from
@@ -80,7 +80,10 @@ export interface Spell {
   level: number;
 }
 
-export interface SpellsKnown {
+/**
+ * A listing of who knows which spells
+ */
+export interface SpellSources {
   knownBy: string;
   spells: string[];
 }
