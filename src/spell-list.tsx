@@ -75,7 +75,9 @@ export default class SpellList extends React.Component<SpellListProps, {}> {
       .map(spell => (
         <SpellCard
           key={spell.name}
-          knownBy={groupedBySpell[spell.name].sort() || []}
+          knownBy={
+            groupedBySpell[spell.name] ? groupedBySpell[spell.name].sort() : []
+          }
           spell={spell}
         />
       ));

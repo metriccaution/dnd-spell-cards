@@ -1,4 +1,5 @@
 import { produce } from "immer";
+import { uniq } from "lodash";
 import * as React from "react";
 import { spellSources } from "./data/spell-sources";
 import { spells } from "./data/spells";
@@ -21,12 +22,16 @@ export default class MainPage extends React.Component<{}, SpellListState> {
   constructor(props: {}) {
     super(props);
     this.state = {
-      spells,
-      spellSources,
+      spells: [],
+      spellSources: [],
       searchText: "",
       spellSourceFilter: [],
       showSidebar: false
     };
+  }
+
+  public componentWillMount() {
+    this.loadData(spells, spellSources);
   }
 
   public render() {
@@ -115,6 +120,34 @@ export default class MainPage extends React.Component<{}, SpellListState> {
     this.setState(
       produce(this.state, draft => {
         draft.searchText = searchText;
+      })
+    );
+  }
+
+  private loadData(spellsToAdd: Spell[], sourcesToAdd: SpellSources[]) {
+    this.setState(
+      produce(this.state, draft => {
+        // Add any spells that aren't in the current list
+        spellsToAdd.forEach(spell => {
+          if (draft.spells.some(existing => existing.name === spell.name)) {
+            return;
+          }
+
+          draft.spells.push(spell);
+        });
+
+        // Add new sources & augment existing ones
+        sourcesToAdd.forEach(source => {
+          const existingSource = draft.spellSources.find(
+            existing => existing.knownBy === source.knownBy
+          );
+
+          if (existingSource) {
+            existingSource.spells = uniq(source.spells.concat(source.spells));
+          } else {
+            draft.spellSources.push(source);
+          }
+        });
       })
     );
   }
