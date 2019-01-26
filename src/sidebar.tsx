@@ -64,7 +64,7 @@ export const SideBar = ({
           href="https://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf"
           target="_blank"
         >
-          SRD Link
+          SRD
         </a>
       </h1>
     </div>
