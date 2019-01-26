@@ -106,6 +106,10 @@ export const SpellCard = ({ spell, knownBy }: SpellCardProps) => {
     .sort()
     .join(", ");
 
+  const sources = spell.page
+    .map(page => `${sourceBookText(page.book)} page ${page.pageNumber}`)
+    .join(", ");
+
   const components = (
     <PropertiesList
       properties={[
@@ -118,10 +122,7 @@ export const SpellCard = ({ spell, knownBy }: SpellCardProps) => {
         ["Materials", spell.material === null ? "None" : spell.material],
         ["Ritual", spell.ritual ? "Yes" : "No"],
         ["Concentration", spell.concentration ? "Yes" : "No"],
-        [
-          "Source",
-          `${sourceBookText(spell.page.book)} page ${spell.page.pageNumber}`
-        ],
+        ["Source", sources],
         ["Known by", knownBy.join(", ")]
       ]}
     />

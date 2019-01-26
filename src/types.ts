@@ -26,7 +26,7 @@ export interface Spell {
   /**
    * Where the spell is originally from (e.g. Player's Handbook, page 123)
    */
-  page: SourcePage;
+  page: SourcePage[];
   /**
    * How far will the spell reach
    */

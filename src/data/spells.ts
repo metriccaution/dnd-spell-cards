@@ -18,10 +18,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 259
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 259
+      }
+    ]
   },
   {
     name: "Acid Splash",
@@ -39,10 +41,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 0,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 211
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 211
+      }
+    ]
   },
   {
     name: "Aid",
@@ -61,10 +65,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 211
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 211
+      }
+    ]
   },
   {
     name: "Alarm",
@@ -83,10 +89,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 1,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 211
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 211
+      }
+    ]
   },
   {
     name: "Alter Self",
@@ -109,10 +117,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 2,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 211
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 211
+      }
+    ]
   },
   {
     name: "Animal Friendship",
@@ -129,10 +139,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 1,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 212
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 212
+      }
+    ]
   },
   {
     name: "Animal Messenger",
@@ -152,10 +164,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 212
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 212
+      }
+    ]
   },
   {
     name: "Animal Shapes",
@@ -174,10 +188,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 8,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 212
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 212
+      }
+    ]
   },
   {
     name: "Animate Dead",
@@ -198,10 +214,12 @@ export const spells: Spell[] = [
     school: "Necromancy",
     level: 3,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 212
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 212
+      }
+    ]
   },
   {
     name: "Animate Objects",
@@ -223,10 +241,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 5,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 213
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 213
+      }
+    ]
   },
   {
     name: "Antilife Shell",
@@ -245,10 +265,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 5,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 213
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 213
+      }
+    ]
   },
   {
     name: "Antimagic Field",
@@ -274,10 +296,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 8,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 213
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 213
+      }
+    ]
   },
   {
     name: "Antipathy/Sympathy",
@@ -302,10 +326,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 8,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 214
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 214
+      }
+    ]
   },
   {
     name: "Arcane Eye",
@@ -324,10 +350,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 4,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 214
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 214
+      }
+    ]
   },
   {
     name: "Arcane Hand",
@@ -356,10 +384,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 5,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 218
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 218
+      }
+    ]
   },
   {
     name: "Arcane Lock",
@@ -377,10 +407,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 215
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 215
+      }
+    ]
   },
   {
     name: "Arcane Sword",
@@ -399,10 +431,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 7,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 262
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 262
+      }
+    ]
   },
   {
     name: "Arcanist's Magic Aura",
@@ -424,10 +458,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 263
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 263
+      }
+    ]
   },
   {
     name: "Astral Projection",
@@ -450,10 +486,12 @@ export const spells: Spell[] = [
     school: "Necromancy",
     level: 9,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 215
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 215
+      }
+    ]
   },
   {
     name: "Augury",
@@ -477,10 +515,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 215
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 215
+      }
+    ]
   },
   {
     name: "Awaken",
@@ -498,10 +538,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 5,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 216
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 216
+      }
+    ]
   },
   {
     name: "Bane",
@@ -520,10 +562,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 1,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 216
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 216
+      }
+    ]
   },
   {
     name: "Banishment",
@@ -544,10 +588,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 4,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 217
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 217
+      }
+    ]
   },
   {
     name: "Barkskin",
@@ -564,10 +610,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 217
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 217
+      }
+    ]
   },
   {
     name: "Beacon of Hope",
@@ -584,10 +632,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 3,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 217
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 217
+      }
+    ]
   },
   {
     name: "Bestow Curse",
@@ -611,10 +661,12 @@ export const spells: Spell[] = [
     school: "Necromancy",
     level: 3,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 218
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 218
+      }
+    ]
   },
   {
     name: "Black Tentacles",
@@ -633,10 +685,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 4,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 238
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 238
+      }
+    ]
   },
   {
     name: "Blade Barrier",
@@ -654,10 +708,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 6,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 218
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 218
+      }
+    ]
   },
   {
     name: "Bless",
@@ -676,10 +732,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 1,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 219
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 219
+      }
+    ]
   },
   {
     name: "Blight",
@@ -700,10 +758,12 @@ export const spells: Spell[] = [
     school: "Necromancy",
     level: 4,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 219
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 219
+      }
+    ]
   },
   {
     name: "Blindness/Deafness",
@@ -722,10 +782,12 @@ export const spells: Spell[] = [
     school: "Necromancy",
     level: 2,
     components: ["V"],
-    page: {
-      book: "phb",
-      pageNumber: 219
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 219
+      }
+    ]
   },
   {
     name: "Blink",
@@ -743,10 +805,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 3,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 219
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 219
+      }
+    ]
   },
   {
     name: "Blur",
@@ -763,10 +827,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 2,
     components: ["V"],
-    page: {
-      book: "phb",
-      pageNumber: 219
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 219
+      }
+    ]
   },
   {
     name: "Branding Smite",
@@ -783,10 +849,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 2,
     components: ["V"],
-    page: {
-      book: "phb",
-      pageNumber: 219
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 219
+      }
+    ]
   },
   {
     name: "Burning Hands",
@@ -806,10 +874,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 1,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 220
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 220
+      }
+    ]
   },
   {
     name: "Call Lightning",
@@ -830,10 +900,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 3,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 220
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 220
+      }
+    ]
   },
   {
     name: "Calm Emotions",
@@ -851,10 +923,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 2,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 221
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 221
+      }
+    ]
   },
   {
     name: "Chain Lightning",
@@ -875,10 +949,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 6,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 221
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 221
+      }
+    ]
   },
   {
     name: "Charm Person",
@@ -897,10 +973,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 1,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 221
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 221
+      }
+    ]
   },
   {
     name: "Chill Touch",
@@ -919,10 +997,12 @@ export const spells: Spell[] = [
     school: "Necromancy",
     level: 0,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 221
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 221
+      }
+    ]
   },
   {
     name: "Circle of Death",
@@ -941,10 +1021,12 @@ export const spells: Spell[] = [
     school: "Necromancy",
     level: 6,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 221
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 221
+      }
+    ]
   },
   {
     name: "Clairvoyance",
@@ -964,10 +1046,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 3,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 222
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 222
+      }
+    ]
   },
   {
     name: "Clone",
@@ -986,10 +1070,12 @@ export const spells: Spell[] = [
     school: "Necromancy",
     level: 8,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 222
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 222
+      }
+    ]
   },
   {
     name: "Cloudkill",
@@ -1010,10 +1096,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 5,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 222
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 222
+      }
+    ]
   },
   {
     name: "Color Spray",
@@ -1034,10 +1122,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 1,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 222
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 222
+      }
+    ]
   },
   {
     name: "Command",
@@ -1067,10 +1157,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 1,
     components: ["V"],
-    page: {
-      book: "phb",
-      pageNumber: 223
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 223
+      }
+    ]
   },
   {
     name: "Commune",
@@ -1089,10 +1181,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 5,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 223
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 223
+      }
+    ]
   },
   {
     name: "Commune with Nature",
@@ -1116,10 +1210,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 5,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 224
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 224
+      }
+    ]
   },
   {
     name: "Comprehend Languages",
@@ -1137,10 +1233,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 1,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 224
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 224
+      }
+    ]
   },
   {
     name: "Compulsion",
@@ -1158,10 +1256,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 4,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 224
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 224
+      }
+    ]
   },
   {
     name: "Cone of Cold",
@@ -1181,10 +1281,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 5,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 224
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 224
+      }
+    ]
   },
   {
     name: "Confusion",
@@ -1205,10 +1307,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 4,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 224
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 224
+      }
+    ]
   },
   {
     name: "Conjure Animals",
@@ -1234,10 +1338,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 3,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 225
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 225
+      }
+    ]
   },
   {
     name: "Conjure Celestial",
@@ -1258,10 +1364,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 7,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 225
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 225
+      }
+    ]
   },
   {
     name: "Conjure Elemental",
@@ -1284,10 +1392,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 5,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 225
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 225
+      }
+    ]
   },
   {
     name: "Conjure Fey",
@@ -1309,10 +1419,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 6,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 226
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 226
+      }
+    ]
   },
   {
     name: "Conjure Minor Elementals",
@@ -1338,10 +1450,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 4,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 226
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 226
+      }
+    ]
   },
   {
     name: "Conjure Woodland Beings",
@@ -1367,10 +1481,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 4,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 226
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 226
+      }
+    ]
   },
   {
     name: "Contact Other Plane",
@@ -1388,10 +1504,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 5,
     components: ["V"],
-    page: {
-      book: "phb",
-      pageNumber: 226
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 226
+      }
+    ]
   },
   {
     name: "Contagion",
@@ -1422,10 +1540,12 @@ export const spells: Spell[] = [
     school: "Necromancy",
     level: 5,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 227
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 227
+      }
+    ]
   },
   {
     name: "Contingency",
@@ -1445,10 +1565,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 6,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 227
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 227
+      }
+    ]
   },
   {
     name: "Continual Flame",
@@ -1465,10 +1587,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 227
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 227
+      }
+    ]
   },
   {
     name: "Control Water",
@@ -1497,10 +1621,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 4,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 227
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 227
+      }
+    ]
   },
   {
     name: "Control Weather",
@@ -1519,10 +1645,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 8,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 228
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 228
+      }
+    ]
   },
   {
     name: "Counterspell",
@@ -1539,10 +1667,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 3,
     components: ["S"],
-    page: {
-      book: "phb",
-      pageNumber: 228
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 228
+      }
+    ]
   },
   {
     name: "Create Food and Water",
@@ -1559,10 +1689,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 3,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 229
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 229
+      }
+    ]
   },
   {
     name: "Create Undead",
@@ -1584,10 +1716,12 @@ export const spells: Spell[] = [
     school: "Necromancy",
     level: 6,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 229
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 229
+      }
+    ]
   },
   {
     name: "Create or Destroy Water",
@@ -1611,10 +1745,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 1,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 229
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 229
+      }
+    ]
   },
   {
     name: "Creation",
@@ -1646,10 +1782,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 5,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 229
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 229
+      }
+    ]
   },
   {
     name: "Cure Wounds",
@@ -1668,10 +1806,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 1,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 230
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 230
+      }
+    ]
   },
   {
     name: "Dancing Lights",
@@ -1689,10 +1829,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 0,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 230
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 230
+      }
+    ]
   },
   {
     name: "Darkness",
@@ -1711,10 +1853,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 2,
     components: ["V", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 230
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 230
+      }
+    ]
   },
   {
     name: "Darkvision",
@@ -1731,10 +1875,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 230
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 230
+      }
+    ]
   },
   {
     name: "Daylight",
@@ -1753,10 +1899,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 3,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 230
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 230
+      }
+    ]
   },
   {
     name: "Death Ward",
@@ -1775,10 +1923,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 4,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 230
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 230
+      }
+    ]
   },
   {
     name: "Delayed Blast Fireball",
@@ -1800,10 +1950,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 7,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 230
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 230
+      }
+    ]
   },
   {
     name: "Demiplane",
@@ -1821,10 +1973,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 8,
     components: ["S"],
-    page: {
-      book: "phb",
-      pageNumber: 231
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 231
+      }
+    ]
   },
   {
     name: "Detect Evil and Good",
@@ -1842,10 +1996,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 1,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 231
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 231
+      }
+    ]
   },
   {
     name: "Detect Magic",
@@ -1863,10 +2019,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 1,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 231
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 231
+      }
+    ]
   },
   {
     name: "Detect Poison and Disease",
@@ -1884,10 +2042,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 1,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 231
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 231
+      }
+    ]
   },
   {
     name: "Detect Thoughts",
@@ -1908,10 +2068,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 231
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 231
+      }
+    ]
   },
   {
     name: "Dimension Door",
@@ -1930,10 +2092,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 4,
     components: ["V"],
-    page: {
-      book: "phb",
-      pageNumber: 233
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 233
+      }
+    ]
   },
   {
     name: "Disguise Self",
@@ -1952,10 +2116,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 1,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 233
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 233
+      }
+    ]
   },
   {
     name: "Disintegrate",
@@ -1977,10 +2143,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 6,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 233
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 233
+      }
+    ]
   },
   {
     name: "Dispel Evil and Good",
@@ -2002,10 +2170,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 5,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 233
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 233
+      }
+    ]
   },
   {
     name: "Dispel Magic",
@@ -2024,10 +2194,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 3,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 234
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 234
+      }
+    ]
   },
   {
     name: "Divination",
@@ -2047,10 +2219,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 4,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 234
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 234
+      }
+    ]
   },
   {
     name: "Divine Favor",
@@ -2067,10 +2241,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 1,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 234
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 234
+      }
+    ]
   },
   {
     name: "Divine Word",
@@ -2092,10 +2268,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 7,
     components: ["V"],
-    page: {
-      book: "phb",
-      pageNumber: 234
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 234
+      }
+    ]
   },
   {
     name: "Dominate Beast",
@@ -2116,10 +2294,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 4,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 234
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 234
+      }
+    ]
   },
   {
     name: "Dominate Monster",
@@ -2141,10 +2321,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 8,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 235
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 235
+      }
+    ]
   },
   {
     name: "Dominate Person",
@@ -2166,10 +2348,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 5,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 235
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 235
+      }
+    ]
   },
   {
     name: "Dream",
@@ -2191,10 +2375,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 5,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 236
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 236
+      }
+    ]
   },
   {
     name: "Druidcraft",
@@ -2215,10 +2401,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 0,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 236
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 236
+      }
+    ]
   },
   {
     name: "Earthquake",
@@ -2241,10 +2429,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 8,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 236
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 236
+      }
+    ]
   },
   {
     name: "Eldritch Blast",
@@ -2263,10 +2453,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 0,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 236
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 236
+      }
+    ]
   },
   {
     name: "Enhance Ability",
@@ -2297,10 +2489,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 237
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 237
+      }
+    ]
   },
   {
     name: "Enlarge/Reduce",
@@ -2322,10 +2516,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 237
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 237
+      }
+    ]
   },
   {
     name: "Entangle",
@@ -2344,10 +2540,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 1,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 238
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 238
+      }
+    ]
   },
   {
     name: "Enthrall",
@@ -2364,10 +2562,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 2,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 238
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 238
+      }
+    ]
   },
   {
     name: "Etherealness",
@@ -2390,10 +2590,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 7,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 238
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 238
+      }
+    ]
   },
   {
     name: "Expeditious Retreat",
@@ -2410,10 +2612,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 1,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 238
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 238
+      }
+    ]
   },
   {
     name: "Eyebite",
@@ -2436,10 +2640,12 @@ export const spells: Spell[] = [
     school: "Necromancy",
     level: 6,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 238
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 238
+      }
+    ]
   },
   {
     name: "Fabricate",
@@ -2458,10 +2664,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 4,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 239
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 239
+      }
+    ]
   },
   {
     name: "Faerie Fire",
@@ -2479,10 +2687,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 1,
     components: ["V"],
-    page: {
-      book: "phb",
-      pageNumber: 239
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 239
+      }
+    ]
   },
   {
     name: "Faithful Hound",
@@ -2501,10 +2711,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 4,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 261
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 261
+      }
+    ]
   },
   {
     name: "False Life",
@@ -2523,10 +2735,12 @@ export const spells: Spell[] = [
     school: "Necromancy",
     level: 1,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 239
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 239
+      }
+    ]
   },
   {
     name: "Fear",
@@ -2544,10 +2758,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 3,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 239
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 239
+      }
+    ]
   },
   {
     name: "Feather Fall",
@@ -2564,10 +2780,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 1,
     components: ["V", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 239
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 239
+      }
+    ]
   },
   {
     name: "Feeblemind",
@@ -2587,10 +2805,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 8,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 239
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 239
+      }
+    ]
   },
   {
     name: "Find Familiar",
@@ -2614,10 +2834,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 1,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 240
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 240
+      }
+    ]
   },
   {
     name: "Find Steed",
@@ -2638,10 +2860,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 2,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 240
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 240
+      }
+    ]
   },
   {
     name: "Find Traps",
@@ -2659,10 +2883,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 2,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 241
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 241
+      }
+    ]
   },
   {
     name: "Find the Path",
@@ -2681,10 +2907,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 6,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 240
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 240
+      }
+    ]
   },
   {
     name: "Finger of Death",
@@ -2702,10 +2930,12 @@ export const spells: Spell[] = [
     school: "Necromancy",
     level: 7,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 241
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 241
+      }
+    ]
   },
   {
     name: "Fire Bolt",
@@ -2723,10 +2953,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 0,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 242
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 242
+      }
+    ]
   },
   {
     name: "Fire Shield",
@@ -2745,10 +2977,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 4,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 242
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 242
+      }
+    ]
   },
   {
     name: "Fire Storm",
@@ -2766,10 +3000,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 7,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 242
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 242
+      }
+    ]
   },
   {
     name: "Fireball",
@@ -2789,10 +3025,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 3,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 241
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 241
+      }
+    ]
   },
   {
     name: "Flame Blade",
@@ -2813,10 +3051,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 242
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 242
+      }
+    ]
   },
   {
     name: "Flame Strike",
@@ -2835,10 +3075,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 5,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 242
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 242
+      }
+    ]
   },
   {
     name: "Flaming Sphere",
@@ -2860,10 +3102,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 242
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 242
+      }
+    ]
   },
   {
     name: "Flesh to Stone",
@@ -2883,10 +3127,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 6,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 243
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 243
+      }
+    ]
   },
   {
     name: "Floating Disk",
@@ -2905,10 +3151,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 1,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 282
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 282
+      }
+    ]
   },
   {
     name: "Fly",
@@ -2927,10 +3175,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 3,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 243
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 243
+      }
+    ]
   },
   {
     name: "Fog Cloud",
@@ -2949,10 +3199,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 1,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 243
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 243
+      }
+    ]
   },
   {
     name: "Forbiddance",
@@ -2973,10 +3225,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 6,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 243
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 243
+      }
+    ]
   },
   {
     name: "Forcecage",
@@ -2998,10 +3252,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 7,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 243
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 243
+      }
+    ]
   },
   {
     name: "Foresight",
@@ -3019,10 +3275,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 9,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 244
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 244
+      }
+    ]
   },
   {
     name: "Freedom of Movement",
@@ -3040,10 +3298,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 4,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 244
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 244
+      }
+    ]
   },
   {
     name: "Freezing Sphere",
@@ -3064,10 +3324,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 6,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 263
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 263
+      }
+    ]
   },
   {
     name: "Gaseous Form",
@@ -3086,10 +3348,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 3,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 244
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 244
+      }
+    ]
   },
   {
     name: "Gate",
@@ -3109,10 +3373,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 9,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 244
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 244
+      }
+    ]
   },
   {
     name: "Geas",
@@ -3133,10 +3399,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 5,
     components: ["V"],
-    page: {
-      book: "phb",
-      pageNumber: 244
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 244
+      }
+    ]
   },
   {
     name: "Gentle Repose",
@@ -3155,10 +3423,12 @@ export const spells: Spell[] = [
     school: "Necromancy",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 245
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 245
+      }
+    ]
   },
   {
     name: "Giant Insect",
@@ -3178,10 +3448,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 4,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 245
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 245
+      }
+    ]
   },
   {
     name: "Glibness",
@@ -3198,10 +3470,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 8,
     components: ["V"],
-    page: {
-      book: "phb",
-      pageNumber: 245
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 245
+      }
+    ]
   },
   {
     name: "Globe of Invulnerability",
@@ -3221,10 +3495,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 6,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 245
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 245
+      }
+    ]
   },
   {
     name: "Glyph of Warding",
@@ -3252,10 +3528,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 3,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 245
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 245
+      }
+    ]
   },
   {
     name: "Goodberry",
@@ -3273,10 +3551,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 1,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 246
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 246
+      }
+    ]
   },
   {
     name: "Grease",
@@ -3294,10 +3574,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 1,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 246
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 246
+      }
+    ]
   },
   {
     name: "Greater Invisibility",
@@ -3314,10 +3596,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 4,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 246
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 246
+      }
+    ]
   },
   {
     name: "Greater Restoration",
@@ -3338,10 +3622,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 5,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 246
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 246
+      }
+    ]
   },
   {
     name: "Guardian of Faith",
@@ -3359,10 +3645,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 4,
     components: ["V"],
-    page: {
-      book: "phb",
-      pageNumber: 246
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 246
+      }
+    ]
   },
   {
     name: "Guards and Wards",
@@ -3397,10 +3685,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 6,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 248
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 248
+      }
+    ]
   },
   {
     name: "Guidance",
@@ -3417,10 +3707,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 0,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 248
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 248
+      }
+    ]
   },
   {
     name: "Guiding Bolt",
@@ -3439,10 +3731,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 1,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 248
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 248
+      }
+    ]
   },
   {
     name: "Gust of Wind",
@@ -3462,10 +3756,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 248
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 248
+      }
+    ]
   },
   {
     name: "Hallow",
@@ -3505,10 +3801,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 5,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 249
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 249
+      }
+    ]
   },
   {
     name: "Hallucinatory Terrain",
@@ -3526,10 +3824,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 4,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 249
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 249
+      }
+    ]
   },
   {
     name: "Harm",
@@ -3546,10 +3846,12 @@ export const spells: Spell[] = [
     school: "Necromancy",
     level: 6,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 249
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 249
+      }
+    ]
   },
   {
     name: "Haste",
@@ -3567,10 +3869,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 3,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 250
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 250
+      }
+    ]
   },
   {
     name: "Heal",
@@ -3589,10 +3893,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 6,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 250
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 250
+      }
+    ]
   },
   {
     name: "Healing Word",
@@ -3611,10 +3917,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 1,
     components: ["V"],
-    page: {
-      book: "phb",
-      pageNumber: 250
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 250
+      }
+    ]
   },
   {
     name: "Heat Metal",
@@ -3634,10 +3942,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 250
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 250
+      }
+    ]
   },
   {
     name: "Hellish Rebuke",
@@ -3654,10 +3964,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 1,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 250
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 250
+      }
+    ]
   },
   {
     name: "Heroes' Feast",
@@ -3676,10 +3988,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 6,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 250
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 250
+      }
+    ]
   },
   {
     name: "Heroism",
@@ -3696,10 +4010,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 1,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 250
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 250
+      }
+    ]
   },
   {
     name: "Hideous Laughter",
@@ -3717,10 +4033,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 1,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 280
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 280
+      }
+    ]
   },
   {
     name: "Hold Monster",
@@ -3739,10 +4057,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 5,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 251
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 251
+      }
+    ]
   },
   {
     name: "Hold Person",
@@ -3761,10 +4081,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 251
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 251
+      }
+    ]
   },
   {
     name: "Holy Aura",
@@ -3782,10 +4104,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 8,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 251
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 251
+      }
+    ]
   },
   {
     name: "Hunter's Mark",
@@ -3802,10 +4126,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 1,
     components: ["V"],
-    page: {
-      book: "phb",
-      pageNumber: 251
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 251
+      }
+    ]
   },
   {
     name: "Hypnotic Pattern",
@@ -3824,10 +4150,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 3,
     components: ["S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 252
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 252
+      }
+    ]
   },
   {
     name: "Ice Storm",
@@ -3847,10 +4175,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 4,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 252
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 252
+      }
+    ]
   },
   {
     name: "Identify",
@@ -3868,10 +4198,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 1,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 252
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 252
+      }
+    ]
   },
   {
     name: "Illusory Script",
@@ -3892,10 +4224,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 1,
     components: ["S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 252
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 252
+      }
+    ]
   },
   {
     name: "Imprisonment",
@@ -3927,10 +4261,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 9,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 252
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 252
+      }
+    ]
   },
   {
     name: "Incendiary Cloud",
@@ -3949,10 +4285,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 8,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 253
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 253
+      }
+    ]
   },
   {
     name: "Inflict Wounds",
@@ -3971,10 +4309,12 @@ export const spells: Spell[] = [
     school: "Necromancy",
     level: 1,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 253
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 253
+      }
+    ]
   },
   {
     name: "Insect Plague",
@@ -3995,10 +4335,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 5,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 254
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 254
+      }
+    ]
   },
   {
     name: "Instant Summons",
@@ -4018,10 +4360,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 6,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 235
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 235
+      }
+    ]
   },
   {
     name: "Invisibility",
@@ -4040,10 +4384,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 254
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 254
+      }
+    ]
   },
   {
     name: "Irresistible Dance",
@@ -4061,10 +4407,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 6,
     components: ["V"],
-    page: {
-      book: "phb",
-      pageNumber: 264
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 264
+      }
+    ]
   },
   {
     name: "Jump",
@@ -4081,10 +4429,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 1,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 254
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 254
+      }
+    ]
   },
   {
     name: "Knock",
@@ -4104,10 +4454,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 2,
     components: ["V"],
-    page: {
-      book: "phb",
-      pageNumber: 254
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 254
+      }
+    ]
   },
   {
     name: "Legend Lore",
@@ -4126,10 +4478,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 5,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 254
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 254
+      }
+    ]
   },
   {
     name: "Lesser Restoration",
@@ -4146,10 +4500,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 2,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 255
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 255
+      }
+    ]
   },
   {
     name: "Levitate",
@@ -4169,10 +4525,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 255
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 255
+      }
+    ]
   },
   {
     name: "Light",
@@ -4190,10 +4548,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 0,
     components: ["V", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 255
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 255
+      }
+    ]
   },
   {
     name: "Lightning Bolt",
@@ -4213,10 +4573,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 3,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 255
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 255
+      }
+    ]
   },
   {
     name: "Locate Animals or Plants",
@@ -4233,10 +4595,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 256
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 256
+      }
+    ]
   },
   {
     name: "Locate Creature",
@@ -4255,10 +4619,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 4,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 256
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 256
+      }
+    ]
   },
   {
     name: "Locate Object",
@@ -4277,10 +4643,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 256
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 256
+      }
+    ]
   },
   {
     name: "Longstrider",
@@ -4299,10 +4667,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 1,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 256
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 256
+      }
+    ]
   },
   {
     name: "Mage Armor",
@@ -4319,10 +4689,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 1,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 256
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 256
+      }
+    ]
   },
   {
     name: "Mage Hand",
@@ -4341,10 +4713,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 0,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 256
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 256
+      }
+    ]
   },
   {
     name: "Magic Circle",
@@ -4368,10 +4742,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 3,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 256
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 256
+      }
+    ]
   },
   {
     name: "Magic Jar",
@@ -4395,10 +4771,12 @@ export const spells: Spell[] = [
     school: "Necromancy",
     level: 6,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 257
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 257
+      }
+    ]
   },
   {
     name: "Magic Missile",
@@ -4417,10 +4795,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 1,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 257
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 257
+      }
+    ]
   },
   {
     name: "Magic Mouth",
@@ -4441,10 +4821,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 257
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 257
+      }
+    ]
   },
   {
     name: "Magic Weapon",
@@ -4463,10 +4845,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 2,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 257
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 257
+      }
+    ]
   },
   {
     name: "Magnificent Mansion",
@@ -4486,10 +4870,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 7,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 261
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 261
+      }
+    ]
   },
   {
     name: "Major Image",
@@ -4510,10 +4896,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 3,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 258
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 258
+      }
+    ]
   },
   {
     name: "Mass Cure Wounds",
@@ -4532,10 +4920,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 5,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 258
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 258
+      }
+    ]
   },
   {
     name: "Mass Heal",
@@ -4552,10 +4942,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 9,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 258
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 258
+      }
+    ]
   },
   {
     name: "Mass Healing Word",
@@ -4574,10 +4966,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 3,
     components: ["V"],
-    page: {
-      book: "phb",
-      pageNumber: 258
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 258
+      }
+    ]
   },
   {
     name: "Mass Suggestion",
@@ -4600,10 +4994,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 6,
     components: ["V", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 258
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 258
+      }
+    ]
   },
   {
     name: "Maze",
@@ -4622,10 +5018,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 8,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 258
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 258
+      }
+    ]
   },
   {
     name: "Meld into Stone",
@@ -4644,10 +5042,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 3,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 259
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 259
+      }
+    ]
   },
   {
     name: "Mending",
@@ -4665,10 +5065,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 0,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 259
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 259
+      }
+    ]
   },
   {
     name: "Message",
@@ -4686,10 +5088,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 0,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 259
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 259
+      }
+    ]
   },
   {
     name: "Meteor Swarm",
@@ -4707,10 +5111,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 9,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 259
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 259
+      }
+    ]
   },
   {
     name: "Mind Blank",
@@ -4727,10 +5133,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 8,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 259
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 259
+      }
+    ]
   },
   {
     name: "Minor Illusion",
@@ -4750,10 +5158,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 0,
     components: ["S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 260
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 260
+      }
+    ]
   },
   {
     name: "Mirage Arcane",
@@ -4773,10 +5183,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 7,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 260
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 260
+      }
+    ]
   },
   {
     name: "Mirror Image",
@@ -4797,10 +5209,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 2,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 260
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 260
+      }
+    ]
   },
   {
     name: "Mislead",
@@ -4819,10 +5233,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 5,
     components: ["S"],
-    page: {
-      book: "phb",
-      pageNumber: 260
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 260
+      }
+    ]
   },
   {
     name: "Misty Step",
@@ -4839,10 +5255,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 2,
     components: ["V"],
-    page: {
-      book: "phb",
-      pageNumber: 260
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 260
+      }
+    ]
   },
   {
     name: "Modify Memory",
@@ -4865,10 +5283,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 5,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 261
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 261
+      }
+    ]
   },
   {
     name: "Moonbeam",
@@ -4891,10 +5311,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 261
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 261
+      }
+    ]
   },
   {
     name: "Move Earth",
@@ -4916,10 +5338,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 6,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 263
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 263
+      }
+    ]
   },
   {
     name: "Nondetection",
@@ -4937,10 +5361,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 3,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 263
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 263
+      }
+    ]
   },
   {
     name: "Pass without Trace",
@@ -4957,10 +5383,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 264
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 264
+      }
+    ]
   },
   {
     name: "Passwall",
@@ -4978,10 +5406,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 5,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 264
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 264
+      }
+    ]
   },
   {
     name: "Phantasmal Killer",
@@ -5000,10 +5430,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 4,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 265
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 265
+      }
+    ]
   },
   {
     name: "Phantom Steed",
@@ -5021,10 +5453,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 3,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 265
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 265
+      }
+    ]
   },
   {
     name: "Planar Ally",
@@ -5046,10 +5480,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 6,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 265
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 265
+      }
+    ]
   },
   {
     name: "Planar Binding",
@@ -5069,10 +5505,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 5,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 265
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 265
+      }
+    ]
   },
   {
     name: "Plane Shift",
@@ -5092,10 +5530,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 7,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 266
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 266
+      }
+    ]
   },
   {
     name: "Plant Growth",
@@ -5115,10 +5555,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 3,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 266
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 266
+      }
+    ]
   },
   {
     name: "Poison Spray",
@@ -5136,10 +5578,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 0,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 266
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 266
+      }
+    ]
   },
   {
     name: "Polymorph",
@@ -5160,10 +5604,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 4,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 266
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 266
+      }
+    ]
   },
   {
     name: "Power Word Kill",
@@ -5180,10 +5626,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 9,
     components: ["V"],
-    page: {
-      book: "phb",
-      pageNumber: 266
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 266
+      }
+    ]
   },
   {
     name: "Power Word Stun",
@@ -5201,10 +5649,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 8,
     components: ["V"],
-    page: {
-      book: "phb",
-      pageNumber: 267
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 267
+      }
+    ]
   },
   {
     name: "Prayer of Healing",
@@ -5223,10 +5673,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 2,
     components: ["V"],
-    page: {
-      book: "phb",
-      pageNumber: 267
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 267
+      }
+    ]
   },
   {
     name: "Prestidigitation",
@@ -5250,10 +5702,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 0,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 267
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 267
+      }
+    ]
   },
   {
     name: "Prismatic Spray",
@@ -5286,10 +5740,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 7,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 267
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 267
+      }
+    ]
   },
   {
     name: "Prismatic Wall",
@@ -5324,10 +5780,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 9,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 267
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 267
+      }
+    ]
   },
   {
     name: "Private Sanctum",
@@ -5355,10 +5813,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 4,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 262
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 262
+      }
+    ]
   },
   {
     name: "Produce Flame",
@@ -5377,10 +5837,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 0,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 269
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 269
+      }
+    ]
   },
   {
     name: "Programmed Illusion",
@@ -5400,10 +5862,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 6,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 269
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 269
+      }
+    ]
   },
   {
     name: "Project Image",
@@ -5423,10 +5887,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 7,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 270
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 270
+      }
+    ]
   },
   {
     name: "Protection from Energy",
@@ -5443,10 +5909,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 3,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 270
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 270
+      }
+    ]
   },
   {
     name: "Protection from Evil and Good",
@@ -5465,10 +5933,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 1,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 270
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 270
+      }
+    ]
   },
   {
     name: "Protection from Poison",
@@ -5486,10 +5956,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 2,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 270
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 270
+      }
+    ]
   },
   {
     name: "Purify Food and Drink",
@@ -5506,10 +5978,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 1,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 270
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 270
+      }
+    ]
   },
   {
     name: "Raise Dead",
@@ -5529,10 +6003,12 @@ export const spells: Spell[] = [
     school: "Necromancy",
     level: 5,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 270
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 270
+      }
+    ]
   },
   {
     name: "Ray of Enfeeblement",
@@ -5550,10 +6026,12 @@ export const spells: Spell[] = [
     school: "Necromancy",
     level: 2,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 271
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 271
+      }
+    ]
   },
   {
     name: "Ray of Frost",
@@ -5571,10 +6049,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 0,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 271
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 271
+      }
+    ]
   },
   {
     name: "Regenerate",
@@ -5592,10 +6072,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 7,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 271
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 271
+      }
+    ]
   },
   {
     name: "Reincarnate",
@@ -5643,10 +6125,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 5,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 271
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 271
+      }
+    ]
   },
   {
     name: "Remove Curse",
@@ -5663,10 +6147,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 3,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 271
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 271
+      }
+    ]
   },
   {
     name: "Resilient Sphere",
@@ -5687,10 +6173,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 4,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 264
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 264
+      }
+    ]
   },
   {
     name: "Resistance",
@@ -5707,10 +6195,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 0,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 272
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 272
+      }
+    ]
   },
   {
     name: "Resurrection",
@@ -5731,10 +6221,12 @@ export const spells: Spell[] = [
     school: "Necromancy",
     level: 7,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 272
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 272
+      }
+    ]
   },
   {
     name: "Reverse Gravity",
@@ -5753,10 +6245,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 7,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 272
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 272
+      }
+    ]
   },
   {
     name: "Revivify",
@@ -5773,10 +6267,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 3,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 272
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 272
+      }
+    ]
   },
   {
     name: "Rope Trick",
@@ -5796,10 +6292,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 272
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 272
+      }
+    ]
   },
   {
     name: "Sacred Flame",
@@ -5817,10 +6315,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 0,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 272
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 272
+      }
+    ]
   },
   {
     name: "Sanctuary",
@@ -5838,10 +6338,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 1,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 272
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 272
+      }
+    ]
   },
   {
     name: "Scorching Ray",
@@ -5861,10 +6363,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 2,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 273
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 273
+      }
+    ]
   },
   {
     name: "Scrying",
@@ -5895,10 +6399,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 5,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 273
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 273
+      }
+    ]
   },
   {
     name: "Secret Chest",
@@ -5918,10 +6424,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 4,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 254
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 254
+      }
+    ]
   },
   {
     name: "See Invisibility",
@@ -5938,10 +6446,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 274
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 274
+      }
+    ]
   },
   {
     name: "Seeming",
@@ -5961,10 +6471,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 5,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 274
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 274
+      }
+    ]
   },
   {
     name: "Sending",
@@ -5982,10 +6494,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 3,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 274
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 274
+      }
+    ]
   },
   {
     name: "Sequester",
@@ -6005,10 +6519,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 7,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 274
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 274
+      }
+    ]
   },
   {
     name: "Shapechange",
@@ -6031,10 +6547,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 9,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 274
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 274
+      }
+    ]
   },
   {
     name: "Shatter",
@@ -6054,10 +6572,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 275
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 275
+      }
+    ]
   },
   {
     name: "Shield",
@@ -6074,10 +6594,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 1,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 275
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 275
+      }
+    ]
   },
   {
     name: "Shield of Faith",
@@ -6094,10 +6616,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 1,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 275
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 275
+      }
+    ]
   },
   {
     name: "Shillelagh",
@@ -6114,10 +6638,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 0,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 275
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 275
+      }
+    ]
   },
   {
     name: "Shocking Grasp",
@@ -6135,10 +6661,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 0,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 275
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 275
+      }
+    ]
   },
   {
     name: "Silence",
@@ -6156,10 +6684,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 2,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 275
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 275
+      }
+    ]
   },
   {
     name: "Silent Image",
@@ -6178,10 +6708,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 1,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 276
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 276
+      }
+    ]
   },
   {
     name: "Simulacrum",
@@ -6202,10 +6734,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 7,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 276
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 276
+      }
+    ]
   },
   {
     name: "Sleep",
@@ -6226,10 +6760,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 1,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 276
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 276
+      }
+    ]
   },
   {
     name: "Sleet Storm",
@@ -6248,10 +6784,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 3,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 276
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 276
+      }
+    ]
   },
   {
     name: "Slow",
@@ -6271,10 +6809,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 3,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 277
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 277
+      }
+    ]
   },
   {
     name: "Spare the Dying",
@@ -6291,10 +6831,12 @@ export const spells: Spell[] = [
     school: "Necromancy",
     level: 0,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 277
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 277
+      }
+    ]
   },
   {
     name: "Speak with Animals",
@@ -6311,10 +6853,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 1,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 277
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 277
+      }
+    ]
   },
   {
     name: "Speak with Dead",
@@ -6332,10 +6876,12 @@ export const spells: Spell[] = [
     school: "Necromancy",
     level: 3,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 277
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 277
+      }
+    ]
   },
   {
     name: "Speak with Plants",
@@ -6356,10 +6902,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 3,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 277
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 277
+      }
+    ]
   },
   {
     name: "Spider Climb",
@@ -6376,10 +6924,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 277
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 277
+      }
+    ]
   },
   {
     name: "Spike Growth",
@@ -6397,10 +6947,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 277
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 277
+      }
+    ]
   },
   {
     name: "Spirit Guardians",
@@ -6420,10 +6972,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 3,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 278
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 278
+      }
+    ]
   },
   {
     name: "Spiritual Weapon",
@@ -6444,10 +6998,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 2,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 278
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 278
+      }
+    ]
   },
   {
     name: "Stinking Cloud",
@@ -6466,10 +7022,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 3,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 278
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 278
+      }
+    ]
   },
   {
     name: "Stone Shape",
@@ -6487,10 +7045,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 4,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 278
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 278
+      }
+    ]
   },
   {
     name: "Stoneskin",
@@ -6507,10 +7067,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 4,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 278
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 278
+      }
+    ]
   },
   {
     name: "Storm of Vengeance",
@@ -6536,10 +7098,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 9,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 279
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 279
+      }
+    ]
   },
   {
     name: "Suggestion",
@@ -6560,10 +7124,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 2,
     components: ["V", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 279
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 279
+      }
+    ]
   },
   {
     name: "Sunbeam",
@@ -6582,10 +7148,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 6,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 279
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 279
+      }
+    ]
   },
   {
     name: "Sunburst",
@@ -6604,10 +7172,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 8,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 279
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 279
+      }
+    ]
   },
   {
     name: "Symbol",
@@ -6645,10 +7215,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 7,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 280
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 280
+      }
+    ]
   },
   {
     name: "Telekinesis",
@@ -6672,10 +7244,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 5,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 280
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 280
+      }
+    ]
   },
   {
     name: "Telepathic Bond",
@@ -6693,10 +7267,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 5,
     components: ["V", "S", "M"],
-    page: {
-      book: "srd",
-      pageNumber: 183
-    }
+    page: [
+      {
+        book: "srd",
+        pageNumber: 183
+      }
+    ]
   },
   {
     name: "Teleport",
@@ -6714,10 +7290,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 7,
     components: ["V"],
-    page: {
-      book: "phb",
-      pageNumber: 281
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 281
+      }
+    ]
   },
   {
     name: "Teleportation Circle",
@@ -6737,10 +7315,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 5,
     components: ["V", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 282
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 282
+      }
+    ]
   },
   {
     name: "Thaumaturgy",
@@ -6764,10 +7344,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 0,
     components: ["V"],
-    page: {
-      book: "phb",
-      pageNumber: 282
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 282
+      }
+    ]
   },
   {
     name: "Thunderwave",
@@ -6787,10 +7369,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 1,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 282
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 282
+      }
+    ]
   },
   {
     name: "Time Stop",
@@ -6808,10 +7392,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 9,
     components: ["V"],
-    page: {
-      book: "phb",
-      pageNumber: 283
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 283
+      }
+    ]
   },
   {
     name: "Tiny Hut",
@@ -6830,10 +7416,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 3,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 255
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 255
+      }
+    ]
   },
   {
     name: "Tongues",
@@ -6850,10 +7438,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 3,
     components: ["V", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 283
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 283
+      }
+    ]
   },
   {
     name: "Transport via Plants",
@@ -6870,10 +7460,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 6,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 283
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 283
+      }
+    ]
   },
   {
     name: "Tree Stride",
@@ -6891,10 +7483,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 5,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 283
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 283
+      }
+    ]
   },
   {
     name: "True Polymorph",
@@ -6922,10 +7516,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 9,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 283
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 283
+      }
+    ]
   },
   {
     name: "True Resurrection",
@@ -6945,10 +7541,12 @@ export const spells: Spell[] = [
     school: "Necromancy",
     level: 9,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 284
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 284
+      }
+    ]
   },
   {
     name: "True Seeing",
@@ -6966,10 +7564,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 6,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 284
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 284
+      }
+    ]
   },
   {
     name: "True Strike",
@@ -6986,10 +7586,12 @@ export const spells: Spell[] = [
     school: "Divination",
     level: 0,
     components: ["S"],
-    page: {
-      book: "phb",
-      pageNumber: 284
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 284
+      }
+    ]
   },
   {
     name: "Unseen Servant",
@@ -7008,10 +7610,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 1,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 284
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 284
+      }
+    ]
   },
   {
     name: "Vampiric Touch",
@@ -7030,10 +7634,12 @@ export const spells: Spell[] = [
     school: "Necromancy",
     level: 3,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 285
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 285
+      }
+    ]
   },
   {
     name: "Vicious Mockery",
@@ -7051,10 +7657,12 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 0,
     components: ["V"],
-    page: {
-      book: "phb",
-      pageNumber: 285
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 285
+      }
+    ]
   },
   {
     name: "Wall of Fire",
@@ -7076,10 +7684,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 4,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 285
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 285
+      }
+    ]
   },
   {
     name: "Wall of Force",
@@ -7097,10 +7707,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 5,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 285
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 285
+      }
+    ]
   },
   {
     name: "Wall of Ice",
@@ -7121,10 +7733,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 6,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 285
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 285
+      }
+    ]
   },
   {
     name: "Wall of Stone",
@@ -7146,10 +7760,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 5,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 287
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 287
+      }
+    ]
   },
   {
     name: "Wall of Thorns",
@@ -7170,10 +7786,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 6,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 287
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 287
+      }
+    ]
   },
   {
     name: "Warding Bond",
@@ -7193,10 +7811,12 @@ export const spells: Spell[] = [
     school: "Abjuration",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 287
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 287
+      }
+    ]
   },
   {
     name: "Water Breathing",
@@ -7213,10 +7833,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 3,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 287
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 287
+      }
+    ]
   },
   {
     name: "Water Walk",
@@ -7234,10 +7856,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 3,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 287
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 287
+      }
+    ]
   },
   {
     name: "Web",
@@ -7258,10 +7882,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 2,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 287
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 287
+      }
+    ]
   },
   {
     name: "Weird",
@@ -7278,10 +7904,12 @@ export const spells: Spell[] = [
     school: "Illusion",
     level: 9,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 288
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 288
+      }
+    ]
   },
   {
     name: "Wind Walk",
@@ -7299,10 +7927,12 @@ export const spells: Spell[] = [
     school: "Transmutation",
     level: 6,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 288
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 288
+      }
+    ]
   },
   {
     name: "Wind Wall",
@@ -7321,10 +7951,12 @@ export const spells: Spell[] = [
     school: "Evocation",
     level: 3,
     components: ["V", "S", "M"],
-    page: {
-      book: "phb",
-      pageNumber: 288
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 288
+      }
+    ]
   },
   {
     name: "Wish",
@@ -7350,10 +7982,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 9,
     components: ["V"],
-    page: {
-      book: "phb",
-      pageNumber: 288
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 288
+      }
+    ]
   },
   {
     name: "Word of Recall",
@@ -7371,10 +8005,12 @@ export const spells: Spell[] = [
     school: "Conjuration",
     level: 6,
     components: ["V"],
-    page: {
-      book: "phb",
-      pageNumber: 289
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 289
+      }
+    ]
   },
   {
     name: "Zone of Truth",
@@ -7392,9 +8028,11 @@ export const spells: Spell[] = [
     school: "Enchantment",
     level: 2,
     components: ["V", "S"],
-    page: {
-      book: "phb",
-      pageNumber: 289
-    }
+    page: [
+      {
+        book: "phb",
+        pageNumber: 289
+      }
+    ]
   }
 ];
