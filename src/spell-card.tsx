@@ -39,7 +39,7 @@ const TextBlock = ({ title, lines }: TextBlockProps) => {
  */
 
 interface PropertiesListProps {
-  properties: Array<[string, string]>;
+  properties: Array<[string, JSX.Element | string]>;
 }
 const PropertiesList = ({ properties }: PropertiesListProps) => {
   return (
@@ -108,7 +108,9 @@ export const SpellCard = ({ spell, knownBy }: SpellCardProps) => {
 
   const sources = spell.page
     .map(page => `${sourceBookText(page.book)} page ${page.pageNumber}`)
-    .join(", ");
+    .map((text, index) => <div key={index}>{text}</div>);
+
+  const knownByList = knownBy.sort().map(k => <div key={k}>{k}</div>);
 
   const components = (
     <PropertiesList
@@ -122,8 +124,8 @@ export const SpellCard = ({ spell, knownBy }: SpellCardProps) => {
         ["Materials", spell.material === null ? "None" : spell.material],
         ["Ritual", spell.ritual ? "Yes" : "No"],
         ["Concentration", spell.concentration ? "Yes" : "No"],
-        ["Source", sources],
-        ["Known by", knownBy.join(", ")]
+        ["Source", <div>{sources}</div>],
+        ["Known by", <div>{knownByList}</div>]
       ]}
     />
   );

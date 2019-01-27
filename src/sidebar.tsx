@@ -83,6 +83,7 @@ export const SideBar = ({
           type="file"
           name="spell-data"
           onChange={e => {
+            // TODO - Document how the data should be structured for this
             // TODO - Look into how this works with browser compatibility
             const files = e.target.files;
             if (!files || files.length !== 1) {
