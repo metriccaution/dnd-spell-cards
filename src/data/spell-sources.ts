@@ -1,6 +1,6 @@
 import { SpellSources } from "../types";
 
-export const spellSources: SpellSources[] = [
+const spellSources: SpellSources[] = [
   {
     knownBy: "Bard",
     spells: [
@@ -820,3 +820,5 @@ export const spellSources: SpellSources[] = [
     ]
   }
 ];
+
+export default spellSources;

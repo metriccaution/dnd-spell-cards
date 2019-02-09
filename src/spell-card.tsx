@@ -1,18 +1,17 @@
 import * as React from "react";
 import styled from "styled-components";
 import PropertiesGrid from "./properties-grid";
-import { spellLevelName } from "./spell-utils";
 import { colours, shadows } from "./styles";
-import { SourceBook, Spell, SpellComponent } from "./types";
+import { FullSpell, SpellComponent } from "./types";
 
 const DescriptionBlock = styled.div`
   padding-top: 0.4em;
 `;
 
 const CardPanel = styled.div`
-  margin: 1em;
-  width: 35em;
+  margin: 2em;
   padding: 0.75em;
+  width: 30em;
   display: inline-block;
   vertical-align: top;
   background: ${colours.cardBackground};
@@ -25,9 +24,15 @@ const SpellTitle = styled.h2`
 `;
 
 /**
+ * Provide a human-readable spell level
+ */
+const spellLevelName = (level: number): string =>
+  level === 0 ? "Cantrip" : `Level ${level}`;
+
+/**
  * Human-readable source books
  */
-export const sourceBookText = (sourceBook: SourceBook): string => {
+export const sourceBookText = (sourceBook: string): string => {
   switch (sourceBook) {
     // Freely avaliable content
     case "phb":
@@ -35,6 +40,7 @@ export const sourceBookText = (sourceBook: SourceBook): string => {
     case "srd":
       return "System Reference Document";
     // Not bundled in the code, as these are proprietary, but render properly
+    // if someone loads some extra local resources
     case "scag":
       return "Sword Coast Adventurer's Guide";
     case "xgte":
@@ -67,23 +73,19 @@ export interface SpellCardProps {
   /**
    * Actual spell details
    */
-  spell: Spell;
-  /**
-   * What gives someone this spell
-   */
-  knownBy: string[];
+  spell: FullSpell;
 }
-export const SpellCard = ({ spell, knownBy }: SpellCardProps) => {
+export const SpellCard = ({ spell }: SpellCardProps) => {
   const spellComponents = spell.components
     .map(spellComponentText)
     .sort()
     .join(", ");
 
-  const sources = spell.page
+  const sources = spell.pages
     .map(page => `${sourceBookText(page.book)} page ${page.pageNumber}`)
     .map((text, index) => <div key={index}>{text}</div>);
 
-  const knownByList = knownBy.sort().map(k => <div key={k}>{k}</div>);
+  const knownByList = spell.knownBy.sort().map(k => <div key={k}>{k}</div>);
 
   const description = [
     {

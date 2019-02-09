@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import { colours, shadows } from "./styles";
-import { Spell, SpellSources } from "./types";
+import { DataSource } from "./types";
 
 const SidebarScrollContainer = styled.div`
   overflow-y: auto;
@@ -32,7 +32,7 @@ export interface SideBarProps {
   toggleSpellSource: (sourceName: string) => void;
   selectedSources: string[];
   sourceNames: string[];
-  loadExtraData: (spellsToAdd: Spell[], sourcesToAdd: SpellSources[]) => void;
+  loadExtraData: (data: DataSource) => void;
 }
 
 export const SideBar = ({
@@ -60,10 +60,9 @@ export const SideBar = ({
       try {
         const data = reader.result;
         if (typeof data === "string") {
-          const parsed = JSON.parse(data);
-
-          const { spells, sources } = parsed;
-          loadExtraData(spells, sources);
+          const parsed: DataSource = JSON.parse(data);
+          // TODO - Validate the data in here
+          loadExtraData(parsed);
         }
       } catch (e) {
         // Do nothing

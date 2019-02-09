@@ -4,24 +4,6 @@
 export type SpellComponent = "S" | "V" | "M";
 
 /**
- * Known source books
- */
-export type SourceBook = "phb" | "srd" | "scag" | "xgte" | "ee";
-
-/**
- * Alias for a spell name to spell source mapping
- */
-export type SourcesBySpell = Record<string, string[]>;
-
-/**
- * A location in a book where a spell is from
- */
-export interface SourcePage {
-  pageNumber: number;
-  book: SourceBook;
-}
-
-/**
  * All of the details stored about a spell.
  */
 export interface Spell {
@@ -38,10 +20,6 @@ export interface Spell {
    * there are no additional effect)
    */
   higherLevel: string[];
-  /**
-   * Where the spell is originally from (e.g. Player's Handbook, page 123)
-   */
-  page: SourcePage[];
   /**
    * How far will the spell reach
    */
@@ -86,4 +64,38 @@ export interface Spell {
 export interface SpellSources {
   knownBy: string;
   spells: string[];
+}
+
+/**
+ * A location in a book where a spell is from
+ */
+export interface SourcePage {
+  pageNumber: number;
+  book: string;
+}
+
+/**
+ * Where the spell is originally from (e.g. Player's Handbook, page 123)
+ */
+export interface PageData {
+  spellName: string;
+  page: SourcePage;
+}
+
+/**
+ * All of the data about a spell, collated from multiple sources
+ */
+export interface FullSpell extends Spell {
+  knownBy: string[];
+  aliases: string[];
+  pages: SourcePage[];
+}
+
+/**
+ * All of the data from a given source (e.g. SRD or players handbook)
+ */
+export interface DataSource {
+  spells: Spell[];
+  sources: SpellSources[];
+  pages: PageData[];
 }

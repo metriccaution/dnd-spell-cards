@@ -1,19 +1,19 @@
 import { produce } from "immer";
-import { uniq } from "lodash";
+import { memoize } from "lodash";
 import * as React from "react";
-import { spellSources } from "./data/spell-sources";
-import { spells } from "./data/spells";
+import collateSpells from "./collate-data";
+import data from "./data";
 import SpellList from "./spell-list";
-import { groupSpellsKnownBySpell } from "./spell-utils";
-import { SourcesBySpell, Spell, SpellSources } from "./types";
+import { DataSource, FullSpell } from "./types";
 
 interface SpellListState {
-  spells: Spell[];
-  spellSources: SpellSources[];
+  spellData: DataSource[];
   showSidebar: boolean;
   searchText: string;
   spellSourceFilter: string[];
 }
+
+const memoiseCollation = memoize(collateSpells);
 
 /**
  * State container
@@ -22,8 +22,7 @@ export default class MainPage extends React.Component<{}, SpellListState> {
   constructor(props: {}) {
     super(props);
     this.state = {
-      spells: [],
-      spellSources: [],
+      spellData: [],
       searchText: "",
       spellSourceFilter: [],
       showSidebar: false
@@ -31,26 +30,19 @@ export default class MainPage extends React.Component<{}, SpellListState> {
   }
 
   public componentWillMount() {
-    this.loadData(spells, spellSources);
+    this.loadData(data);
   }
 
   public render() {
-    const groupedBySpell = groupSpellsKnownBySpell(this.state.spellSources);
-
-    const matchingSpells = this.state.spells
-      .filter(this.spellMatchesText.bind(this, this.state.searchText))
+    const spells = memoiseCollation(this.state.spellData)
       .filter(
-        this.spellMatchesSourceFilter.bind(
-          this,
-          this.state.spellSourceFilter,
-          groupedBySpell
-        )
-      );
+        this.spellMatchesSourceFilter.bind(this, this.state.spellSourceFilter)
+      )
+      .filter(this.spellMatchesText.bind(this, this.state.searchText));
 
     return (
       <SpellList
-        spellList={matchingSpells}
-        spellsKnown={this.state.spellSources}
+        spellList={spells}
         toggleSidebar={this.toggleSidebar.bind(this)}
         showSidebar={this.state.showSidebar}
         searchText={this.state.searchText}
@@ -90,7 +82,7 @@ export default class MainPage extends React.Component<{}, SpellListState> {
   /**
    * Does a spell match a text value.
    */
-  private spellMatchesText(text: string, spell: Spell): boolean {
+  private spellMatchesText(text: string, spell: FullSpell): boolean {
     const searchTerm = text.toLowerCase();
     const matchesString = (toMatch: string) =>
       toMatch.toLowerCase().indexOf(searchTerm) > -1;
@@ -103,15 +95,12 @@ export default class MainPage extends React.Component<{}, SpellListState> {
    */
   private spellMatchesSourceFilter(
     selectedGroups: string[],
-    groupedBySpell: SourcesBySpell,
-    spell: Spell
+    spell: FullSpell
   ): boolean {
-    if (selectedGroups.length === 0) {
-      return true;
-    }
-
-    const spellKnownBy = groupedBySpell[spell.name];
-    return spellKnownBy.some(knownBy => selectedGroups.indexOf(knownBy) > -1);
+    return (
+      !Boolean(selectedGroups.length) ||
+      spell.knownBy.some(knownBy => selectedGroups.indexOf(knownBy) > -1)
+    );
   }
 
   /**
@@ -125,30 +114,13 @@ export default class MainPage extends React.Component<{}, SpellListState> {
     );
   }
 
-  private loadData(spellsToAdd: Spell[], sourcesToAdd: SpellSources[]) {
+  /**
+   * Load up a new data set into the app
+   */
+  private loadData(source: DataSource) {
     this.setState(
       produce(this.state, draft => {
-        // Add any spells that aren't in the current list
-        spellsToAdd.forEach(spell => {
-          if (draft.spells.some(existing => existing.name === spell.name)) {
-            return;
-          }
-
-          draft.spells.push(spell);
-        });
-
-        // Add new sources & augment existing ones
-        sourcesToAdd.forEach(source => {
-          const existingSource = draft.spellSources.find(
-            existing => existing.knownBy === source.knownBy
-          );
-
-          if (existingSource) {
-            existingSource.spells = uniq(source.spells.concat(source.spells));
-          } else {
-            draft.spellSources.push(source);
-          }
-        });
+        draft.spellData.push(source);
       })
     );
   }

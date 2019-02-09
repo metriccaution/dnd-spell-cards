@@ -1,15 +1,14 @@
-import { groupBy } from "lodash";
 import * as React from "react";
 import styled from "styled-components";
 import { SideBar } from "./sidebar";
 import { SpellCard } from "./spell-card";
-import { groupSpellsKnownBySpell, spellLevelName } from "./spell-utils";
 import { colours, shadows } from "./styles";
-import { SourcesBySpell, Spell, SpellSources } from "./types";
+import { DataSource, FullSpell } from "./types";
+
+import { flatten, flow, uniq } from "lodash";
 
 interface SpellListProps {
-  spellList: Spell[];
-  spellsKnown: SpellSources[];
+  spellList: FullSpell[];
   // Showing the sidebar or not
   showSidebar: boolean;
   toggleSidebar: () => void;
@@ -20,7 +19,7 @@ interface SpellListProps {
   spellSourceFilter: string[];
   toggleSpellSourceFilter: (sourceName: string) => void;
   // Loading extra data
-  loadExtraData: (spellsToAdd: Spell[], sourcesToAdd: SpellSources[]) => void;
+  loadExtraData: (data: DataSource) => void;
 }
 
 const SpellListContainer = styled.div`
@@ -32,13 +31,6 @@ const SpellListContainer = styled.div`
 
 const SpellListInnerContainer = styled.div`
   margin: 1em;
-`;
-
-const SpellLevelLabel = styled.h1`
-  background: ${colours.spellDividerBackground};
-  box-shadow: ${shadows.standard};
-  padding: 0.5em;
-  margin: 0em 1em;
 `;
 
 const TopBarWrapper = styled.div`
@@ -76,19 +68,19 @@ const SidebarTopBarOffset = styled.div`
   padding-top: 6em;
 `;
 
+const getSpellSources = flow(
+  (spells: FullSpell[]) => spells.map(spell => spell.knownBy),
+  flatten,
+  uniq,
+  spells => spells.sort()
+);
+
 /**
  * A (filtered) listing of all spells in the spell book
  */
 export default class SpellList extends React.Component<SpellListProps, {}> {
   public render() {
-    const { spellList, spellsKnown } = this.props;
-
-    const groupedBySpell = groupSpellsKnownBySpell(spellsKnown);
-    const spellsByLevel = groupBy(spellList, "level");
-
-    const cardsByLevel = Object.keys(spellsByLevel).map(levelName =>
-      this.renderSpellLevel(levelName, groupedBySpell, spellsByLevel[levelName])
-    );
+    const { spellList } = this.props;
 
     // TODO - Animate sidebar transitions
     const sidebar = this.props.showSidebar ? (
@@ -96,7 +88,7 @@ export default class SpellList extends React.Component<SpellListProps, {}> {
         <SidebarTopBarOffset>
           <SideBar
             selectedSources={this.props.spellSourceFilter}
-            sourceNames={this.props.spellsKnown.map(o => o.knownBy)}
+            sourceNames={getSpellSources(spellList)}
             toggleSpellSource={this.props.toggleSpellSourceFilter}
             loadExtraData={this.props.loadExtraData}
           />
@@ -119,45 +111,12 @@ export default class SpellList extends React.Component<SpellListProps, {}> {
           />
         </TopBarWrapper>
 
-        <SpellListInnerContainer>{cardsByLevel}</SpellListInnerContainer>
+        {spellList.map(spell => (
+          <SpellCard key={spell.name} spell={spell} />
+        ))}
+
+        <SpellListInnerContainer>{}</SpellListInnerContainer>
       </SpellListContainer>
-    );
-  }
-
-  /**
-   * Compare two spells for sort-ordering
-   */
-  private compareSpells(a: Spell, b: Spell): number {
-    return a.level - b.level || a.name.localeCompare(b.name);
-  }
-
-  private renderSpellLevel(
-    level: string,
-    groupedBySpell: SourcesBySpell,
-    spells: Spell[]
-  ) {
-    const spellCards = spells
-      .sort(this.compareSpells)
-      .map(spell => (
-        <SpellCard
-          key={spell.name}
-          knownBy={
-            groupedBySpell[spell.name] ? groupedBySpell[spell.name].sort() : []
-          }
-          spell={spell}
-        />
-      ));
-
-    const levelNumber = parseInt(level, 10);
-    const levelName = isNaN(levelNumber)
-      ? "Unknown Level"
-      : spellLevelName(levelNumber);
-
-    return (
-      <div key={level}>
-        <SpellLevelLabel>{levelName}</SpellLevelLabel>
-        <SpellListInnerContainer>{spellCards}</SpellListInnerContainer>
-      </div>
     );
   }
 }
