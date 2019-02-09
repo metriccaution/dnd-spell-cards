@@ -1,8 +1,9 @@
 import { groupBy } from "lodash";
 import * as React from "react";
+import styled from "styled-components";
 import { SideBar } from "./sidebar";
 import { SpellCard } from "./spell-card";
-import { groupSpellsKnownBySpell } from "./spell-utils";
+import { groupSpellsKnownBySpell, spellLevelName } from "./spell-utils";
 import { colours, shadows } from "./styles";
 import { SourcesBySpell, Spell, SpellSources } from "./types";
 
@@ -22,6 +23,59 @@ interface SpellListProps {
   loadExtraData: (spellsToAdd: Spell[], sourcesToAdd: SpellSources[]) => void;
 }
 
+const SpellListContainer = styled.div`
+  height: 100%;
+  overflow-y: auto;
+  color: ${colours.text};
+  background: ${colours.pageBackground};
+`;
+
+const SpellListInnerContainer = styled.div`
+  margin: 1em;
+`;
+
+const SpellLevelLabel = styled.h1`
+  background: ${colours.spellDividerBackground};
+  box-shadow: ${shadows.standard};
+  padding: 0.5em;
+  margin: 0em 1em;
+`;
+
+const TopBarWrapper = styled.div`
+  position: sticky;
+  top: 0;
+  background: ${colours.topNavBackground};
+  padding: 0.5em 0em;
+  box-shadow: ${shadows.standard};
+`;
+
+const ToggleSidebarButton = styled.button`
+  width: 5em;
+  margin: 0.5em 1em;
+  padding: 0.2em;
+  border: 1px outset blue;
+`;
+
+const TopBarSearchBox = styled.input`
+  height: 2.5em;
+  margin: 0.5em 1em;
+  width: 90%;
+  border: none;
+  padding-left: 0.2em;
+`;
+
+const SidebarContainer = styled.div`
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  background-color: ${colours.topNavBackground};
+  box-shadow: ${shadows.standard};
+`;
+
+const SidebarTopBarOffset = styled.div`
+  padding-top: 6em;
+`;
+
 /**
  * A (filtered) listing of all spells in the spell book
  */
@@ -36,26 +90,37 @@ export default class SpellList extends React.Component<SpellListProps, {}> {
       this.renderSpellLevel(levelName, groupedBySpell, spellsByLevel[levelName])
     );
 
-    return (
-      <div
-        style={{
-          height: "100%",
-          overflowY: "auto",
-          color: colours.text,
-          backgroundColor: colours.pageBackground
-        }}
-      >
-        {this.renderSidebar()}
-        {this.renderTopBar()}
+    // TODO - Animate sidebar transitions
+    const sidebar = this.props.showSidebar
+      ? <SidebarContainer>
+        <SidebarTopBarOffset>
+          <SideBar
+            selectedSources={this.props.spellSourceFilter}
+            sourceNames={this.props.spellsKnown.map(o => o.knownBy)}
+            toggleSpellSource={this.props.toggleSpellSourceFilter}
+            loadExtraData={this.props.loadExtraData}
+          />
+        </SidebarTopBarOffset>
+      </SidebarContainer>
+      : null;
 
-        <div
-          style={{
-            margin: "1em"
-          }}
-        >
-          {cardsByLevel}
-        </div>
-      </div>
+    return (
+      <SpellListContainer>
+        {sidebar}
+
+        <TopBarWrapper>
+          <ToggleSidebarButton onClick={this.props.toggleSidebar.bind(this)}>
+            Sidebar
+          </ToggleSidebarButton>
+          <TopBarSearchBox
+            placeholder={"Search"}
+            value={this.props.searchText}
+            onChange={e => this.props.setSearchText(e.target.value)}
+          />
+        </TopBarWrapper>
+
+        <SpellListInnerContainer>{cardsByLevel}</SpellListInnerContainer>
+      </SpellListContainer>
     );
   }
 
@@ -64,13 +129,6 @@ export default class SpellList extends React.Component<SpellListProps, {}> {
    */
   private compareSpells(a: Spell, b: Spell): number {
     return a.level - b.level || a.name.localeCompare(b.name);
-  }
-
-  /**
-   * Provide a human-readable spell level
-   */
-  private spellLevelText(level: number): string {
-    return level === 0 ? "Cantrip" : `Level ${level}`;
   }
 
   private renderSpellLevel(
@@ -93,97 +151,12 @@ export default class SpellList extends React.Component<SpellListProps, {}> {
     const levelNumber = parseInt(level, 10);
     const levelName = isNaN(levelNumber)
       ? "Unknown Level"
-      : this.spellLevelText(levelNumber);
+      : spellLevelName(levelNumber);
 
     return (
       <div key={level}>
-        <h1
-          style={{
-            backgroundColor: colours.spellDividerBackground,
-            boxShadow: shadows.standard,
-            padding: "0.5em",
-            margin: "0em 1em"
-          }}
-        >
-          {levelName}
-        </h1>
-        <div
-          style={{
-            margin: "0.25em"
-          }}
-        >
-          {spellCards}
-        </div>
-      </div>
-    );
-  }
-
-  private renderSidebar() {
-    // TODO - Animate this
-    if (!this.props.showSidebar) {
-      return null;
-    }
-
-    return (
-      <div
-        style={{
-          position: "absolute",
-          width: "30%",
-          height: "100%",
-          backgroundColor: colours.topNavBackground,
-          boxShadow: shadows.standard
-        }}
-      >
-        <div
-          style={{
-            paddingTop: "6em"
-          }}
-        >
-          <SideBar
-            selectedSources={this.props.spellSourceFilter}
-            sourceNames={this.props.spellsKnown.map(o => o.knownBy)}
-            toggleSpellSource={this.props.toggleSpellSourceFilter}
-            loadExtraData={this.props.loadExtraData}
-          />
-        </div>
-      </div>
-    );
-  }
-
-  private renderTopBar() {
-    return (
-      <div
-        style={{
-          position: "sticky",
-          top: 0,
-          backgroundColor: colours.topNavBackground,
-          padding: "0.5em 0em",
-          boxShadow: shadows.standard
-        }}
-      >
-        <button
-          onClick={this.props.toggleSidebar.bind(this)}
-          style={{
-            width: "5em",
-            margin: "0.5em 1em",
-            padding: "0.2em",
-            border: "1px outset blue"
-          }}
-        >
-          Sidebar
-        </button>
-        <input
-          style={{
-            height: "2.5em",
-            margin: "0.5em 1em",
-            width: "90%",
-            border: "none",
-            paddingLeft: "0.2em"
-          }}
-          placeholder={"Search"}
-          value={this.props.searchText}
-          onChange={e => this.props.setSearchText(e.target.value)}
-        />
+        <SpellLevelLabel>{levelName}</SpellLevelLabel>
+        <SpellListInnerContainer>{spellCards}</SpellListInnerContainer>
       </div>
     );
   }
