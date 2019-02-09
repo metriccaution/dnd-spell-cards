@@ -2,7 +2,6 @@ import { groupBy } from "lodash";
 import * as React from "react";
 import { SideBar } from "./sidebar";
 import { SpellCard } from "./spell-card";
-import { spellLevelText } from "./spell-utils";
 import { groupSpellsKnownBySpell } from "./spell-utils";
 import { colours, shadows } from "./styles";
 import { SourcesBySpell, Spell, SpellSources } from "./types";
@@ -67,6 +66,13 @@ export default class SpellList extends React.Component<SpellListProps, {}> {
     return a.level - b.level || a.name.localeCompare(b.name);
   }
 
+  /**
+   * Provide a human-readable spell level
+   */
+  private spellLevelText(level: number): string {
+    return level === 0 ? "Cantrip" : `Level ${level}`;
+  }
+
   private renderSpellLevel(
     level: string,
     groupedBySpell: SourcesBySpell,
@@ -87,7 +93,7 @@ export default class SpellList extends React.Component<SpellListProps, {}> {
     const levelNumber = parseInt(level, 10);
     const levelName = isNaN(levelNumber)
       ? "Unknown Level"
-      : spellLevelText(levelNumber);
+      : this.spellLevelText(levelNumber);
 
     return (
       <div key={level}>
