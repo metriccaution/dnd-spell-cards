@@ -91,8 +91,8 @@ export default class SpellList extends React.Component<SpellListProps, {}> {
     );
 
     // TODO - Animate sidebar transitions
-    const sidebar = this.props.showSidebar
-      ? <SidebarContainer>
+    const sidebar = this.props.showSidebar ? (
+      <SidebarContainer>
         <SidebarTopBarOffset>
           <SideBar
             selectedSources={this.props.spellSourceFilter}
@@ -102,7 +102,7 @@ export default class SpellList extends React.Component<SpellListProps, {}> {
           />
         </SidebarTopBarOffset>
       </SidebarContainer>
-      : null;
+    ) : null;
 
     return (
       <SpellListContainer>

@@ -123,7 +123,7 @@ export const SpellCard = ({ spell, knownBy }: SpellCardProps) => {
           ["Materials", spell.material === null ? "None" : spell.material],
           ["Ritual", spell.ritual ? "Yes" : "No"],
           ["Concentration", spell.concentration ? "Yes" : "No"],
-          ["Source", <div>{sources}</div>],
+          ["Page", <div>{sources}</div>],
           ["Known by", <div>{knownByList}</div>]
         ]}
       />
