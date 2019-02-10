@@ -83,6 +83,13 @@ export interface PageData {
 }
 
 /**
+ * Some spells have different names in different books
+ */
+export interface SpellAlias {
+  names: string[];
+}
+
+/**
  * All of the data about a spell, collated from multiple sources
  */
 export interface FullSpell extends Spell {
@@ -98,4 +105,5 @@ export interface DataSource {
   spells: Spell[];
   sources: SpellSources[];
   pages: PageData[];
+  aliases: SpellAlias[];
 }

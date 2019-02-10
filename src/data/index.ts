@@ -3,5 +3,5 @@ import pages from "./spell-pages";
 import sources from "./spell-sources";
 import spells from "./spells";
 
-const data: DataSource = { spells, pages, sources };
+const data: DataSource = { spells, pages, sources, aliases: [] };
 export default data;

@@ -18,18 +18,20 @@ const PropertyValue = styled.td`
 `;
 
 export interface PropertiesGridProps {
-  properties: Array<[string, JSX.Element | string]>;
+  properties: Array<[string, JSX.Element | string | null]>;
 }
 
 const PropertiesGrid = ({ properties }: PropertiesGridProps) => {
   return (
     <table>
-      {properties.map(([name, value]) => (
-        <PropertiesRow>
-          <PropertyTitle>{name}</PropertyTitle>
-          <PropertyValue>{value}</PropertyValue>
-        </PropertiesRow>
-      ))}
+      {properties
+        .filter(prop => prop[1] !== null)
+        .map(([name, value]) => (
+          <PropertiesRow>
+            <PropertyTitle>{name}</PropertyTitle>
+            <PropertyValue>{value}</PropertyValue>
+          </PropertiesRow>
+        ))}
     </table>
   );
 };

@@ -48,6 +48,7 @@ export const SideBar = ({
   const handleFileUpload = (e: any) => {
     // TODO - Document how the data should be structured for this
     // TODO - Look into how this works with browser compatibility
+    // TODO - Acknowledge successful adding
     const files = e.target.files;
     if (!files || files.length !== 1) {
       return;

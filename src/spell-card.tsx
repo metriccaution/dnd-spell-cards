@@ -111,6 +111,15 @@ export const SpellCard = ({ spell }: SpellCardProps) => {
       );
     });
 
+  const aliases =
+    spell.aliases.length > 0 ? (
+      <div>
+        {spell.aliases.map(s => (
+          <div key={s}>{s}</div>
+        ))}
+      </div>
+    ) : null;
+
   return (
     <CardPanel>
       <SpellTitle>{spell.name}</SpellTitle>
@@ -126,7 +135,8 @@ export const SpellCard = ({ spell }: SpellCardProps) => {
           ["Ritual", spell.ritual ? "Yes" : "No"],
           ["Concentration", spell.concentration ? "Yes" : "No"],
           ["Page", <div>{sources}</div>],
-          ["Known by", <div>{knownByList}</div>]
+          ["Known by", <div>{knownByList}</div>],
+          ["AKA", aliases]
         ]}
       />
       {description}

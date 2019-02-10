@@ -11,12 +11,14 @@ test("Collating an empty data set", t => {
     {
       pages: [],
       sources: [],
-      spells: []
+      spells: [],
+      aliases: []
     },
     {
       pages: [],
       sources: [],
-      spells: []
+      spells: [],
+      aliases: []
     }
   ]);
   t.deepEqual([], actual);
@@ -32,15 +34,27 @@ test("A bit of everything", t => {
             book: "Book 2",
             pageNumber: 3
           }
+        },
+        {
+          spellName: "Aliased spell",
+          page: {
+            book: "Book 3",
+            pageNumber: 13
+          }
         }
       ],
       sources: [
         {
           knownBy: "Extra subclass",
           spells: ["Another spell"]
+        },
+        {
+          knownBy: "Someone else",
+          spells: ["Aliased spell"]
         }
       ],
-      spells: []
+      spells: [],
+      aliases: []
     },
     {
       pages: [
@@ -105,6 +119,11 @@ test("A bit of everything", t => {
           range: "Touch",
           school: "Spellomancy"
         }
+      ],
+      aliases: [
+        {
+          names: ["Another spell", "Aliased spell"]
+        }
       ]
     }
   ]);
@@ -124,12 +143,16 @@ test("A bit of everything", t => {
         material: "A brick",
         range: "Touch",
         school: "Spellomancy",
-        knownBy: ["Base Class 1", "Extra subclass"],
-        aliases: [],
+        knownBy: ["Base Class 1", "Extra subclass", "Someone else"],
+        aliases: ["Aliased spell"],
         pages: [
           {
             book: "Book 1",
             pageNumber: 512
+          },
+          {
+            book: "Book 3",
+            pageNumber: 13
           }
         ]
       },

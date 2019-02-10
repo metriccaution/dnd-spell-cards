@@ -1,4 +1,4 @@
-import { flatten, uniqBy } from "lodash";
+import { flatten, uniq, uniqBy } from "lodash";
 import { DataSource, FullSpell, Spell } from "./types";
 
 /**
@@ -8,6 +8,9 @@ export default function collateData(data: DataSource[]): FullSpell[] {
   const allSpells = flatten(data.map(source => source.spells));
   const sources = flatten(data.map(source => source.sources));
   const pageData = flatten(data.map(source => source.pages));
+  const allAliases: string[][] = flatten(
+    data.map(source => source.aliases)
+  ).map(aliasList => aliasList.names);
 
   const baseSpells: Spell[] = uniqBy(allSpells, "name").sort(
     (a, b) => a.level - b.level || a.name.localeCompare(b.name)
@@ -20,18 +23,26 @@ export default function collateData(data: DataSource[]): FullSpell[] {
   return (
     baseSpells
       .map(spell => {
-        // TODO - Aliases from data source
-        const aliases: string[] = [];
+        const isAlias = (list: string[]) => list.indexOf(spell.name) > -1;
+        const notThisSpellName = (s: string) => s !== spell.name;
+
+        const aliases = flatten(allAliases.filter(isAlias))
+          // Don't include the original name as an alias
+          .filter(notThisSpellName);
+
         return {
           ...spell,
-          aliases
+          aliases: uniq(aliases).sort()
         };
       })
       // Append who knows which spells
       .map(spell => {
-        // TODO - Also look up by alias
+        const names = [...spell.aliases, spell.name];
+
         const knownBy: string[] = sources
-          .filter(source => source.spells.indexOf(spell.name) > -1)
+          .filter(source =>
+            source.spells.some(spellName => names.indexOf(spellName) > -1)
+          )
           .map(source => source.knownBy)
           .sort();
 
@@ -42,9 +53,10 @@ export default function collateData(data: DataSource[]): FullSpell[] {
       })
       // Append page numbers to spells
       .map(spell => {
-        // TODO - Also look up by alias
+        const names = [...spell.aliases, spell.name];
+
         const spellPages = pageData
-          .filter(page => page.spellName === spell.name)
+          .filter(page => names.indexOf(page.spellName) > -1)
           .map(page => page.page)
           .sort(
             (a, b) =>
