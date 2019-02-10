@@ -60,7 +60,7 @@ const SidebarContainer = styled.div`
   position: absolute;
   width: 30%;
   height: 100%;
-  background-color: ${colours.topNavBackground};
+  background-color: ${colours.pageBackground};
   box-shadow: ${shadows.standard};
 `;
 

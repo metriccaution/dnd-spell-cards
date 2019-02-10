@@ -1,15 +1,15 @@
 export const colours = {
   // Main page styles
-  pageBackground: "#161e20",
-  topNavBackground: "#697f8a",
+  pageBackground: "#555",
+  topNavBackground: "#c54c30",
   text: "#252423",
   // Divider styles
   spellDividerBackground: "#c54c30",
   // Spell card styles
   cardBackground: "#de973d",
-  cardBorder: "#26130d"
+  cardBorder: "#c88737"
 };
 
 export const shadows = {
-  standard: "5px 5px 30px -5px #353535"
+  standard: "2px 2px 10px -2px #000"
 };

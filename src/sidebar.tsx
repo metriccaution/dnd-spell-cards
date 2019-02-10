@@ -11,16 +11,17 @@ const SidebarScrollContainer = styled.div`
 const SidebarHeading = styled.h1`
   box-shadow: ${shadows.standard};
   background: ${colours.spellDividerBackground};
-  margin: 0em 1em 0em 0.2em;
-  padding: 0.2em;
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.8em;
 `;
 
 const SidebarItem = styled.div`
-  background: ${colours.cardBackground};
-  font-size: 1.3em;
-  margin: 0.8em;
-  padding: 0.2em;
   box-shadow: ${shadows.standard};
+  background: ${colours.cardBackground};
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.2em;
 `;
 
 const ClassCheckbox = styled.input`
