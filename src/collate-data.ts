@@ -32,7 +32,8 @@ export default function collateData(data: DataSource[]): FullSpell[] {
         // TODO - Also look up by alias
         const knownBy: string[] = sources
           .filter(source => source.spells.indexOf(spell.name) > -1)
-          .map(source => source.knownBy);
+          .map(source => source.knownBy)
+          .sort();
 
         return {
           ...spell,
@@ -44,7 +45,11 @@ export default function collateData(data: DataSource[]): FullSpell[] {
         // TODO - Also look up by alias
         const spellPages = pageData
           .filter(page => page.spellName === spell.name)
-          .map(page => page.page);
+          .map(page => page.page)
+          .sort(
+            (a, b) =>
+              a.book.localeCompare(b.book) || a.pageNumber - b.pageNumber
+          );
 
         return {
           ...spell,

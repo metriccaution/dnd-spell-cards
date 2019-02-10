@@ -6,7 +6,8 @@
     "format": "prettier --write 'src/**/*' '*.{yml,md,js,json}' 'data/**/*.{json,md,js}'",
     "build": "webpack",
     "lint": "tslint -p . --fix",
-    "test": "npm run lint && npm run format && npm run build",
+    "unit-test": "tsc && ava",
+    "test": "npm run lint && npm run format && npm run unit-test && npm run build",
     "start": "webpack-dev-server"
   },
   "license": "MIT",
@@ -22,6 +23,7 @@
     "styled-components": "^4.1.3"
   },
   "devDependencies": {
+    "ava": "^1.2.1",
     "awesome-typescript-loader": "^5.2.1",
     "copy-webpack-plugin": "^4.5.2",
     "husky": "^1.3.1",
