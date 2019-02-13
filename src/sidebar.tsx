@@ -63,12 +63,13 @@ export const SideBar = ({
         const data = reader.result;
         if (typeof data === "string") {
           const parsed: DataSource = JSON.parse(data);
-          // TODO - Validate the data in here
           loadExtraData(parsed);
         }
       } catch (e) {
         // Do nothing
         // TODO - Error display
+        // tslint:disable-next-line:no-console
+        console.log(e);
       }
     };
   };

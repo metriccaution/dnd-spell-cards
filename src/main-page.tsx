@@ -3,6 +3,7 @@ import { memoize } from "lodash";
 import * as React from "react";
 import collateSpells from "./collate-data";
 import data from "./data";
+import validateDataSource from "./data-schemas";
 import SpellList from "./spell-list";
 import { DataSource, FullSpell } from "./types";
 
@@ -118,6 +119,8 @@ export default class MainPage extends React.Component<{}, SpellListState> {
    * Load up a new data set into the app
    */
   private loadData(source: DataSource) {
+    validateDataSource(source);
+
     this.setState(
       produce(this.state, draft => {
         draft.spellData.push(source);
