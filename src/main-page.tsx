@@ -88,7 +88,11 @@ export default class MainPage extends React.Component<{}, SpellListState> {
     const matchesString = (toMatch: string) =>
       toMatch.toLowerCase().indexOf(searchTerm) > -1;
 
-    return matchesString(spell.name) || spell.description.some(matchesString);
+    return (
+      matchesString(spell.name) ||
+      spell.aliases.some(matchesString) ||
+      spell.description.some(matchesString)
+    );
   }
 
   /**
