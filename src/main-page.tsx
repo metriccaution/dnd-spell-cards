@@ -35,8 +35,7 @@ export default class MainPage extends React.Component<{}, SpellListState> {
   }
 
   public render() {
-    const allSpells = memoiseCollation(this.state.spellData);
-    const spells = allSpells
+    const spells = memoiseCollation(this.state.spellData)
       .filter(
         this.spellMatchesSourceFilter.bind(this, this.state.spellSourceFilter)
       )
@@ -45,7 +44,6 @@ export default class MainPage extends React.Component<{}, SpellListState> {
     return (
       <SpellList
         spellList={spells}
-        allSpells={allSpells}
         toggleSidebar={this.toggleSidebar.bind(this)}
         showSidebar={this.state.showSidebar}
         searchText={this.state.searchText}

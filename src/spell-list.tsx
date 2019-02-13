@@ -9,7 +9,6 @@ import { flatten, flow, uniq } from "lodash";
 
 interface SpellListProps {
   spellList: FullSpell[];
-  allSpells: FullSpell[];
   // Showing the sidebar or not
   showSidebar: boolean;
   toggleSidebar: () => void;
@@ -81,7 +80,7 @@ const getSpellSources = flow(
  */
 export default class SpellList extends React.Component<SpellListProps, {}> {
   public render() {
-    const { allSpells, spellList } = this.props;
+    const { spellList } = this.props;
 
     // TODO - Animate sidebar transitions
     const sidebar = this.props.showSidebar ? (
@@ -89,7 +88,7 @@ export default class SpellList extends React.Component<SpellListProps, {}> {
         <SidebarTopBarOffset>
           <SideBar
             selectedSources={this.props.spellSourceFilter}
-            sourceNames={getSpellSources(allSpells)}
+            sourceNames={getSpellSources(spellList)}
             toggleSpellSource={this.props.toggleSpellSourceFilter}
             loadExtraData={this.props.loadExtraData}
           />
