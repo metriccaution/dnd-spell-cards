@@ -5980,7 +5980,7 @@ const spells: Spell[] = [
     ],
     higherLevel: [],
     range: "30 feet",
-    material: null,
+    material: "A piece of cork",
     ritual: true,
     concentration: false,
     duration: "1 hour",
