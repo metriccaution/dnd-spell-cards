@@ -16,10 +16,6 @@ export default function collateData(data: DataSource[]): FullSpell[] {
     (a, b) => a.level - b.level || a.name.localeCompare(b.name)
   );
 
-  if (baseSpells.length !== allSpells.length) {
-    throw new Error(`Duplicate spell names present`);
-  }
-
   return (
     baseSpells
       .map(spell => {

@@ -190,3 +190,84 @@ test("A bit of everything", t => {
     actual
   );
 });
+
+test("Duplicate spell names across multiple sources just picks the first", t => {
+  const actual = collate([
+    {
+      aliases: [],
+      pages: [],
+      sources: [],
+      spells: [
+        {
+          name: "Spell",
+          castingTime: "Quick",
+          components: [],
+          concentration: true,
+          ritual: false,
+          description: ["First"],
+          duration: "Some time",
+          higherLevel: [],
+          level: 3,
+          material: null,
+          range: "Long",
+          school: "Spellomancy"
+        },
+        {
+          name: "Spell",
+          castingTime: "Quick",
+          components: [],
+          concentration: true,
+          ritual: false,
+          description: ["Second"],
+          duration: "Some time",
+          higherLevel: [],
+          level: 3,
+          material: null,
+          range: "Long",
+          school: "Spellomancy"
+        }
+      ]
+    },
+    {
+      aliases: [],
+      pages: [],
+      sources: [],
+      spells: [
+        {
+          name: "Spell",
+          castingTime: "Quick",
+          components: [],
+          concentration: true,
+          ritual: false,
+          description: ["third"],
+          duration: "Some time",
+          higherLevel: [],
+          level: 3,
+          material: null,
+          range: "Long",
+          school: "Spellomancy"
+        }
+      ]
+    }
+  ]);
+
+  t.deepEqual(actual, [
+    {
+      name: "Spell",
+      castingTime: "Quick",
+      components: [],
+      concentration: true,
+      ritual: false,
+      description: ["First"],
+      duration: "Some time",
+      higherLevel: [],
+      level: 3,
+      material: null,
+      range: "Long",
+      school: "Spellomancy",
+      aliases: [],
+      knownBy: [],
+      pages: []
+    }
+  ]);
+});
