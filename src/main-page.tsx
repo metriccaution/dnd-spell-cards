@@ -1,5 +1,5 @@
 import { produce } from "immer";
-import { memoize } from "lodash";
+import { flatten, memoize, uniq } from "lodash";
 import * as React from "react";
 import collateSpells from "./collate-data";
 import data from "./data";
@@ -35,11 +35,15 @@ export default class MainPage extends React.Component<{}, SpellListState> {
   }
 
   public render() {
-    const spells = memoiseCollation(this.state.spellData)
+    const allSpells = memoiseCollation(this.state.spellData);
+
+    const spells = allSpells
       .filter(
         this.spellMatchesSourceFilter.bind(this, this.state.spellSourceFilter)
       )
       .filter(this.spellMatchesText.bind(this, this.state.searchText));
+
+    const sourceNames = uniq(flatten(allSpells.map(spell => spell.knownBy)));
 
     return (
       <SpellList
@@ -48,6 +52,7 @@ export default class MainPage extends React.Component<{}, SpellListState> {
         showSidebar={this.state.showSidebar}
         searchText={this.state.searchText}
         setSearchText={this.setSearchText.bind(this)}
+        sourceNames={sourceNames}
         spellSourceFilter={this.state.spellSourceFilter}
         toggleSpellSourceFilter={this.toggleSpellSourceFilter.bind(this)}
         loadExtraData={this.loadData.bind(this)}

@@ -44,7 +44,7 @@ export default function collateData(data: DataSource[]): FullSpell[] {
 
         return {
           ...spell,
-          knownBy
+          knownBy: uniqBy(knownBy, JSON.stringify)
         };
       })
       // Append page numbers to spells
@@ -61,7 +61,7 @@ export default function collateData(data: DataSource[]): FullSpell[] {
 
         return {
           ...spell,
-          pages: spellPages
+          pages: uniqBy(spellPages, JSON.stringify)
         };
       })
   );

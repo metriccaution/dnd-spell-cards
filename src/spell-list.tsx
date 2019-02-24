@@ -5,8 +5,6 @@ import { SpellCard } from "./spell-card";
 import { colours, shadows } from "./styles";
 import { DataSource, FullSpell } from "./types";
 
-import { flatten, flow, uniq } from "lodash";
-
 interface SpellListProps {
   spellList: FullSpell[];
   // Showing the sidebar or not
@@ -16,6 +14,7 @@ interface SpellListProps {
   searchText: string;
   setSearchText: (text: string) => void;
   // Spell source data - Which classes/subclasses know a spell
+  sourceNames: string[];
   spellSourceFilter: string[];
   toggleSpellSourceFilter: (sourceName: string) => void;
   // Loading extra data
@@ -68,19 +67,12 @@ const SidebarTopBarOffset = styled.div`
   padding-top: 6em;
 `;
 
-const getSpellSources = flow(
-  (spells: FullSpell[]) => spells.map(spell => spell.knownBy),
-  flatten,
-  uniq,
-  spells => spells.sort()
-);
-
 /**
  * A (filtered) listing of all spells in the spell book
  */
 export default class SpellList extends React.Component<SpellListProps, {}> {
   public render() {
-    const { spellList } = this.props;
+    const { sourceNames, spellList } = this.props;
 
     // TODO - Animate sidebar transitions
     const sidebar = this.props.showSidebar ? (
@@ -88,7 +80,7 @@ export default class SpellList extends React.Component<SpellListProps, {}> {
         <SidebarTopBarOffset>
           <SideBar
             selectedSources={this.props.spellSourceFilter}
-            sourceNames={getSpellSources(spellList)}
+            sourceNames={sourceNames}
             toggleSpellSource={this.props.toggleSpellSourceFilter}
             loadExtraData={this.props.loadExtraData}
           />
