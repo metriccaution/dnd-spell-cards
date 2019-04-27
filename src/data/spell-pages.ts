@@ -244,7 +244,7 @@ const spellPages: PageData[] = [
   { spellName: "Moonbeam", page: { book: "srd", pageNumber: 166 } },
   { spellName: "Move Earth", page: { book: "srd", pageNumber: 166 } },
   { spellName: "Nondetection", page: { book: "srd", pageNumber: 167 } },
-  { spellName: "Pass without Trace", page: { book: "srd", pageNumber: 167 } },
+  { spellName: "Pass Without Trace", page: { book: "srd", pageNumber: 167 } },
   { spellName: "Passwall", page: { book: "srd", pageNumber: 167 } },
   { spellName: "Phantasmal Killer", page: { book: "srd", pageNumber: 167 } },
   { spellName: "Phantom Steed", page: { book: "srd", pageNumber: 167 } },
