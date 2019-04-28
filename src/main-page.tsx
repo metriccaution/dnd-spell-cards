@@ -12,6 +12,10 @@ interface SpellListState {
   showSidebar: boolean;
   searchText: string;
   spellSourceFilter: string[];
+  levelFilter: {
+    min: number;
+    max: number;
+  };
 }
 
 const memoiseCollation = memoize(collateSpells);
@@ -26,7 +30,11 @@ export default class MainPage extends React.Component<{}, SpellListState> {
       spellData: [],
       searchText: "",
       spellSourceFilter: [],
-      showSidebar: false
+      showSidebar: false,
+      levelFilter: {
+        max: 9,
+        min: 0
+      }
     };
   }
 
@@ -38,6 +46,8 @@ export default class MainPage extends React.Component<{}, SpellListState> {
     const allSpells = memoiseCollation(this.state.spellData);
 
     const spells = allSpells
+      .filter(spell => spell.level <= this.state.levelFilter.max)
+      .filter(spell => spell.level >= this.state.levelFilter.min)
       .filter(
         this.spellMatchesSourceFilter.bind(this, this.state.spellSourceFilter)
       )
@@ -55,6 +65,8 @@ export default class MainPage extends React.Component<{}, SpellListState> {
         sourceNames={sourceNames}
         spellSourceFilter={this.state.spellSourceFilter}
         toggleSpellSourceFilter={this.toggleSpellSourceFilter.bind(this)}
+        levelFilter={this.state.levelFilter}
+        setLevelFilter={this.setLevelFilter.bind(this)}
         loadExtraData={this.loadData.bind(this)}
       />
     );
@@ -133,6 +145,14 @@ export default class MainPage extends React.Component<{}, SpellListState> {
     this.setState(
       produce(this.state, draft => {
         draft.spellData.push(source);
+      })
+    );
+  }
+
+  private setLevelFilter(prop: "min" | "max", level: number) {
+    this.setState(
+      produce(this.state, draft => {
+        draft.levelFilter[prop] = level;
       })
     );
   }

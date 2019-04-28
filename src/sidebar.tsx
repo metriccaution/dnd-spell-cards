@@ -32,6 +32,13 @@ const ClassCheckbox = styled.input`
 export interface SideBarProps {
   toggleSpellSource: (sourceName: string) => void;
   selectedSources: string[];
+
+  levelFilter: {
+    min: number;
+    max: number;
+  };
+  setLevelFilter: (prop: "min" | "max", level: number) => void;
+
   sourceNames: string[];
   loadExtraData: (data: DataSource) => void;
 }
@@ -40,7 +47,9 @@ export const SideBar = ({
   sourceNames,
   toggleSpellSource,
   selectedSources,
-  loadExtraData
+  loadExtraData,
+  levelFilter,
+  setLevelFilter
 }: SideBarProps) => {
   /**
    * Handle uploading bonus data
@@ -76,6 +85,28 @@ export const SideBar = ({
 
   return (
     <SidebarScrollContainer>
+      <SidebarHeading>Filter by Level</SidebarHeading>
+      <SidebarItem>
+        <input
+          type="number"
+          onChange={e => setLevelFilter("min", e.target.valueAsNumber)}
+          value={levelFilter.min}
+          min={0}
+          max={9}
+        />
+        <label>Min level</label>
+      </SidebarItem>
+      <SidebarItem>
+        <input
+          type="number"
+          onChange={e => setLevelFilter("max", e.target.valueAsNumber)}
+          value={levelFilter.max}
+          min={0}
+          max={9}
+        />
+        <label>Max level</label>
+      </SidebarItem>
+
       <SidebarHeading>Class / Subclass</SidebarHeading>
       {sourceNames.sort().map(g => {
         const id = `choose-filter-${g}`;

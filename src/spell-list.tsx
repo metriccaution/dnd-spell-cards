@@ -19,6 +19,12 @@ interface SpellListProps {
   toggleSpellSourceFilter: (sourceName: string) => void;
   // Loading extra data
   loadExtraData: (data: DataSource) => void;
+  // Setting the min / max spell level
+  levelFilter: {
+    min: number;
+    max: number;
+  };
+  setLevelFilter: (prop: "min" | "max", level: number) => void;
 }
 
 const SpellListContainer = styled.div`
@@ -72,7 +78,7 @@ const SidebarTopBarOffset = styled.div`
  */
 export default class SpellList extends React.Component<SpellListProps, {}> {
   public render() {
-    const { sourceNames, spellList } = this.props;
+    const { sourceNames, spellList, levelFilter, setLevelFilter } = this.props;
 
     // TODO - Animate sidebar transitions
     const sidebar = this.props.showSidebar ? (
@@ -83,6 +89,8 @@ export default class SpellList extends React.Component<SpellListProps, {}> {
             sourceNames={sourceNames}
             toggleSpellSource={this.props.toggleSpellSourceFilter}
             loadExtraData={this.props.loadExtraData}
+            levelFilter={levelFilter}
+            setLevelFilter={setLevelFilter}
           />
         </SidebarTopBarOffset>
       </SidebarContainer>
