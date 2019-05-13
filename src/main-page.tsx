@@ -2,7 +2,6 @@ import { produce } from "immer";
 import { flatten, memoize, uniq } from "lodash";
 import * as React from "react";
 import collateSpells from "./collate-data";
-import data from "./data";
 import validateDataSource from "./data-schemas";
 import SpellList from "./spell-list";
 import { DataSource, FullSpell } from "./types";
@@ -38,8 +37,9 @@ export default class MainPage extends React.Component<{}, SpellListState> {
     };
   }
 
-  public componentWillMount() {
-    this.loadData(data);
+  public async componentWillMount() {
+    const res = await fetch("/srd-data.json");
+    this.loadData(await res.json());
   }
 
   public render() {
