@@ -56,9 +56,36 @@ export default class MainPage extends React.Component<{}, SpellListState> {
 
     const sourceNames = uniq(flatten(allSpells.map(spell => spell.knownBy)));
 
+    // Display either the list of spells, or a placeholder loading message
+    const displaySpells =
+      allSpells.length > 0
+        ? spells
+        : [
+            {
+              aliases: [],
+              castingTime: "Hopefully not long",
+              components: [],
+              concentration: true,
+              description: [
+                "Spell data is currently loading",
+                "This should only take a few seconds."
+              ],
+              duration: "A few seconds",
+              higherLevel: [],
+              knownBy: [],
+              level: 0,
+              material: null,
+              name: "Loading Spells...",
+              pages: [],
+              range: "Self",
+              ritual: true,
+              school: "Conjuration"
+            }
+          ];
+
     return (
       <SpellList
-        spellList={spells}
+        spellList={displaySpells}
         toggleSidebar={this.toggleSidebar.bind(this)}
         showSidebar={this.state.showSidebar}
         searchText={this.state.searchText}
