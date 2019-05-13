@@ -137,6 +137,32 @@ export default class SpellList extends React.Component<SpellListProps, {}> {
       </Spring>
     );
 
+    const spells: FullSpell[] =
+      spellList.length > 0
+        ? spellList
+        : [
+            {
+              aliases: [],
+              castingTime: "Hopefully not long",
+              components: [],
+              concentration: true,
+              description: [
+                "Spell data is currently loading",
+                "This should only take a few seconds."
+              ],
+              duration: "A few seconds",
+              higherLevel: [],
+              knownBy: [],
+              level: 0,
+              material: null,
+              name: "Loading Spells...",
+              pages: [],
+              range: "Self",
+              ritual: true,
+              school: "Conjuration"
+            }
+          ];
+
     return (
       <SpellListContainer>
         {sidebar}
@@ -152,7 +178,7 @@ export default class SpellList extends React.Component<SpellListProps, {}> {
           />
         </TopBarWrapper>
 
-        {spellList.map(spell => (
+        {spells.map(spell => (
           <SpellCard key={spell.name} spell={spell} />
         ))}
 

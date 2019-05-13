@@ -1,6 +1,6 @@
 export const colours = {
   // Main page styles
-  pageBackground: "#555",
+  pageBackground: "#EEE",
   topNavBackground: "#c54c30",
   text: "#252423",
   // Divider styles
