@@ -38,8 +38,9 @@ export default class MainPage extends React.Component<{}, SpellListState> {
   }
 
   public async componentWillMount() {
-    const res = await fetch("/srd-data.json");
-    this.loadData(await res.json());
+    const res = await fetch("srd-data.json");
+    const parsed = await res.json();
+    this.loadData(parsed);
   }
 
   public render() {
