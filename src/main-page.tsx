@@ -9,7 +9,7 @@ import { DataSource, FullSpell } from "./types";
 
 interface SpellListState {
   spellData: DataSource[];
-  showSidebar: boolean;
+  showSidebar: "open" | "closed" | "never-opened";
   searchText: string;
   spellSourceFilter: string[];
   levelFilter: {
@@ -30,7 +30,7 @@ export default class MainPage extends React.Component<{}, SpellListState> {
       spellData: [],
       searchText: "",
       spellSourceFilter: [],
-      showSidebar: false,
+      showSidebar: "never-opened",
       levelFilter: {
         max: 9,
         min: 0
@@ -92,7 +92,15 @@ export default class MainPage extends React.Component<{}, SpellListState> {
   private toggleSidebar() {
     this.setState(
       produce(this.state, draft => {
-        draft.showSidebar = !draft.showSidebar;
+        switch (draft.showSidebar) {
+          case "never-opened":
+          case "closed":
+            draft.showSidebar = "open";
+            break;
+          case "open":
+            draft.showSidebar = "closed";
+            break;
+        }
       })
     );
   }

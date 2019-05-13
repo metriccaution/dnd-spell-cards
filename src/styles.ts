@@ -13,3 +13,7 @@ export const colours = {
 export const shadows = {
   standard: "2px 2px 10px -2px #000"
 };
+
+export const sizes = {
+  sidebarPercentageWidth: 30
+};

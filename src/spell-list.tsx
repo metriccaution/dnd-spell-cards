@@ -1,14 +1,15 @@
 import * as React from "react";
+import { Spring } from "react-spring/renderprops";
 import styled from "styled-components";
 import { SideBar } from "./sidebar";
 import { SpellCard } from "./spell-card";
-import { colours, shadows } from "./styles";
+import { colours, shadows, sizes } from "./styles";
 import { DataSource, FullSpell } from "./types";
 
 interface SpellListProps {
   spellList: FullSpell[];
   // Showing the sidebar or not
-  showSidebar: boolean;
+  showSidebar: "open" | "closed" | "never-opened";
   toggleSidebar: () => void;
   // Search filtering
   searchText: string;
@@ -73,28 +74,68 @@ const SidebarTopBarOffset = styled.div`
   padding-top: 6em;
 `;
 
+const sidebarFromWidth = (state: "open" | "closed" | "never-opened") => {
+  switch (state) {
+    case "open":
+    case "never-opened":
+      return 0;
+    case "closed":
+      return sizes.sidebarPercentageWidth;
+    default:
+      throw new Error(`Unknown sidebar state ${state}`);
+  }
+};
+
+const sidebarToWidth = (state: "open" | "closed" | "never-opened") => {
+  switch (state) {
+    case "closed":
+    case "never-opened":
+      return 0;
+    case "open":
+      return sizes.sidebarPercentageWidth;
+    default:
+      throw new Error(`Unknown sidebar state ${state}`);
+  }
+};
+
 /**
  * A (filtered) listing of all spells in the spell book
  */
 export default class SpellList extends React.Component<SpellListProps, {}> {
   public render() {
-    const { sourceNames, spellList, levelFilter, setLevelFilter } = this.props;
+    const {
+      sourceNames,
+      spellList,
+      levelFilter,
+      setLevelFilter,
+      showSidebar
+    } = this.props;
 
-    // TODO - Animate sidebar transitions
-    const sidebar = this.props.showSidebar ? (
-      <SidebarContainer>
-        <SidebarTopBarOffset>
-          <SideBar
-            selectedSources={this.props.spellSourceFilter}
-            sourceNames={sourceNames}
-            toggleSpellSource={this.props.toggleSpellSourceFilter}
-            loadExtraData={this.props.loadExtraData}
-            levelFilter={levelFilter}
-            setLevelFilter={setLevelFilter}
-          />
-        </SidebarTopBarOffset>
-      </SidebarContainer>
-    ) : null;
+    const sidebar = (
+      <Spring
+        from={{ width: sidebarFromWidth(showSidebar) }}
+        to={{ width: sidebarToWidth(showSidebar) }}
+      >
+        {props => (
+          <SidebarContainer
+            style={{
+              width: `${props.width}%`
+            }}
+          >
+            <SidebarTopBarOffset>
+              <SideBar
+                selectedSources={this.props.spellSourceFilter}
+                sourceNames={sourceNames}
+                toggleSpellSource={this.props.toggleSpellSourceFilter}
+                loadExtraData={this.props.loadExtraData}
+                levelFilter={levelFilter}
+                setLevelFilter={setLevelFilter}
+              />
+            </SidebarTopBarOffset>
+          </SidebarContainer>
+        )}
+      </Spring>
+    );
 
     return (
       <SpellListContainer>

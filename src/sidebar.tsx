@@ -22,6 +22,7 @@ const SidebarItem = styled.div`
   font-size: 1em;
   margin: 1em;
   padding: 0.2em;
+  overflow-x: hidden;
 `;
 
 const ClassCheckbox = styled.input`
