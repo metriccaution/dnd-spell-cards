@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "precompile": "rm -rf dist/",
-    "format": "prettier --write 'src/**/*' '*.{yml,md,js,json}' 'data/**/*.{json,md,js}'",
+    "format": "prettier --write 'src/**/*' '*.{yml,md,js,json}' 'data/**/*.{json,md,js}' 'static/**/*.{html,json}'",
     "build": "webpack",
     "lint": "tslint -p . --fix",
     "unit-test": "tsc && ava",
