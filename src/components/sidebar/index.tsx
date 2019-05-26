@@ -89,23 +89,25 @@ export const SideBar = ({
       <SidebarHeading>Filter by Level</SidebarHeading>
       <SidebarItem>
         <input
+          name="min-level"
           type="number"
           onChange={e => setLevelFilter("min", e.target.valueAsNumber)}
           value={levelFilter.min}
           min={0}
           max={9}
         />
-        <label>Min level</label>
+        <label htmlFor="min-level">Min level</label>
       </SidebarItem>
       <SidebarItem>
         <input
+          name="max-level"
           type="number"
           onChange={e => setLevelFilter("max", e.target.valueAsNumber)}
           value={levelFilter.max}
           min={0}
           max={9}
         />
-        <label>Max level</label>
+        <label htmlFor="max-level">Max level</label>
       </SidebarItem>
 
       <SidebarHeading>Class / Subclass</SidebarHeading>
@@ -125,7 +127,9 @@ export const SideBar = ({
         );
       })}
 
-      <SidebarHeading>Load Additional Data</SidebarHeading>
+      <SidebarHeading>
+        <label htmlFor="spell-data">Load Additional Data</label>
+      </SidebarHeading>
       <SidebarItem>
         <input type="file" name="spell-data" onChange={handleFileUpload} />
       </SidebarItem>
@@ -134,6 +138,7 @@ export const SideBar = ({
       <SidebarItem>
         <a
           href="https://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf"
+          rel="noreferrer"
           target="_blank"
         >
           SRD
