@@ -3,6 +3,7 @@ import { flatten, memoize, uniq } from "lodash";
 import * as React from "react";
 import collateSpells from "./collate-data";
 import validateDataSource from "./data-schemas";
+import SmoothingSpellList from "./smoothing-spell-list";
 import SpellList from "./spell-list";
 import { DataSource, FullSpell } from "./types";
 
@@ -84,7 +85,8 @@ export default class MainPage extends React.Component<{}, SpellListState> {
           ];
 
     return (
-      <SpellList
+      <SmoothingSpellList
+        animationBatchSize={5}
         spellList={displaySpells}
         toggleSidebar={this.toggleSidebar.bind(this)}
         showSidebar={this.state.showSidebar}

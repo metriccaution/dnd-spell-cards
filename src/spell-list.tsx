@@ -6,7 +6,7 @@ import { SpellCard } from "./spell-card";
 import { colours, shadows, sizes } from "./styles";
 import { DataSource, FullSpell } from "./types";
 
-interface SpellListProps {
+export interface SpellListProps {
   spellList: FullSpell[];
   // Showing the sidebar or not
   showSidebar: "open" | "closed" | "never-opened";
