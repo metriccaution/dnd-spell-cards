@@ -1,8 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
+import { colours, shadows } from "../../styles";
+import { FullSpell, SpellComponent } from "../../types";
 import PropertiesGrid from "./properties-grid";
-import { colours, shadows } from "./styles";
-import { FullSpell, SpellComponent } from "./types";
 
 const DescriptionBlock = styled.div`
   padding-top: 0.4em;

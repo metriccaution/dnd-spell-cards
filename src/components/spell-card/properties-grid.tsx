@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import { colours } from "./styles";
+import { colours } from "../../styles";
 
 const PropertiesRow = styled.tr`
   padding: 0.5;

@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { colours, shadows } from "./styles";
-import { DataSource } from "./types";
+import { colours, shadows } from "../../styles";
+import { DataSource } from "../../types";
 
 const SidebarScrollContainer = styled.div`
   overflow-y: auto;

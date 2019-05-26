@@ -1,5 +1,5 @@
 import * as React from "react";
 import * as ReactDom from "react-dom";
-import MainPage from "./main-page";
+import SpellList from "./pages/spell-list";
 
-ReactDom.render(<MainPage />, document.getElementById("main"));
+ReactDom.render(<SpellList />, document.getElementById("main"));

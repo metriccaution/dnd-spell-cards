@@ -1,10 +1,10 @@
 import * as React from "react";
 import { Spring } from "react-spring/renderprops";
 import styled from "styled-components";
-import { SideBar } from "./sidebar";
-import { SpellCard } from "./spell-card";
-import { colours, shadows, sizes } from "./styles";
-import { DataSource, FullSpell } from "./types";
+import { SideBar } from "../../components/sidebar";
+import { SpellCard } from "../../components/spell-card";
+import { colours, shadows, sizes } from "../../styles";
+import { DataSource, FullSpell } from "../../types";
 
 export interface SpellListProps {
   spellList: FullSpell[];
