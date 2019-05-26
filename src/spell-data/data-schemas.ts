@@ -1,5 +1,5 @@
 import { array, bool, number, object, string } from "yup";
-import { DataSource, SpellComponent } from "./types";
+import { DataSource, SpellComponent } from "../types";
 
 const aliasSchema = object()
   .shape({

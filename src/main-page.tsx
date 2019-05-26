@@ -1,9 +1,8 @@
 import { produce } from "immer";
 import { flatten, memoize, uniq } from "lodash";
 import * as React from "react";
-import collateSpells from "./collate-data";
-import validateDataSource from "./data-schemas";
 import SmoothingSpellList from "./smoothing-spell-list";
+import { collateDataSources, validateDataSource } from "./spell-data";
 import SpellList from "./spell-list";
 import { DataSource, FullSpell } from "./types";
 
@@ -18,7 +17,7 @@ interface SpellListState {
   };
 }
 
-const memoiseCollation = memoize(collateSpells);
+const memoiseCollation = memoize(collateDataSources);
 
 /**
  * State container

@@ -1,5 +1,5 @@
 import { flatten, uniq, uniqBy } from "lodash";
-import { DataSource, FullSpell, Spell } from "./types";
+import { DataSource, FullSpell, Spell } from "../types";
 
 /**
  * Munge down a number of data sets into a cohearant list of spells
