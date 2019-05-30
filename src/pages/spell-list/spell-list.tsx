@@ -30,13 +30,8 @@ export interface SpellListProps {
 
 const SpellListContainer = styled.div`
   height: 100%;
-  overflow-y: auto;
   color: ${colours.text};
   background: ${colours.pageBackground};
-`;
-
-const SpellListInnerContainer = styled.div`
-  margin: 1em;
 `;
 
 const TopBarWrapper = styled.div`
@@ -68,10 +63,15 @@ const SidebarContainer = styled.div`
   height: 100%;
   background-color: ${colours.pageBackground};
   box-shadow: ${shadows.standard};
+  overflow-y: auto;
 `;
 
 const SidebarTopBarOffset = styled.div`
   padding-top: 6em;
+`;
+
+const SpellContainer = styled.div`
+  overflow-y: auto;
 `;
 
 const sidebarFromWidth = (state: "open" | "closed" | "never-opened") => {
@@ -152,11 +152,11 @@ export default class SpellList extends React.Component<SpellListProps, {}> {
           />
         </TopBarWrapper>
 
-        {spellList.map(spell => (
-          <SpellCard key={spell.name} spell={spell} />
-        ))}
-
-        <SpellListInnerContainer>{}</SpellListInnerContainer>
+        <SpellContainer>
+          {spellList.map(spell => (
+            <SpellCard key={spell.name} spell={spell} />
+          ))}
+        </SpellContainer>
       </SpellListContainer>
     );
   }
