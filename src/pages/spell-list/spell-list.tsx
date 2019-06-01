@@ -32,6 +32,7 @@ const SpellListContainer = styled.div`
   height: 100%;
   color: ${colours.text};
   background: ${colours.pageBackground};
+  overflow-y: auto;
 `;
 
 const TopBarWrapper = styled.div`
@@ -70,9 +71,7 @@ const SidebarTopBarOffset = styled.div`
   padding-top: 6em;
 `;
 
-const SpellContainer = styled.div`
-  overflow-y: auto;
-`;
+const SpellContainer = styled.div``;
 
 const sidebarFromWidth = (state: "open" | "closed" | "never-opened") => {
   switch (state) {
