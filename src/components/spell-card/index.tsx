@@ -4,10 +4,6 @@ import { colours, shadows } from "../../styles";
 import { FullSpell, SpellComponent } from "../../types";
 import PropertiesGrid from "./properties-grid";
 
-const DescriptionBlock = styled.div`
-  padding-top: 0.4em;
-`;
-
 const CardPanel = styled.div`
   margin: 2em;
   padding: 0.75em;
@@ -69,6 +65,10 @@ export const spellComponentText = (component: SpellComponent): string => {
   }
 };
 
+const DescriptionText = styled.div`
+  white-space: pre-line;
+`;
+
 export interface SpellCardProps {
   /**
    * Actual spell details
@@ -83,9 +83,9 @@ export const SpellCard = ({ spell }: SpellCardProps) => {
 
   const sources = spell.pages
     .map(page => `${sourceBookText(page.book)} page ${page.pageNumber}`)
-    .map((text, index) => <div key={index}>{text}</div>);
+    .join("\n");
 
-  const knownByList = spell.knownBy.sort().map(k => <div key={k}>{k}</div>);
+  const knownByList = spell.knownBy.sort().join("\n");
 
   const description = [
     {
@@ -98,48 +98,33 @@ export const SpellCard = ({ spell }: SpellCardProps) => {
     }
   ]
     .filter(({ lines }) => lines.length > 0)
-    .map(props => {
-      const descriptionLines = props.lines.map((line, index) => (
-        <DescriptionBlock key={index}>{line}</DescriptionBlock>
-      ));
+    .map(props => [
+      <h3>{props.title}</h3>,
+      <DescriptionText>{props.lines.join("\n\n")}</DescriptionText>
+    ])
+    .reduce((arr, items) => arr.concat(items), [] as JSX.Element[]);
 
-      return (
-        <div>
-          <h3>{props.title}</h3>
-          {descriptionLines}
-        </div>
-      );
-    });
-
-  const aliases =
-    spell.aliases.length > 0 ? (
-      <div>
-        {spell.aliases.map(s => (
-          <div key={s}>{s}</div>
-        ))}
-      </div>
-    ) : null;
+  const aliases = spell.aliases.length > 0 ? spell.aliases.join("\n") : null;
 
   return (
     <CardPanel>
       <SpellTitle>{spell.name}</SpellTitle>
       <PropertiesGrid
         properties={[
-          ["Level", spellLevelName(spell.level)],
-          ["School", spell.school],
+          ["Level", `${spellLevelName(spell.level)} (${spell.school})`],
           ["Range", spell.range],
           ["Casting Time", spell.castingTime],
           ["Duration", spell.duration],
           ["Components", spellComponents],
-          ["Materials", spell.material === null ? "None" : spell.material],
-          ["Ritual", spell.ritual ? "Yes" : "No"],
-          ["Concentration", spell.concentration ? "Yes" : "No"],
-          ["Page", <div>{sources}</div>],
-          ["Known by", <div>{knownByList}</div>],
+          ["Materials", spell.material],
+          ["Ritual", spell.ritual ? "Yes" : null],
+          ["Concentration", spell.concentration ? "Yes" : null],
+          ["Page", sources],
+          ["Known by", knownByList],
           ["AKA", aliases]
         ]}
       />
-      {description}
+      {...description}
     </CardPanel>
   );
 };

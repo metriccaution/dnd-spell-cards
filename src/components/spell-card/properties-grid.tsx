@@ -15,10 +15,11 @@ const PropertyTitle = styled.th`
 const PropertyValue = styled.td`
   border-bottom: 1px solid ${colours.cardBorder};
   text-align: left;
+  white-space: pre-line;
 `;
 
 export interface PropertiesGridProps {
-  properties: Array<[string, JSX.Element | string | null]>;
+  properties: Array<[string, string | null]>;
 }
 
 const PropertiesGrid = ({ properties }: PropertiesGridProps) => {
@@ -27,7 +28,7 @@ const PropertiesGrid = ({ properties }: PropertiesGridProps) => {
       {properties
         .filter(prop => prop[1] !== null)
         .map(([name, value]) => (
-          <PropertiesRow>
+          <PropertiesRow key={name}>
             <PropertyTitle>{name}</PropertyTitle>
             <PropertyValue>{value}</PropertyValue>
           </PropertiesRow>
