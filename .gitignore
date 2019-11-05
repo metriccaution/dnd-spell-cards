@@ -1,5 +1,6 @@
 node_modules
 dist
+!src/dist/**/*
 
 # Don't include non-free data in the public version
 data/*/*
