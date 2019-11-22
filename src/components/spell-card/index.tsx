@@ -10,7 +10,6 @@ const CardPanel = styled.div`
   width: 30em;
   display: inline-block;
   vertical-align: top;
-  background: ${colours.cardBackground};
   box-shadow: ${shadows.standard};
   border: 2px solid ${colours.cardBorder};
 `;
