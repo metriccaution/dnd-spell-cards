@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import { colours, shadows } from "../../styles";
+import { shadows } from "../../styles";
 import { FullSpell, SpellComponent } from "../../types";
 import PropertiesGrid from "./properties-grid";
 
@@ -8,10 +8,10 @@ const CardPanel = styled.div`
   margin: 2em;
   padding: 0.75em;
   width: 30em;
+  max-width: 80%;
   display: inline-block;
   vertical-align: top;
   box-shadow: ${shadows.standard};
-  border: 2px solid ${colours.cardBorder};
 `;
 
 const SpellTitle = styled.h2`

@@ -32,7 +32,9 @@ const SpellListContainer = styled.div`
   height: 100%;
   color: ${colours.text};
   background: ${colours.pageBackground};
+  overflow-x: hidden;
   overflow-y: auto;
+  width: 100%;
 `;
 
 const TopBarWrapper = styled.div`

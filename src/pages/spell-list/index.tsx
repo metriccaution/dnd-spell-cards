@@ -3,7 +3,7 @@ import { flatten, memoize, uniq } from "lodash";
 import * as React from "react";
 import { collateDataSources, validateDataSource } from "../../spell-data";
 import { DataSource, FullSpell } from "../../types";
-import SmoothingSpellList from "./smoothing-spell-list";
+import SpellList from "./spell-list";
 
 interface SpellListState {
   spellData: DataSource[];
@@ -83,8 +83,7 @@ export default class MainPage extends React.Component<{}, SpellListState> {
           ];
 
     return (
-      <SmoothingSpellList
-        animationBatchSize={5}
+      <SpellList
         spellList={displaySpells}
         toggleSidebar={this.toggleSidebar.bind(this)}
         showSidebar={this.state.showSidebar}
