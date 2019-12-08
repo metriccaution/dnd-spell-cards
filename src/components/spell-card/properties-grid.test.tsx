@@ -18,13 +18,28 @@ test("Empty grid", renderGridTest, {
 });
 
 test("Some items", renderGridTest, {
-  properties: [["X", "Y"], ["A", "B"], ["X", "Y"], ["X", "Y"]]
+  properties: [
+    ["X", "Y"],
+    ["A", "B"],
+    ["X", "Y"],
+    ["X", "Y"]
+  ]
 });
 
 test("All missing", renderGridTest, {
-  properties: [["X", null], ["A", null], ["X", null], ["X", null]]
+  properties: [
+    ["X", null],
+    ["A", null],
+    ["X", null],
+    ["X", null]
+  ]
 });
 
 test("Some missing", renderGridTest, {
-  properties: [["X", "Y"], ["A", null], ["X", null], ["B", "Y"]]
+  properties: [
+    ["X", "Y"],
+    ["A", null],
+    ["X", null],
+    ["B", "Y"]
+  ]
 });
