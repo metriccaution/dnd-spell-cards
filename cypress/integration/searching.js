@@ -1,7 +1,7 @@
 import config from "../support/config";
 
-describe("Search testing", function() {
-  it("looking for 'Wish'", function() {
+describe("Search testing", () => {
+  it("looking for 'Wish'", () => {
     cy.visit(config.website);
     cy.get('input[placeholder="Search"]').type("Wish");
     cy.get(".spell-card").should("have.length", 10);
@@ -9,7 +9,7 @@ describe("Search testing", function() {
     // TODO - Assert each
   });
 
-  it("looking for 'prismatic spray'", function() {
+  it("looking for 'prismatic spray'", () => {
     cy.visit(config.website);
     cy.get('input[placeholder="Search"]').type("prismatic spray");
 
