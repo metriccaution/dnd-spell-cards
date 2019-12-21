@@ -108,7 +108,7 @@ export const SpellCard = ({ spell }: SpellCardProps) => {
   const aliases = spell.aliases.length > 0 ? spell.aliases.join("\n") : null;
 
   return (
-    <CardPanel>
+    <CardPanel className="spell-card">
       <SpellTitle>{spell.name}</SpellTitle>
       <PropertiesGrid
         properties={[
