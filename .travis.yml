@@ -1,12 +1,27 @@
 language: node_js
-script:
-  - npm test
-  - npm run build
 node_js:
   - "10"
 cache:
+  npm: true
+  # Cache Cypress binaries
   directories:
-    - "node_modules"
+    - ~/.cache
+addons:
+  apt:
+    packages:
+      # Required for Cypress
+      - libgconf-2-4
+jobs:
+  include:
+        - stage: unit-test
+          script: npm test
+        - stage: integration-test
+          script:
+            - npm run cypress
+            - echo "Yay"
+script:
+  - npm test
+  - npm run build
 deploy:
   provider: pages
   skip_cleanup: true
