@@ -143,7 +143,10 @@ export default class SpellList extends React.Component<SpellListProps, {}> {
         {sidebar}
 
         <TopBarWrapper>
-          <ToggleSidebarButton onClick={this.props.toggleSidebar.bind(this)}>
+          <ToggleSidebarButton
+            className="open-sidebar"
+            onClick={this.props.toggleSidebar.bind(this)}
+          >
             Sidebar
           </ToggleSidebarButton>
           <TopBarSearchBox

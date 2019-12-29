@@ -1,9 +1,11 @@
 node_modules
 /dist/
 !/src/dist/
+cypress/videos/
 
 # Don't include non-free data in the public version
 data/*/*
 !data/README.md
 !data/srd/README.md
 !data/srd/**/*
+

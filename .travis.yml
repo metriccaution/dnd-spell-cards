@@ -1,12 +1,30 @@
 language: node_js
-script:
-  - npm test
-  - npm run build
 node_js:
   - "10"
 cache:
+  npm: true
+  # Cache Cypress binaries
   directories:
-    - "node_modules"
+    - ~/.cache
+addons:
+  apt:
+    packages:
+      # Required for Cypress
+      - libgconf-2-4
+jobs:
+  include:
+    - stage: test
+      script:
+        - npm run lint
+        - npm run unit-test
+    - stage: test
+      script:
+        - npm run build
+        - npx http-server dist/static --silent &
+        # Normally this would want to wait for the server, but http-server comes up quick enough
+        - npm run cypress
+script:
+  - npm run build
 deploy:
   provider: pages
   skip_cleanup: true
