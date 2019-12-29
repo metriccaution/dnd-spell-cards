@@ -17,11 +17,12 @@ jobs:
       script:
         - npm run lint
         - npm run unit-test
+        - npm run build
     - stage: integration-test
       script:
         # - npm run cypress
         - npm run build
-        - npx http-server &
+        - npx http-server dist/static --silent &
         - npm run cypress
 script:
   - npm run build
