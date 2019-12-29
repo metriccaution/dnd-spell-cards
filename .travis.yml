@@ -17,6 +17,7 @@ jobs:
       script:
         - npm run lint
         - npm run unit-test
+        - npm run build
     - stage: test
       script:
         - npm run build
