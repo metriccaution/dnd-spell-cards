@@ -118,4 +118,12 @@ describe("Search smoke tests", () => {
     cy.get(".spell-card").should("have.length", 1);
     cy.get(".spell-card:first > h2").should("have.text", "Conjure Celestial");
   });
+
+  it("fails deliberately", () => {
+      cy.visit(config.website);
+      cy.get('input[placeholder="Search"]').type("This isn't actualy a real name for a spell");
+
+      cy.get(".spell-card").should("have.length", 1);
+      cy.get(".spell-card:first > h2").should("have.text", "Prismatic Spray");
+  })
 });

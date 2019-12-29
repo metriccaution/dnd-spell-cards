@@ -17,12 +17,11 @@ jobs:
       script:
         - npm run lint
         - npm run unit-test
-        - npm run build
     - stage: test
       script:
-        # - npm run cypress
         - npm run build
         - npx http-server dist/static --silent &
+        # Normally this would want to wait for the server, but http-server comes up quick enough
         - npm run cypress
 script:
   - npm run build
