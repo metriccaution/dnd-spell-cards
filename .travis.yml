@@ -13,12 +13,12 @@ addons:
       - libgconf-2-4
 jobs:
   include:
-    - stage: unit-test
+    - stage: test
       script:
         - npm run lint
         - npm run unit-test
         - npm run build
-    - stage: integration-test
+    - stage: test
       script:
         # - npm run cypress
         - npm run build
