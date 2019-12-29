@@ -13,14 +13,17 @@ addons:
       - libgconf-2-4
 jobs:
   include:
-        - stage: unit-test
-          script: npm test
-        - stage: integration-test
-          script:
-            - npm run cypress
-            - echo "Yay"
+    - stage: unit-test
+      script:
+        - npm run lint
+        - npm run unit-test
+    - stage: integration-test
+      script:
+        # - npm run cypress
+        - npm run build
+        - npx http-server &
+        - npm run cypress
 script:
-  - npm test
   - npm run build
 deploy:
   provider: pages

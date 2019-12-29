@@ -2,14 +2,13 @@
   "name": "dnd-spell-cards",
   "version": "1.0.0",
   "scripts": {
-    "precompile": "rm -rf dist/",
     "format": "prettier --write 'src/**/*.{ts,tsx}' '*.{yml,md,js,json}' 'data/**/*.{json,md,js}' 'static/**/*.{html,json}' 'cypress/**/*.{js,json}'",
     "build": "webpack",
     "lint": "tslint -p . --fix",
     "unit-test": "tsc && ava",
     "test": "npm run lint && npm run format && npm run unit-test && npm run build",
     "start": "webpack-dev-server",
-    "cypress": "http-server dist/static"
+    "cypress": "cypress run"
   },
   "license": "MIT",
   "dependencies": {
