@@ -39,7 +39,7 @@ export default class MainPage extends React.Component<{}, SpellListState> {
   public async componentWillMount() {
     const res = await fetch("srd-data.json");
     const parsed = await res.json();
-    this.loadData(parsed);
+    this.loadData(parsed, true);
   }
 
   public render() {
@@ -174,8 +174,10 @@ export default class MainPage extends React.Component<{}, SpellListState> {
   /**
    * Load up a new data set into the app
    */
-  private loadData(source: DataSource) {
-    validateDataSource(source);
+  private loadData(source: DataSource, validate: boolean = true) {
+    if (validate) {
+      validateDataSource(source);
+    }
 
     this.setState(
       produce(this.state, draft => {
