@@ -14,12 +14,12 @@ export interface Spell {
   /**
    * A description of what this spell does
    */
-  description: string[];
+  description: string;
   /**
    * Any additional effects from casting the spell at a higher level (empty when
    * there are no additional effect)
    */
-  higherLevel: string[];
+  higherLevel: string | null;
   /**
    * How far will the spell reach
    */

@@ -48,21 +48,12 @@ const spellSchema = object().shape({
     .of(string().oneOf(["V", "S", "M"]))
     .min(1)
     .required(),
-  description: array()
-    .of(
-      string()
-        .min(1)
-        .required()
-    )
+  description: string()
     .min(1)
     .required(),
-  higherLevel: array()
-    .of(
-      string()
-        .min(1)
-        .required()
-    )
-    .default([]),
+  higherLevel: string()
+    .min(1)
+    .nullable(),
   ritual: bool().default(false),
   concentration: bool().default(false),
   duration: string()

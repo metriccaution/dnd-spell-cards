@@ -96,11 +96,11 @@ export const SpellCard = ({ spell }: SpellCardProps) => {
       title: "At a higher level"
     }
   ]
-    .filter(({ lines }) => lines.length > 0)
+    .filter(({ lines }) => Boolean(lines))
     .map(props => [
       <h3 key={`heading-${props.title}`}>{props.title}</h3>,
       <DescriptionText key={`description-${props.title}`}>
-        {props.lines.join("\n\n")}
+        {props.lines}
       </DescriptionText>
     ])
     .reduce((arr, items) => arr.concat(items), [] as JSX.Element[]);

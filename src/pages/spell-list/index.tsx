@@ -65,12 +65,10 @@ export default class MainPage extends React.Component<{}, SpellListState> {
               castingTime: "Hopefully not long",
               components: [],
               concentration: true,
-              description: [
-                "Spell data is currently loading",
-                "This should only take a few seconds."
-              ],
+              description:
+                "Spell data is currently loading\n\nThis should only take a few seconds.",
               duration: "A few seconds",
-              higherLevel: [],
+              higherLevel: null,
               knownBy: [],
               level: 0,
               material: null,
@@ -143,7 +141,7 @@ export default class MainPage extends React.Component<{}, SpellListState> {
     return (
       matchesString(spell.name) ||
       spell.aliases.some(matchesString) ||
-      spell.description.some(matchesString)
+      matchesString(spell.description)
     );
   }
 
