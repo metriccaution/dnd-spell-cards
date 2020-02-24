@@ -1,4 +1,5 @@
 import * as React from "react";
+import * as ReactMarkdown from "react-markdown";
 import styled from "styled-components";
 import { shadows } from "../../styles";
 import { FullSpell, SpellComponent } from "../../types";
@@ -100,7 +101,7 @@ export const SpellCard = ({ spell }: SpellCardProps) => {
     .map(props => [
       <h3 key={`heading-${props.title}`}>{props.title}</h3>,
       <DescriptionText key={`description-${props.title}`}>
-        {props.lines}
+        <ReactMarkdown source={props.lines || "N/A"} />
       </DescriptionText>
     ])
     .reduce((arr, items) => arr.concat(items), [] as JSX.Element[]);
