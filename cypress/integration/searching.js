@@ -4,8 +4,8 @@ describe("Search testing", () => {
   it("looking for 'Wish'", () => {
     cy.visit(config.website);
     cy.get('input[placeholder="Search"]').type("Wish");
-    cy.get(".spell-card").should("have.length", 10);
-    cy.get(".spell-card:nth-child(10) > h2").should("have.text", "Wish");
+    cy.get(".spell-card").should("have.length", 11);
+    cy.get(".spell-card:nth-child(11) > h2").should("have.text", "Wish");
     // TODO - Assert each
   });
 

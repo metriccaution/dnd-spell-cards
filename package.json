@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "format": "prettier --write 'src/**/*.{ts,tsx}' '*.{yml,md,js,json}' 'data/**/*.{json,md,js}' 'static/**/*.{html,json}' 'cypress/**/*.{js,json}'",
+    "postformat": "node normalise-spell-data.js",
     "build": "webpack",
     "lint": "tslint -p . --fix",
     "unit-test": "tsc && ava",
