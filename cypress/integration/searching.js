@@ -1,21 +1,56 @@
 import config from "../support/config";
 
 describe("Search testing", () => {
-  it("looking for 'Wish'", () => {
+  /**
+   * Make a search for a spell, and check the results are what would be expected
+   *
+   * @param {string} searchTerm The value to search for
+   * @param {string[]} expectedResults The expected results from searching
+   */
+  const searchCase = (searchTerm, expectedResults) => {
     cy.visit(config.website);
-    cy.get('input[placeholder="Search"]').type("Wish");
-    cy.get(".spell-card").should("have.length", 11);
-    cy.get(".spell-card:nth-child(11) > h2").should("have.text", "Wish");
-    // TODO - Assert each
-  });
+    cy.get('input[placeholder="Search"]').type(searchTerm);
+    cy.get(".spell-card").should("have.length", expectedResults.length);
+    expectedResults.forEach((name, index) => {
+      cy.get(`.spell-card:nth-child(${index + 1}) > h2`).should(
+        "have.text",
+        name
+      );
+    });
+  };
 
-  it("looking for 'prismatic spray'", () => {
-    cy.visit(config.website);
-    cy.get('input[placeholder="Search"]').type("prismatic spray");
+  it("looking for 'Wish'", () =>
+    searchCase("Wish", [
+      "Calm Emotions",
+      "Geas",
+      "Disintegrate",
+      "Freezing Sphere",
+      "Divine Word",
+      "Fire Storm",
+      "Simulacrum",
+      "Feeblemind",
+      "Mind Blank",
+      "True Polymorph",
+      "Wish"
+    ]));
 
-    cy.get(".spell-card").should("have.length", 1);
-    cy.get(".spell-card:first > h2").should("have.text", "Prismatic Spray");
-  });
+  it("looking for 'wish'", () =>
+    searchCase("wish", [
+      "Calm Emotions",
+      "Geas",
+      "Disintegrate",
+      "Freezing Sphere",
+      "Divine Word",
+      "Fire Storm",
+      "Simulacrum",
+      "Feeblemind",
+      "Mind Blank",
+      "True Polymorph",
+      "Wish"
+    ]));
+
+  it("looking for 'prismatic spray'", () =>
+    searchCase("prismatic spray", ["Prismatic Spray"]));
 
   it("searches by description text", () => {
     cy.visit(config.website);
