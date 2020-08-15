@@ -14,12 +14,14 @@ module.exports = {
     rules: [{ test: /\.tsx?$/, loader: "awesome-typescript-loader" }]
   },
   plugins: [
-    new CopyWebpackPlugin([
-      {
-        from: "static",
-        to: ""
-      }
-    ])
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: "static",
+          to: ""
+        }
+      ]
+    })
   ],
   devServer: {}
 };
