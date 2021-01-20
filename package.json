@@ -20,7 +20,7 @@
     "@types/sinon": "^7.5.2",
     "@types/styled-components": "^4.4.3",
     "@types/yup": "^0.26.37",
-    "immer": "^3.3.0",
+    "immer": "^8.0.1",
     "lodash": "^4.17.19",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
