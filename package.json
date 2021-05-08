@@ -21,7 +21,7 @@
     "@types/styled-components": "^4.4.3",
     "@types/yup": "^0.26.37",
     "immer": "^3.3.0",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-spring": "^8.0.27",
