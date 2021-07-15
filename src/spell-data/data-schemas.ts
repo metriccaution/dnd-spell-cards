@@ -1,76 +1,116 @@
-import { array, bool, number, object, string } from "yup";
-import { DataSource, SpellComponent } from "../types";
+import {
+  AnySchema,
+  array,
+  bool,
+  mixed,
+  number,
+  object,
+  ObjectSchema,
+  SchemaOf,
+  string
+} from "yup";
+import {
+  DataSource,
+  PageData,
+  Spell,
+  SpellAlias,
+  SpellComponent,
+  SpellSources
+} from "../types";
 
-const aliasSchema = object()
-  .shape({
-    names: array()
-      .of(string().min(1))
-      .min(2)
-      .required()
-  })
-  .strict(true);
+const obj = <T extends Record<string, any>>(shape: T): ObjectSchema<T> => {
+  return object()
+    .noUnknown()
+    .required()
+    .defined()
+    .shape(shape);
+};
 
-const sourceSchema = object().shape({
-  knownBy: string()
-    .min(1)
-    .required(),
-  spells: array()
-    .of(string().min(1))
-    .min(1)
+const aliasSchema: SchemaOf<SpellAlias> = obj({
+  names: array()
+    .of(
+      string()
+        .required()
+        .min(1)
+    )
+    .min(2)
     .required()
 });
 
-const pageSchema = object().shape({
+const sourceSchema: SchemaOf<SpellSources> = obj({
+  knownBy: string()
+    .min(1)
+    .defined(),
+  spells: array()
+    .of(
+      string()
+        .defined()
+        .min(1)
+    )
+    .min(1)
+    .defined()
+});
+
+const pageSchema: SchemaOf<PageData> = obj({
   spellName: string()
     .min(1)
-    .required(),
+    .defined(),
   page: object().shape({
     pageNumber: number()
       .min(1)
-      .required(),
+      .defined(),
     book: string()
       .min(1)
-      .required()
+      .defined()
   })
 });
 
-const spellSchema = object().shape({
+const spellSchema: SchemaOf<Spell> = obj({
   name: string()
     .min(1)
-    .required(),
+    .defined(),
   range: string()
     .min(1)
-    .required(),
+    .defined(),
   material: string()
     .nullable(true)
+    .defined()
     .min(1),
   components: array()
-    .of(string().oneOf(["V", "S", "M"]))
+    .of(
+      mixed()
+        .oneOf(["V", "S", "M"])
+        .defined()
+    )
     .min(1)
-    .required(),
+    .defined(),
   description: array()
     .of(
       string()
         .min(1)
-        .required()
+        .defined()
     )
     .min(1)
-    .required(),
+    .defined(),
   higherLevel: array()
     .of(
       string()
         .min(1)
-        .required()
+        .defined()
     )
     .default([]),
-  ritual: bool().default(false),
-  concentration: bool().default(false),
+  ritual: bool()
+    .defined()
+    .default(false),
+  concentration: bool()
+    .defined()
+    .default(false),
   duration: string()
     .min(1)
-    .required(),
+    .defined(),
   castingTime: string()
     .min(1)
-    .required(),
+    .defined(),
   school: string()
     .oneOf([
       "Abjuration",
@@ -82,31 +122,34 @@ const spellSchema = object().shape({
       "Necromancy",
       "Transmutation"
     ])
-    .required(),
+    .defined(),
   level: number()
     .min(0)
     .max(9)
-    .required()
+    .defined()
 });
+
+// const blah = <T> = (itemSchema : SchemaOf)
 
 /**
  * Check that everything is as it should be in a source book
  */
-const dataSourceSchema = object().shape({
-  aliases: array().of(aliasSchema),
-  sources: array().of(sourceSchema),
-  pages: array().of(pageSchema),
-  spells: array().of(spellSchema)
+const dataSourceSchema: SchemaOf<DataSource> = obj({
+  aliases: array()
+    .of(aliasSchema)
+    .defined(),
+  sources: array()
+    .of(sourceSchema)
+    .defined(),
+  pages: array()
+    .of(pageSchema)
+    .defined(),
+  spells: array()
+    .of(spellSchema)
+    .defined()
 });
 
-export default function validateDataSource(original: DataSource): DataSource {
+export default function validateDataSource(original: unknown): DataSource {
   const validated = dataSourceSchema.validateSync(original);
-
-  return {
-    ...validated,
-    spells: validated.spells.map(spell => ({
-      ...spell,
-      components: spell.components as SpellComponent[]
-    }))
-  };
+  return validated as DataSource;
 }

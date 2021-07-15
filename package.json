@@ -19,19 +19,19 @@
     "@types/react-dom": "^16.9.8",
     "@types/sinon": "^7.5.2",
     "@types/styled-components": "^4.4.3",
-    "@types/yup": "^0.26.37",
-    "immer": "^3.3.0",
+    "@types/yup": "^0.29.13",
+    "immer": "^9.0.5",
     "lodash": "^4.17.19",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-spring": "^8.0.27",
     "sinon": "^7.5.0",
     "styled-components": "^4.4.1",
-    "yup": "^0.27.0"
+    "yup": "^0.32.9"
   },
   "devDependencies": {
     "@types/enzyme-to-json": "^1.5.3",
-    "ava": "^3.11.1",
+    "ava": "^3.15.0",
     "awesome-typescript-loader": "^5.2.1",
     "copy-webpack-plugin": "^6.0.3",
     "cypress": "^4.12.1",
@@ -44,9 +44,9 @@
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.9.7",
-    "webpack": "^4.44.1",
+    "webpack": "^5.44.0",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.2"
   },
   "husky": {
     "hooks": {

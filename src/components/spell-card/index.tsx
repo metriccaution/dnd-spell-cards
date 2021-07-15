@@ -74,6 +74,7 @@ export interface SpellCardProps {
    */
   spell: FullSpell;
 }
+
 export const SpellCard = ({ spell }: SpellCardProps) => {
   const spellComponents = spell.components
     .map(spellComponentText)
@@ -129,3 +130,5 @@ export const SpellCard = ({ spell }: SpellCardProps) => {
     </CardPanel>
   );
 };
+
+export const CachedSpellCard = React.memo(SpellCard);
